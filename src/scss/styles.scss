@@ -1,0 +1,12 @@
+//main styling imports
+
+@use './base/normalize';
+
+@use './base/variables';
+@use './utilities/mixins';
+@use './base/global';
+@use './layout/header';
+@use './pages/pageHome';
+@use './pages/pageAbout';
+@use './components/contact';
+@use './layout/footer';

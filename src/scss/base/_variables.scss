@@ -1,0 +1,43 @@
+//variables for application
+
+//google fonts
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Source+Sans+Pro:wght@300;400;700&display=swap");
+
+//font variables
+// $heading-font: 'Montserrat', sans-serif;
+// $body-text-font: 'Roboto', sans-serif;
+
+$heading-font: 'Poppins', sans-serif;
+$body-text-font: 'Source Sans Pro', sans-serif;
+
+$line-height: 1.7;
+
+//font size variables
+$standard-font-size: 1rem;
+$medium-font-size: 1.5rem;
+$large-font-size: 2rem;
+
+//colors variables
+$dark-blue: #336699;
+$light-blue: #86BBD8;
+// $dark-grey: #404040;
+$dark-grey: #2b2b2b;
+$light-grey: #E9ECEF;
+$white: #fff;
+
+//spacing variables
+$small-spacing: 0.5rem;
+$base-spacing: 1rem;
+$medium-spacing: 1.5rem;
+$double-spacing: 2rem;
+
+//max width for <main> container
+$main-max-width: 1600px;
+
+//media query breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-desktop-lg: 1400px;

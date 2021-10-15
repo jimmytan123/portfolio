@@ -1,0 +1,113 @@
+@use '../base/variables' as *;
+@use '../utilities/mixins' as *;
+
+header {
+  padding: $base-spacing;
+
+  .top-bar {
+    @include flex-layout-row-center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .main-nav {
+    width: 100%;
+    display: flex;
+    @include flex-layout-column-center;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $dark-blue;
+    z-index: 9;
+
+    ul {
+      @include ul-base;
+      text-align: center;
+
+      li {
+        margin: 2rem 0;
+      }
+    }
+
+    a {
+      display: inline-block;
+      color: rgba($white, 0.75);
+      font-weight: 700;
+      font-size: 2.5rem;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  &.show .main-nav {
+    height: 100%;
+    visibility: visible;
+
+    a:hover {
+      color: rgba($white, 1);
+    }
+  }
+
+  .header-logo-container {
+    // padding: $base-spacing;
+    img {
+      width: 45px;
+      display: block;
+    }
+  }
+
+  .btn-main-nav {
+    // padding: $base-spacing;
+    z-index: 10;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  &.show .btn-main-nav {
+    position: fixed;
+    right: 1rem;
+  }
+
+  .closeIcon {
+    fill: $white;
+  }
+
+  svg {
+    transition: all 0.7s ease-in-out;
+  }
+
+  @media all and (min-width: $breakpoint-mobile) {
+    .btn-main-nav {
+      display: none;
+    }
+
+    .main-nav {
+      visibility: visible;
+      transition: none;
+      height: auto;
+      width: auto;
+      background-color: inherit;
+      position: relative;
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0 1rem;
+        }
+      }
+
+      a {
+        color: $dark-grey;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

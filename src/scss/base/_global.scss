@@ -1,0 +1,56 @@
+@use './variables' as *;
+@use '../utilities/mixins' as *;
+
+/* ------
+   Setting up css variables
+------ */
+:root {
+  --text-color: #{$dark-grey};
+  --heading-color: #{$dark-blue};
+  --bg-color: #{$white};
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// General Styling
+body {
+  font-family: $body-text-font;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: $line-height;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  //max-width: $main-max-width;
+  flex: 1 1 auto;
+  //margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: $heading-font;
+}
+
+a,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+li {
+  list-style: none;
+}
