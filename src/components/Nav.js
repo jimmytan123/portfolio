@@ -12,7 +12,7 @@ const Nav = ({ handleShowHide }) => {
   };
 
   return (
-    <nav className="main-nav" onClick={closeNav}>
+    <nav onClick={closeNav} className="main-nav">
       <ul>
         <li>
           <NavLink to="/" exact>
@@ -20,8 +20,6 @@ const Nav = ({ handleShowHide }) => {
           </NavLink>
         </li>
         <li>
-          {/* <NavLink to="/#project-thumbnails">Work</NavLink> */}
-          {/* <a href="/portfolio/#project-thumbnails">Work</a> */}
           <NavLink to="/work">Work</NavLink>
         </li>
         <li>

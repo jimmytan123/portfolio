@@ -1,3 +1,5 @@
+import Contact from '../components/Contact';
+
 const PageWork = () => {
   return (
     <div className="work-container">
@@ -16,6 +18,15 @@ const PageWork = () => {
         exercitationem tenetur nulla aperiam sunt et corrupti ullam sequi, ad
         odit debitis laboriosam natus!
       </p>
+
+      <h2>Project 3</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+        quisquam nostrum doloremque earum dolor reprehenderit blanditiis,
+        exercitationem tenetur nulla aperiam sunt et corrupti ullam sequi, ad
+        odit debitis laboriosam natus!
+      </p>
+      <Contact />
     </div>
   );
 };

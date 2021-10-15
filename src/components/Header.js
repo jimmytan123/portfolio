@@ -27,7 +27,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={navOpen ? 'show' : undefined}>
+    <header className={navOpen ? 'active' : 'undefined'}>
       <div className="top-bar">
         <div className="header-logo-container">
           <NavLink to="/" className="header-logo">

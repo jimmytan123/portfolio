@@ -2,21 +2,21 @@
 @use '../utilities/mixins' as *;
 
 header {
-  padding: $base-spacing;
+  position: relative;
 
   .top-bar {
+    padding: $base-spacing;
     @include flex-layout-row-center;
     justify-content: space-between;
-    position: relative;
   }
 
   .main-nav {
     width: 100%;
-    display: flex;
     @include flex-layout-column-center;
-    height: 0px;
-    overflow: hidden;
+    text-align: center;
+    height: 0;
     visibility: hidden;
+    overflow: hidden;
     transition: 0.5s ease-in-out;
 
     position: fixed;
@@ -27,7 +27,6 @@ header {
 
     ul {
       @include ul-base;
-      text-align: center;
 
       li {
         margin: 2rem 0;
@@ -39,13 +38,22 @@ header {
       color: rgba($white, 0.75);
       font-weight: 700;
       font-size: 2.5rem;
-      transition: all 0.4s ease-in-out;
+      transition: color 0.3s ease-in-out;
+      font-family: $heading-font;
+    }
+
+    a.active {
+      color: $dark-blue;
     }
   }
 
-  &.show .main-nav {
+  &.active .main-nav {
     height: 100%;
     visibility: visible;
+
+    a.active {
+      color: rgba($white, 0.75);
+    }
 
     a:hover {
       color: rgba($white, 1);
@@ -53,7 +61,6 @@ header {
   }
 
   .header-logo-container {
-    // padding: $base-spacing;
     img {
       width: 45px;
       display: block;
@@ -61,7 +68,6 @@ header {
   }
 
   .btn-main-nav {
-    // padding: $base-spacing;
     z-index: 10;
     border: none;
     outline: none;
@@ -69,7 +75,7 @@ header {
     cursor: pointer;
   }
 
-  &.show .btn-main-nav {
+  &.active .btn-main-nav {
     position: fixed;
     right: 1rem;
   }
@@ -83,6 +89,12 @@ header {
   }
 
   @media all and (min-width: $breakpoint-mobile) {
+    .header-logo-container {
+      img {
+        margin-left: $base-spacing;
+      }
+    }
+
     .btn-main-nav {
       display: none;
     }

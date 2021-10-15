@@ -26,7 +26,7 @@
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
     transform: translateZ(-30px);
-    margin: 0 auto;
+    margin: $small-spacing auto;
 
     .side {
       width: 100%;
@@ -45,14 +45,14 @@
       background-color: #3aafa9;
       border: 5px solid $white;
       transform: translateZ(30px);
-      
+
       a {
         color: $white;
       }
     }
 
     .hover-side {
-      background-color: #2B7A78;
+      background-color: #2b7a78;
       border: 5px solid $white;
       transform: rotateX(90deg) translateZ(30px);
 
@@ -65,8 +65,14 @@
       transform: rotateX(-90deg) translateY(30px);
     }
   }
-}
 
-body {
-  perspective: 800px;
+  @media all and (min-width: 450px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
 }
