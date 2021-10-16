@@ -2,10 +2,16 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as LaptopCode } from '../images/laptop-code.svg';
 import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
-
 import { FaCode, FaPaintBrush } from 'react-icons/fa';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const PageHome = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
+
   return (
     <div className="home-container">
       <section className="landing">
@@ -25,13 +31,16 @@ const PageHome = () => {
         <a href="#background">{downArrow}</a>
       </section>
       <section className="background" id="background">
-        <div className="text">
-          <h2>Background</h2>
+        <div className="text" data-aos="fade-up">
+          <h2>Front-End Developer</h2>
           <p>
-            I am a Front-End Developer based in Vancouver, British Columbia,
-            Canada. As a web developer, my goal is to build websites that not
-            only look beautiful but also be functional and implement UX
-            principles. I value clean design patterns and thoughtful features.
+            I'm Jimmy Tan. A self-motivated front-end developer with{' '}
+            <Link className="link-to-work" to="/work">
+              <mark>hands-on project experience</mark>
+            </Link>{' '}
+            designing and building websites from scratch. My goal is to build
+            websites that are not only visually appealing but also be functional
+            and implement UX principles.
             <Link className="link-to-about" to="/about">
               <mark>More about me.</mark>
             </Link>
@@ -39,17 +48,17 @@ const PageHome = () => {
           <div className="grid">
             <h3>Things I Love</h3>
             <div className="card">
-              <FaCode />
+              <FaCode className="code-icon" />
               <p>
-                I enjoy front-end development and love to work with ReactJS,
-                HTML, CSS and modern JavaScript.
+                I enjoy front-end development and love to work with React JS,
+                HTML5, CSS3/Sass and modern JavaScript.
               </p>
             </div>
             <div className="card">
-              <FaPaintBrush />
+              <FaPaintBrush className="brush-icon" />
               <p>
-                I love being part of the creative process and I have working web
-                design using Adobe Creative Cloud.
+                I also like being part of the design creative process and I have
+                been working on web design using Adobe Creative Cloud.
               </p>
             </div>
           </div>

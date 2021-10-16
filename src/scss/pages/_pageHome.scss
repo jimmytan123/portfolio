@@ -73,6 +73,8 @@
     }
 
     @media all and (min-width: $breakpoint-tablet) {
+      min-height: calc(100vh - 77px);
+
       .landing-content {
         @include flex-layout-row-center;
       }
@@ -128,12 +130,12 @@
     background-color: $dark-grey;
     color: $white;
 
-    .link-to-about {
+    .link-to-about, .link-to-work {
       mark {
         padding: 0 0.2rem;
         margin-left: 3px;
-        // color: $white;
-        // background-color: $dark-blue;
+        color: $white;
+        background-color: #1f7a88;
       }
     }
 
@@ -154,7 +156,6 @@
       display: grid;
       grid-template-columns: 1fr;
       justify-content: center;
-      align-items: center;
       h3 {
         grid-column: 1/2;
         text-align: center;
@@ -173,6 +174,14 @@
           text-align: left;
         }
       }
+    }
+
+    .code-icon {
+      fill: $light-blue;
+    }
+
+    .brush-icon {
+      fill: #ffc300;
     }
 
     @media all and (min-width: 450px) {
