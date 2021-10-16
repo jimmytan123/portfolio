@@ -45,6 +45,12 @@ header {
     a.active {
       color: $dark-blue;
     }
+
+    .nav-social-media {
+      a {
+        margin: 0 $small-spacing;
+      }
+    }
   }
 
   &.active .main-nav {
@@ -119,6 +125,10 @@ header {
         color: $dark-grey;
         font-weight: 400;
         font-size: 1.2rem;
+      }
+
+      .nav-social-media {
+        display: none;
       }
     }
   }

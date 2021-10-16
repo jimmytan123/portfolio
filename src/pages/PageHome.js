@@ -3,6 +3,8 @@ import { ReactComponent as LaptopCode } from '../images/laptop-code.svg';
 import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
 
+import { FaCode, FaPaintBrush } from 'react-icons/fa';
+
 const PageHome = () => {
   return (
     <div className="home-container">
@@ -14,7 +16,7 @@ const PageHome = () => {
             <p>
               A <mark>front-end developer</mark> based in Vancouver, Canada.
             </p>
-            <Link className="work-btn" to="/work">
+            <Link className="work-btn homepage-btn" to="/work">
               View My Work
               <div className="overlay"></div>
             </Link>
@@ -26,14 +28,31 @@ const PageHome = () => {
         <div className="text">
           <h2>Background</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            eos dolor officiis eligendi doloribus corrupti minus laudantium,
-            perspiciatis, asperiores tempora aspernatur suscipit rem magnam
-            velit quae non labore voluptate ipsa! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Eaque sunt, quo voluptatibus quos
-            magnam debitis, ipsa fuga voluptatum ut ab recusandae voluptate
-            facilis veniam illo dicta amet mollitia quaerat unde.
+            I am a Front-End Developer based in Vancouver, British Columbia,
+            Canada. As a web developer, my goal is to build websites that not
+            only look beautiful but also be functional and implement UX
+            principles. I value clean design patterns and thoughtful features.
+            <Link className="link-to-about" to="/about">
+              <mark>More about me.</mark>
+            </Link>
           </p>
+          <div className="grid">
+            <h3>Things I Love</h3>
+            <div className="card">
+              <FaCode />
+              <p>
+                I enjoy front-end development and love to work with ReactJS,
+                HTML, CSS and modern JavaScript.
+              </p>
+            </div>
+            <div className="card">
+              <FaPaintBrush />
+              <p>
+                I love being part of the creative process and I have working web
+                design using Adobe Creative Cloud.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <Contact />

@@ -5,7 +5,7 @@
   // for landing section on Page Home
   .landing {
     text-align: center;
-    height: calc(85vh - 77px);
+    min-height: calc(83vh - 77px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,37 +31,6 @@
       padding: 0 0.2rem;
       background: $dark-blue;
       color: $white;
-    }
-
-    .work-btn {
-      padding: $small-spacing $base-spacing;
-      border: 2px solid $dark-grey;
-      display: inline-block;
-      font-size: 0.8rem;
-      font-family: $heading-font;
-      text-transform: uppercase;
-      transition: all 0.4s ease-in-out;
-      margin: $small-spacing 0;
-
-      position: relative;
-
-      .overlay {
-        position: absolute;
-        width: 100%;
-        height: 0%;
-        background-color: $dark-grey;
-        left: 0;
-        bottom: 0;
-        z-index: -1;
-        transition: all 0.4s ease-in-out;
-      }
-
-      &:hover {
-        color: $white;
-        .overlay {
-          height: 100%;
-        }
-      }
     }
 
     .landing-content {
@@ -123,10 +92,50 @@
     }
   }
 
+  .homepage-btn {
+    padding: $small-spacing $base-spacing;
+    border: 2px solid $dark-grey;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: $heading-font;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+    margin: $base-spacing 0;
+
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 0%;
+      background-color: $dark-grey;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+      color: $white;
+      .overlay {
+        height: 100%;
+      }
+    }
+  }
+
   // for background section on Page Home
   .background {
     background-color: $dark-grey;
     color: $white;
+
+    .link-to-about {
+      mark {
+        padding: 0 0.2rem;
+        margin-left: 3px;
+        // color: $white;
+        // background-color: $dark-blue;
+      }
+    }
 
     h2 {
       margin: 1rem 0;
@@ -136,9 +145,34 @@
     }
 
     .text {
+      max-width: 1000px;
       padding: $base-spacing $double-spacing;
-      max-width: 850px;
       margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        grid-column: 1/2;
+        text-align: center;
+        color: $white;
+        font-size: 1.5rem;
+      }
+
+      svg {
+        font-size: 2.5rem;
+      }
+
+      .card {
+        text-align: center;
+
+        p {
+          text-align: left;
+        }
+      }
     }
 
     @media all and (min-width: 450px) {
@@ -148,6 +182,26 @@
 
       p {
         font-size: 1.3rem;
+      }
+    }
+
+    @media all and (min-width: $breakpoint-mobile) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+
+        h3 {
+          grid-column: 1/3;
+        }
+
+        .card {
+          margin: 0 $base-spacing;
+        }
+      }
+    }
+
+    @media all and (min-width: $breakpoint-tablet) {
+      h2 {
+        font-size: 3rem;
       }
     }
   }

@@ -2,20 +2,20 @@
 @use '../utilities/mixins' as *;
 
 .contact {
-  background-color: #3aafa9;
+  background-color: #1f7a88;
 
   .text {
+    max-width: 800px;
     padding: $base-spacing $double-spacing;
     color: $white;
-    max-width: 850px;
     margin: 0 auto;
   }
 
   h2 {
+    font-size: 2rem;
     margin: $base-spacing 0;
     text-align: center;
     color: $white;
-    font-size: 2rem;
   }
 
   .btn {
@@ -26,7 +26,7 @@
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
     transform: translateZ(-30px);
-    margin: $small-spacing auto;
+    margin: $base-spacing auto;
 
     .side {
       width: 100%;
@@ -52,7 +52,8 @@
     }
 
     .hover-side {
-      background-color: #2b7a78;
+      // background-color: #2b7a78;
+      background-color: $dark-blue;
       border: 5px solid $white;
       transform: rotateX(90deg) translateZ(30px);
 
@@ -73,6 +74,12 @@
 
     p {
       font-size: 1.3rem;
+    }
+  }
+
+  @media all and (min-width: $breakpoint-tablet) {
+    h2 {
+      font-size: 3rem;
     }
   }
 }
