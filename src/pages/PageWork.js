@@ -25,6 +25,7 @@ const PageWork = () => {
       tools: ['ReactJS', 'HTML5', 'Sass', 'REST API', 'GitHub'],
       imgUrl: moviewaveThumbImg,
       slug: 'moviewave',
+      moreInfo: true,
       route: '/work-moviewave',
       livesite: 'https://ztan.ca/moviewave/',
       github: 'https://github.com/jimmytan123/movieWave',
@@ -36,6 +37,7 @@ const PageWork = () => {
       tools: ['ReactJS', 'HTML5', 'Sass'],
       imgUrl: portfolioThumbImg,
       slug: 'portfolio',
+      moreInfo: true,
       route: '/work-portfolio',
       livesite: 'google.ca',
       github: 'google.ca',
@@ -59,6 +61,7 @@ const PageWork = () => {
             tools={thumbnail.tools}
             imgUrl={thumbnail.imgUrl}
             slug={thumbnail.slug}
+            moreInfo={thumbnail.moreInfo}
             route={thumbnail.route}
             livesite={thumbnail.livesite}
             github={thumbnail.github}

@@ -10,6 +10,7 @@ const Thumbnail = ({
   tools,
   imgUrl,
   slug,
+  moreInfo,
   route,
   livesite,
   github,
@@ -30,18 +31,22 @@ const Thumbnail = ({
           <h2 className="project-thumbnail-title">{title}</h2>
           <ul className="tools-list">
             {tools.map((tool, index) => (
-              <li key="index">{tool}</li>
+              <li key={index}>{tool}</li>
             ))}
           </ul>
           <p className="project-thumbnail-overview">{description}</p>
           <div className="action-buttons">
-            <a href={livesite} target="_blank" rel="noreferrer">
-              Live Site
-            </a>
-            <a href={github} target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-            <Link to={route}>More Info</Link>
+            {livesite && (
+              <a href={livesite} target="_blank" rel="noreferrer">
+                Live Site
+              </a>
+            )}
+            {github && (
+              <a href={github} target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            )}
+            {moreInfo && <Link to={route}>More Info</Link>}
           </div>
         </div>
       </div>
