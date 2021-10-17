@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
-import { ReactComponent as LaptopCode } from '../images/laptop-code.svg';
+import { ReactComponent as LaptopCode } from '../assets/logos/laptop-code.svg';
 import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
 import { FaCode, FaPaintBrush } from 'react-icons/fa';
 import { useEffect } from 'react';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const PageHome = () => {
   useEffect(() => {
-    Aos.init({ duration: 800 });
+    Aos.init({ duration: 700, once: true });
   }, []);
 
   return (
@@ -39,8 +40,8 @@ const PageHome = () => {
               <mark>hands-on project experience</mark>
             </Link>{' '}
             designing and building websites from scratch. My goal is to build
-            websites that are not only visually appealing but also be functional
-            and implement UX principles.
+            websites with both visually appealing and user experience-oriented
+            functionality.
             <Link className="link-to-about" to="/about">
               <mark>More about me.</mark>
             </Link>

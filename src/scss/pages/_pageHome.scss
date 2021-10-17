@@ -73,7 +73,7 @@
     }
 
     @media all and (min-width: $breakpoint-tablet) {
-      min-height: calc(100vh - 77px);
+      min-height: calc(85vh - 77px);
 
       .landing-content {
         @include flex-layout-row-center;
@@ -91,6 +91,10 @@
         width: 200px;
         margin-right: $double-spacing;
       }
+    }
+
+    @media all and (min-width: $breakpoint-desktop) {
+      min-height: calc(100vh - 77px);
     }
   }
 
@@ -130,12 +134,15 @@
     background-color: $dark-grey;
     color: $white;
 
-    .link-to-about, .link-to-work {
+    .link-to-about,
+    .link-to-work {
       mark {
         padding: 0 0.2rem;
         margin-left: 3px;
-        color: $white;
-        background-color: #1f7a88;
+        //color: $white;
+        //background-color: #1f7a88;
+        background-color: #ffd500;
+        color: $dark-grey;
       }
     }
 
@@ -181,7 +188,7 @@
     }
 
     .brush-icon {
-      fill: #ffc300;
+      fill: #ffd500;
     }
 
     @media all and (min-width: 450px) {

@@ -1,0 +1,37 @@
+@use '../base/variables' as *;
+
+.work-container {
+  .projects-intro {
+    padding: 0 $base-spacing;
+    margin-bottom: 4rem;
+
+    h1 {
+      margin: $base-spacing 0;
+      font-size: 3.5rem;
+      color: $dark-blue;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: $heading-font;
+    }
+  }
+
+  @media all and (min-width: $breakpoint-mobile) {
+    .projects-intro {
+      margin-bottom: 5rem;
+
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+      }
+
+      p {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}

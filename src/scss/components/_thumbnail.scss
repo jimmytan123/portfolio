@@ -1,0 +1,142 @@
+@use '../base/variables' as *;
+@use '../utilities/mixins' as *;
+
+// styling for general project thumbnail
+.project-thumbnail {
+  padding: 3rem $base-spacing;
+
+  .thumbnail-wrapper {
+    position: relative;
+  }
+
+  h2 {
+    margin: $small-spacing 0 0 0;
+    font-size: 2rem;
+  }
+
+  img {
+    display: block;
+    max-width: 750px;
+    width: 100%;
+  }
+
+  .tools-list {
+    @include ul-base;
+    @include flex-layout-row-center;
+    justify-content: flex-start;
+
+    li {
+      margin-top: 0.3rem;
+      margin-right: $small-spacing;
+      padding: 0 0.3rem;
+      border: 2px solid $dark-grey;
+      font-size: 0.75rem;
+      font-family: $heading-font;
+      border-radius: 6px;
+    }
+  }
+
+  .action-buttons {
+    a {
+      margin-right: $small-spacing;
+      border-bottom: 2px solid $dark-grey;
+    }
+  }
+
+  .thumbnail-text {
+    margin-top: $double-spacing;
+  }
+
+  @media all and (min-width: $breakpoint-mobile) {
+    padding: 3rem $double-spacing;
+  }
+
+  @media all and (min-width: $breakpoint-tablet) {
+    padding: 6rem $double-spacing;
+
+    .thumbnail-wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    .thumbnail-text {
+      width: 40%;
+      margin-top: 0;
+    }
+
+    .project-thumbnail-image {
+      width: 50%;
+    }
+
+    // img {
+    //   max-width: 650px;
+    // }
+  }
+
+  @media all and (min-width: $breakpoint-desktop) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// styling specific for project MovieWave
+.project-thumbnail-moviewave {
+  background-color: #0f182b;
+
+  h2 {
+    color: $white;
+  }
+
+  p {
+    color: $white;
+  }
+
+  .tools-list {
+    color: $white;
+
+    li {
+      border-color: $white;
+    }
+  }
+
+  .action-buttons {
+    a {
+      color: $white;
+      border-color: $white;
+      transition: border-color 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        border-color: #ff983d;
+      }
+    }
+  }
+}
+
+// styling specific for project Portfolio site
+.project-thumbnail-portfolio {
+  background-color: $light-grey;
+
+  .thumbnail-text {
+    order: -1;
+  }
+
+  .action-buttons {
+    a {
+      transition: border-color 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        border-color: $dark-blue;
+      }
+    }
+  }
+}
