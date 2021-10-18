@@ -2,7 +2,9 @@
 @use '../utilities/mixins' as *;
 
 .contact {
-  background-color: #1f7a88;
+  //background-color: #1f7a88;
+  background-color: $dark-grey;
+
 
   .text {
     max-width: 800px;

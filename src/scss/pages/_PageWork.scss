@@ -15,11 +15,32 @@
       font-size: 1.5rem;
       font-family: $heading-font;
     }
+
+    .sort-btns-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: $double-spacing;
+    }
+  }
+
+  @media all and (min-width: 450px) {
+    .sort-btns-group {
+      padding: 0.2rem;
+      border: 1px solid $light-grey;
+      border-radius: 10px;
+      max-width: 440px;
+      margin: 0 auto;
+
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
   }
 
   @media all and (min-width: $breakpoint-mobile) {
     .projects-intro {
-      margin-bottom: 5rem;
+      margin-bottom: 4.5rem;
 
       h1 {
         text-align: center;
@@ -28,7 +49,7 @@
 
       p {
         text-align: center;
-        max-width: 600px;
+        max-width: 700px;
         margin: 0 auto;
         font-size: 1.7rem;
       }

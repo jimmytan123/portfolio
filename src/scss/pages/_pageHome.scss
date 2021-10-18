@@ -131,8 +131,10 @@
 
   // for background section on Page Home
   .background {
-    background-color: $dark-grey;
-    color: $white;
+    // background-color: $dark-grey;
+    // color: $white;
+
+    background-color: $light-grey;
 
     .link-to-about,
     .link-to-work {
@@ -149,7 +151,7 @@
     h2 {
       margin: 1rem 0;
       text-align: center;
-      color: $white;
+      // color: $white;
       font-size: 2rem;
     }
 
@@ -166,7 +168,7 @@
       h3 {
         grid-column: 1/2;
         text-align: center;
-        color: $white;
+        // color: $white;
         font-size: 1.5rem;
       }
 
@@ -188,7 +190,7 @@
     }
 
     .brush-icon {
-      fill: #ffd500;
+      fill: #ff7900;
     }
 
     @media all and (min-width: 450px) {
