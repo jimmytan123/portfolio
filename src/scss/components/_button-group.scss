@@ -1,0 +1,29 @@
+@use '../base/variables' as *;
+
+.customButton {
+  // reset button styling
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  margin: 0.3rem 0.5rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-blue;
+    color: $white;
+    transform: scale(1.05);
+  }
+
+  &.active {
+    background-color: $dark-blue;
+    color: $white;
+  }
+}

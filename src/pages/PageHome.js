@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 
 const PageHome = () => {
   useEffect(() => {
+    document.title = 'Jimmy Tan | Portfolio';
     Aos.init({ duration: 700, once: true });
   }, []);
 

@@ -18,6 +18,9 @@
     display: block;
     max-width: 750px;
     width: 100%;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   }
 
   .tools-list {
@@ -87,7 +90,7 @@
   }
 }
 
-// styling specific for project MovieWave
+// styling specific for project MovieWave thumbnail
 .project-thumbnail-moviewave {
   background-color: #0f182b;
 
@@ -121,7 +124,7 @@
   }
 }
 
-// styling specific for project Portfolio site
+// styling specific for project Portfolio thumbnail
 .project-thumbnail-portfolio {
   background-color: $light-grey;
 
@@ -136,6 +139,40 @@
       &:hover,
       &:focus {
         border-color: $dark-blue;
+      }
+    }
+  }
+}
+
+// styling specific for project Code Breaker thumbnail
+.project-thumbnail-codeBreaker {
+  background-color: #e2711d;
+
+  h2 {
+    color: $white;
+  }
+
+  p {
+    color: $white;
+  }
+
+  .tools-list {
+    color: $white;
+
+    li {
+      border-color: $white;
+    }
+  }
+
+  .action-buttons {
+    a {
+      color: $white;
+      border-color: $white;
+      transition: border-color 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        border-color: #606c38;
       }
     }
   }

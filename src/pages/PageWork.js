@@ -7,10 +7,11 @@ import { useState, useEffect } from 'react';
 import moviewaveThumbImg from '../assets/moviewave/moviewave-thumbnail.png';
 import portfolioThumbImg from '../assets/portfolio/portfolio-thumbnail.png';
 import codeBreakerThumbImg from '../assets/codeBreaker/codeBreaker-thumbnail.png';
+import SortButtonGroup from '../components/SortButtonGroup';
 
 const PageWork = () => {
   useEffect(() => {
-    document.title = 'Work | Jimmy Tan';
+    document.title = 'Jimmy Tan | Work';
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -18,7 +19,7 @@ const PageWork = () => {
   }, []);
 
   // data for project thumbnails
-  const thumbnailData = [
+  const rawThumbnailData = [
     {
       title: 'MovieWave',
       description:
@@ -60,61 +61,20 @@ const PageWork = () => {
     },
   ];
 
-  // State for keeping track of work category -- featured projects or mini projects
-  const [workCategory, setWorkCategory] = useState('All');
+  // State to track projectData that is coming from rawThumbnailData
+  const [projectsData, setProjectsData] = useState(rawThumbnailData);
 
   // function for handle click event for filter buttons
-  // updating states
+  // updating state projectData based on chosen filter
   const handleCategory = (selectedCat) => {
-    if (selectedCat) {
-      setWorkCategory(selectedCat);
-    }
-  };
-
-  // function to filtering thumbnail data and return list of thumbnail items
-  const displayThumbnails = () => {
-    // if selected All, return all the projects
-    if (workCategory === 'All') {
-      const data = thumbnailData.map((thumbnail, index) => {
-        return (
-          <Thumbnail
-            title={thumbnail.title}
-            description={thumbnail.description}
-            tools={thumbnail.tools}
-            imgUrl={thumbnail.imgUrl}
-            slug={thumbnail.slug}
-            moreInfo={thumbnail.moreInfo}
-            route={thumbnail.route}
-            livesite={thumbnail.livesite}
-            github={thumbnail.github}
-            key={index}
-          />
-        );
-      });
-
-      return data;
-    } else {
-      // if selected a filter option, return the filtering projects
-      const data = thumbnailData
-        .filter((thumbnail) => thumbnail.category === workCategory)
-        .map((thumbnail, index) => {
-          return (
-            <Thumbnail
-              title={thumbnail.title}
-              description={thumbnail.description}
-              tools={thumbnail.tools}
-              imgUrl={thumbnail.imgUrl}
-              slug={thumbnail.slug}
-              moreInfo={thumbnail.moreInfo}
-              route={thumbnail.route}
-              livesite={thumbnail.livesite}
-              github={thumbnail.github}
-              key={index}
-            />
-          );
-        });
-
-      return data;
+    if (selectedCat === 'all') {
+      setProjectsData(rawThumbnailData);
+    } else if (selectedCat === 'featured' || selectedCat === 'mini') {
+      setProjectsData(
+        rawThumbnailData.filter(
+          (thumbnail) => thumbnail.category === selectedCat
+        )
+      );
     }
   };
 
@@ -126,13 +86,33 @@ const PageWork = () => {
           A collection of my featured technical projects, mini/passion projects
           as a front-end developer. Stay tune for more...
         </p>
-        <button onClick={() => handleCategory('All')}>All</button>
-        <button onClick={() => handleCategory('featured')}>
-          Featured Projects
-        </button>
-        <button onClick={() => handleCategory('mini')}>Mini Projects</button>
+        <div className="sort-btns-group">
+          <SortButtonGroup
+            handleCategory={handleCategory}
+            buttons={[
+              { name: 'All Projects', slug: 'all' },
+              { name: 'Featured Projects', slug: 'featured' },
+              { name: 'Mini Projects', slug: 'mini' },
+            ]}
+          />
+        </div>
       </div>
-      {displayThumbnails()}
+      {projectsData.map((projectData, index) => {
+        return (
+          <Thumbnail
+            title={projectData.title}
+            description={projectData.description}
+            tools={projectData.tools}
+            imgUrl={projectData.imgUrl}
+            slug={projectData.slug}
+            moreInfo={projectData.moreInfo}
+            route={projectData.route}
+            livesite={projectData.livesite}
+            github={projectData.github}
+            key={index}
+          />
+        );
+      })}
       <Contact />
     </div>
   );
