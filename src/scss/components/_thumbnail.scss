@@ -90,6 +90,13 @@
   }
 }
 
+// change img and text position for odd thumbnail projects
+.project-thumbnail:nth-of-type(2n + 1) {
+  .thumbnail-text {
+    order: -1;
+  }
+}
+
 // styling specific for project MovieWave thumbnail
 .project-thumbnail-moviewave {
   background-color: #0f182b;
@@ -127,10 +134,6 @@
 // styling specific for project Portfolio thumbnail
 .project-thumbnail-portfolio {
   background-color: $light-grey;
-
-  .thumbnail-text {
-    order: -1;
-  }
 
   .action-buttons {
     a {
@@ -176,4 +179,9 @@
       }
     }
   }
+}
+
+// styling specific for project Gallery thumbnail
+.project-thumbnail-gallery {
+  background-color: #fff1e6;
 }

@@ -1,5 +1,6 @@
 import Contact from '../components/Contact';
 import Thumbnail from '../components/Thumbnail';
+import SortButtonGroup from '../components/SortButtonGroup';
 
 import { useState, useEffect } from 'react';
 
@@ -7,7 +8,8 @@ import { useState, useEffect } from 'react';
 import moviewaveThumbImg from '../assets/moviewave/moviewave-thumbnail.png';
 import portfolioThumbImg from '../assets/portfolio/portfolio-thumbnail.png';
 import codeBreakerThumbImg from '../assets/codeBreaker/codeBreaker-thumbnail.png';
-import SortButtonGroup from '../components/SortButtonGroup';
+import weatherAppThumbImg from '../assets/weather-app/weatherApp-thumbnail.png';
+import galleryThumbImg from '../assets/gallery/gallery-thumbnail.png';
 
 const PageWork = () => {
   useEffect(() => {
@@ -57,7 +59,33 @@ const PageWork = () => {
       //route: '',
       livesite: 'https://ztan.ca/jimmyTan-js_game/',
       github: 'https://github.com/jimmytan123/Code-Breaker-Game',
-      category: 'mini',
+      category: 'fun',
+    },
+    {
+      title: 'Weather App',
+      description:
+        'The reponsive weather app allows you to search for a city or click Show My Location to get the weather info. The background image is from Unsplash API and it changes according to different cities. ',
+      tools: ['JavaScript', 'HTML5', 'Sass'],
+      imgUrl: weatherAppThumbImg,
+      slug: 'weather-app',
+      moreInfo: false,
+      //route: '',
+      livesite: 'https://ztan.ca/weather-app/',
+      // github: '',
+      category: 'fun',
+    },
+    {
+      title: 'Gallery',
+      description:
+        'A responsive masonry gallery that showcases my interests in landscape photography. All the images can be uploaded from local devices via the site.',
+      tools: ['ReactJS', 'Sass', 'Firebase'],
+      imgUrl: galleryThumbImg,
+      slug: 'gallery',
+      moreInfo: false,
+      //route: '',
+      livesite: 'https://ztan.ca/jimmy-gallery/',
+      // github: '',
+      category: 'fun',
     },
   ];
 
@@ -69,7 +97,7 @@ const PageWork = () => {
   const handleCategory = (selectedCat) => {
     if (selectedCat === 'all') {
       setProjectsData(rawThumbnailData);
-    } else if (selectedCat === 'featured' || selectedCat === 'mini') {
+    } else if (selectedCat === 'featured' || selectedCat === 'fun') {
       setProjectsData(
         rawThumbnailData.filter(
           (thumbnail) => thumbnail.category === selectedCat
@@ -83,8 +111,9 @@ const PageWork = () => {
       <div className="projects-intro">
         <h1>Projects.</h1>
         <p>
-          A collection of my featured technical projects, mini/passion projects
-          as a front-end developer. Stay tune for more...
+          A collection of my featured technical projects, fun projects as a
+          front-end developer. <br />
+          Stay tune for more...
         </p>
         <div className="sort-btns-group">
           <SortButtonGroup
@@ -92,7 +121,7 @@ const PageWork = () => {
             buttons={[
               { name: 'All Projects', slug: 'all' },
               { name: 'Featured Projects', slug: 'featured' },
-              { name: 'Mini Projects', slug: 'mini' },
+              { name: 'Fun Projects', slug: 'fun' },
             ]}
           />
         </div>

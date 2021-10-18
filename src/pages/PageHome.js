@@ -33,7 +33,7 @@ const PageHome = () => {
         <a href="#background">{downArrow}</a>
       </section>
       <section className="background" id="background">
-        <div className="text" data-aos="fade-up">
+        <div className="text" data-aos="zoom-in">
           <h2>Front-End Developer</h2>
           <p>
             I'm Jimmy Tan. A self-motivated front-end developer with{' '}
