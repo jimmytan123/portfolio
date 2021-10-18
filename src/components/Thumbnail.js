@@ -23,9 +23,9 @@ const Thumbnail = ({
     <div className={`project-thumbnail project-thumbnail-${slug}`}>
       <div className="thumbnail-wrapper" data-aos="fade-left">
         <div className="project-thumbnail-image">
-          <Link to={route}>
-            <img src={imgUrl} alt="project cover" />
-          </Link>
+          <a href={livesite} target="_blank" rel="noreferrer">
+            <img src={imgUrl} alt={`${title} Banner`} />
+          </a>
         </div>
         <div className="thumbnail-text">
           <h2 className="project-thumbnail-title">{title}</h2>

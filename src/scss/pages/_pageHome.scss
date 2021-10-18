@@ -5,7 +5,7 @@
   // for landing section on Page Home
   .landing {
     text-align: center;
-    min-height: calc(83vh - 77px);
+    min-height: calc(83vh - 72px); //72px is the height of the site header
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +73,7 @@
     }
 
     @media all and (min-width: $breakpoint-tablet) {
-      min-height: calc(85vh - 77px);
+      min-height: calc(85vh - 72px);
 
       .landing-content {
         @include flex-layout-row-center;
@@ -94,7 +94,7 @@
     }
 
     @media all and (min-width: $breakpoint-desktop) {
-      min-height: calc(100vh - 77px);
+      min-height: calc(100vh - 72px);
     }
   }
 
