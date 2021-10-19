@@ -5,6 +5,8 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiFillGithub } from 'react-icons/ai';
 
+import { gitHubURL, linkedInURL, email } from '../globals/global';
+
 const Nav = ({ handleShowHide }) => {
   //when user clicks a menu link or the element lost focus within the nav menu, close it
   const closeNav = (e) => {
@@ -36,7 +38,7 @@ const Nav = ({ handleShowHide }) => {
         <li className="nav-social-media">
           <a
             className="nav-social-icon"
-            href="https://github.com/jimmytan123"
+            href={gitHubURL}
             title="GitHub"
             target="_blank"
             rel="noreferrer"
@@ -45,18 +47,14 @@ const Nav = ({ handleShowHide }) => {
           </a>
           <a
             className="nav-social-icon"
-            href="https://www.linkedin.com/in/zhixi-tan/"
+            href={linkedInURL}
             title="LinkedIn"
             target="_blank"
             rel="noreferrer"
           >
             <FaLinkedinIn />
           </a>
-          <a
-            className="nav-social-icon"
-            href="mailto:jimmytan0424@gmail.com"
-            title="email"
-          >
+          <a className="nav-social-icon" href={`mailto:${email}`} title="email">
             <HiOutlineMail />
           </a>
         </li>

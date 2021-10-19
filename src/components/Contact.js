@@ -1,5 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 
+import { email } from '../globals/global';
+
 const Contact = () => {
   const location = useLocation();
 
@@ -26,11 +28,11 @@ const Contact = () => {
           )}
           <div className="btn">
             <div className="side default-side">
-              <a href="mailto:jimmytan0424@gmail.com">Email me</a>
+              <a href={`mailto:${email}`}>Email me</a>
             </div>
 
             <div className="side hover-side hover-side-email-btn">
-              <a href="mailto:jimmytan0424@gmail.com">Email me</a>
+              <a href={`mailto:${email}`}>Email me</a>
             </div>
           </div>
         </div>

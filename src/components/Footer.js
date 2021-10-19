@@ -3,6 +3,7 @@ import { getYear } from '../utilities/date';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiFillGithub } from 'react-icons/ai';
+import { gitHubURL, linkedInURL, email } from '../globals/global';
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
       <section className="footer social-media">
         <a
           className="footer-icon"
-          href="https://github.com/jimmytan123"
+          href={gitHubURL}
           title="GitHub"
           target="_blank"
           rel="noreferrer"
@@ -19,18 +20,14 @@ const Footer = () => {
         </a>
         <a
           className="footer-icon"
-          href="https://www.linkedin.com/in/zhixi-tan/"
+          href={linkedInURL}
           title="LinkedIn"
           target="_blank"
           rel="noreferrer"
         >
           <FaLinkedinIn />
         </a>
-        <a
-          className="footer-icon"
-          href="mailto:jimmytan0424@gmail.com"
-          title="email"
-        >
+        <a className="footer-icon" href={`mailto:${email}`} title="email">
           <HiOutlineMail />
         </a>
       </section>

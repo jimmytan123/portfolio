@@ -1,6 +1,19 @@
-// data for projects
+/* 
+   Overview: the rawProjectData consists of data that will be 
+   used in Page Work thumbnail section and single project page(if exist)
+   
+   id - id for the project
+   title - name of the projec
+   briefDescription - A simple and brief summary of the project that will be displayed in the thumbnail section
+   tags - A highlight tools about the project that will be displayed in the thumbnail section
+   thumbnailImgUrl - screenshot of the project that will be displayed in the thumbnail section
+   moreInfo - boolean value, true if the project has a single detail page
+   livesite - URL of the live site of the project
+   github - URL of the GitHub repo of the project
+   category - featured/fun, used for filter feature in Page Work
+*/
 
-// thumbnail images
+// import thumbnail images
 import moviewaveThumbImg from '../assets/moviewave/moviewave-thumbnail.png';
 import portfolioThumbImg from '../assets/portfolio/portfolio-thumbnail.png';
 import codeBreakerThumbImg from '../assets/codeBreaker/codeBreaker-thumbnail.png';
