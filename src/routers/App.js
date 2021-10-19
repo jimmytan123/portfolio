@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import PageHome from '../pages/PageHome';
 import PageAbout from '../pages/PageAbout';
 import PageWork from '../pages/PageWork';
+import PageSingleProject from '../pages/PageSingleProject';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
             </Route>
             <Route path="/work">
               <PageWork />
+            </Route>
+            <Route path='/project-:id'>
+              <PageSingleProject />
             </Route>
           </Switch>
         </main>
