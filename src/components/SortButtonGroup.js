@@ -10,19 +10,20 @@ const SortButtonGroup = ({ buttons, handleCategory }) => {
 
   return (
     <>
-      {buttons.map((button, index) => {
-        return (
-          <button
-            key={index}
-            onClick={() => handleOnClick(index, button)}
-            className={
-              index === clickedId ? 'customButton active' : 'customButton'
-            }
-          >
-            {button.name}
-          </button>
-        );
-      })}
+      {buttons &&
+        buttons.map((button, index) => {
+          return (
+            <button
+              key={index}
+              onClick={() => handleOnClick(index, button)}
+              className={
+                index === clickedId ? 'customButton active' : 'customButton'
+              }
+            >
+              {button.name}
+            </button>
+          );
+        })}
     </>
   );
 };

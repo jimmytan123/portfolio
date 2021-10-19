@@ -1,4 +1,5 @@
 @use '../base/variables' as *;
+@use '../utilities/mixins' as *;
 
 .work-container {
   .projects-intro {
@@ -22,19 +23,28 @@
       align-items: center;
       flex-wrap: wrap;
       margin-top: $double-spacing;
-    }
-  }
+      flex-direction: column;
 
-  @media all and (min-width: 450px) {
-    .sort-btns-group {
       padding: 0.2rem;
       border: 1px solid $light-grey;
       border-radius: 10px;
       max-width: 440px;
-      margin: 0 auto;
 
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+  }
+
+  @media all and (min-width: 425px) {
+    .projects-intro {
+      .sort-btns-group {
+        flex-direction: row;
+        // padding: 0.2rem;
+        // border: 1px solid $light-grey;
+        // border-radius: 10px;
+        // max-width: 440px;
+        @include margin-center;
+      }
     }
   }
 

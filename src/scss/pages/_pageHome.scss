@@ -131,9 +131,6 @@
 
   // for background section on Page Home
   .background {
-    // background-color: $dark-grey;
-    // color: $white;
-
     background-color: $light-grey;
 
     .link-to-about,
@@ -141,9 +138,7 @@
       mark {
         padding: 0 0.2rem;
         margin-left: 3px;
-        //color: $white;
-        //background-color: #1f7a88;
-        background-color: #ffd500;
+        background-color: #fca311;
         color: $dark-grey;
       }
     }
@@ -190,7 +185,7 @@
     }
 
     .brush-icon {
-      fill: #ff7900;
+      fill: #fca311;
     }
 
     @media all and (min-width: 450px) {
@@ -198,9 +193,9 @@
         font-size: 2.5rem;
       }
 
-      p {
-        font-size: 1.3rem;
-      }
+      // p {
+      //   font-size: 1.3rem;
+      // }
     }
 
     @media all and (min-width: $breakpoint-mobile) {

@@ -21,6 +21,12 @@
 
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
       rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
 
   .tools-list {
@@ -43,6 +49,12 @@
     a {
       margin-right: $small-spacing;
       border-bottom: 2px solid $dark-grey;
+      transition: border-color 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        border-color: $dark-blue;
+      }
     }
   }
 
@@ -90,8 +102,8 @@
   }
 }
 
-// change img and text position for odd thumbnail projects
-.project-thumbnail:nth-of-type(2n + 1) {
+// change img and text position (text left, img right) for even thumbnail projects
+.project-thumbnail:nth-of-type(2n) {
   .thumbnail-text {
     order: -1;
   }
@@ -134,17 +146,6 @@
 // styling specific for project Portfolio thumbnail
 .project-thumbnail-portfolio {
   background-color: $light-grey;
-
-  .action-buttons {
-    a {
-      transition: border-color 0.3s ease-in-out;
-
-      &:hover,
-      &:focus {
-        border-color: $dark-blue;
-      }
-    }
-  }
 }
 
 // styling specific for project Code Breaker thumbnail

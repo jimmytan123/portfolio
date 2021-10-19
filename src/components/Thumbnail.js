@@ -2,31 +2,28 @@ import { Link } from 'react-router-dom';
 
 const Thumbnail = ({
   title,
-  description,
-  tools,
-  imgUrl,
-  slug,
+  briefDescription,
+  tags,
+  thumbnailImgUrl,
+  id,
   moreInfo,
-  route,
   livesite,
   github,
 }) => {
   return (
-    <div className={`project-thumbnail project-thumbnail-${slug}`}>
+    <div className={`project-thumbnail project-thumbnail-${id}`}>
       <div className="thumbnail-wrapper">
         <div className="project-thumbnail-image">
           <a href={livesite} target="_blank" rel="noreferrer">
-            <img src={imgUrl} alt={`${title} Banner`} />
+            <img src={thumbnailImgUrl} alt={`${title} Banner`} />
           </a>
         </div>
         <div className="thumbnail-text">
           <h2 className="project-thumbnail-title">{title}</h2>
           <ul className="tools-list">
-            {tools.map((tool, index) => (
-              <li key={index}>{tool}</li>
-            ))}
+            {tags && tags.map((tag, index) => <li key={index}>{tag}</li>)}
           </ul>
-          <p className="project-thumbnail-overview">{description}</p>
+          <p className="project-thumbnail-overview">{briefDescription}</p>
           <div className="action-buttons">
             {livesite && (
               <a href={livesite} target="_blank" rel="noreferrer">
@@ -38,7 +35,7 @@ const Thumbnail = ({
                 GitHub
               </a>
             )}
-            {moreInfo && <Link to={route}>More Info</Link>}
+            {moreInfo && <Link to={`/project-${id}`}>More Info</Link>}
           </div>
         </div>
       </div>
