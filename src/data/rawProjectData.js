@@ -35,7 +35,7 @@ export const rawProjectData = [
     overview:
       'MovieWave is a single-page web app built in React JS that allows users to browse movie information and keep track of movies. It is an online movie database where movie lovers can find the relevant movie information based on popular, top-rated, now playing and upcoming. This application uses the TMDb API to fetch movie data and outputs the content dynamically to the webpage. Users can also be able to search and save movies to their favourites. A dark/light theme is also included in this application to improve the user experience.',
     duration: '4 weeks',
-    role: 'UI/UX Design, Front-End Development',
+    roles: ['UI/UX Design', 'Front-End Development'],
     stack: [
       'ReactJS',
       'HTML5',

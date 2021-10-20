@@ -22,8 +22,11 @@ function App() {
             <Route path="/work">
               <PageWork />
             </Route>
-            <Route path='/project-:id'>
+            <Route path="/project-:id">
               <PageSingleProject />
+            </Route>
+            <Route path="*">
+              <PageHome />
             </Route>
           </Switch>
         </main>

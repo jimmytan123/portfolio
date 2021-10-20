@@ -23,7 +23,7 @@ const PageWork = () => {
       setProjectsData(rawProjectData);
     } else if (selectedCat === 'featured' || selectedCat === 'fun') {
       setProjectsData(
-        rawProjectData.filter((thumbnail) => thumbnail.category === selectedCat)
+        rawProjectData.filter((project) => project.category === selectedCat)
       );
     }
   };
