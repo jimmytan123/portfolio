@@ -22,7 +22,7 @@ const PageAbout = () => {
           </p>
           <p>
             In addition to web development, one of my interests is landscape
-            photography. I enjoy the processing of slowing down and finding the
+            photography. I enjoy the process of slowing down and finding the
             point of aesthetics.
           </p>
         </div>
@@ -43,7 +43,8 @@ const PageAbout = () => {
             <li>PHP</li>
             <li>SQL</li>
             <li>WooCommerce</li>
-            <li>Git, GitHub</li>
+            <li>Git</li>
+            <li>GitHub</li>
           </ul>
         </div>
         <div className="development-stack">

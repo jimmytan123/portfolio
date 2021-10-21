@@ -21,7 +21,7 @@ const PageWork = () => {
   const handleCategory = (selectedCat) => {
     if (selectedCat === 'all') {
       setProjectsData(rawProjectData);
-    } else if (selectedCat === 'featured' || selectedCat === 'fun') {
+    } else {
       setProjectsData(
         rawProjectData.filter((project) => project.category === selectedCat)
       );
