@@ -62,7 +62,7 @@ export const rawProjectData = [
       {
         title: 'Filter',
         description:
-          'A dropdown filter was made to allow users to view movies according to popular, top-rated, now playing and upcoming. This feature required the manipulation of the TMDb API with React useState and useEffect hooks. The impactful hero image section on the home page will also change based on the selected filter.',
+          'A movie filter was made to allow users to view movies according to popular, top-rated, now playing and upcoming. This feature required the manipulation of the TMDb API with React useState and useEffect hooks. The impactful hero image section on the home page will also change based on the selected filter.',
       },
       {
         title: 'Multiple Pages',
@@ -82,22 +82,28 @@ export const rawProjectData = [
       {
         title: 'Dark/Light Theme Toggle',
         description:
-          'The React useEffect hook was used to implement dark/light theme toggle functionality to create a better user experience.',
+          'The React useState hook was used to implement dark/light theme toggle functionality to create a better user experience.',
+      },
+      {
+        title: 'Fully Responsive',
+        description:
+          'A mobile-first design approach to ensure the layout of the movie cards and the movie detail information is to best fit the page in different devices without being too overcrowded or too much white space. The website is responsive for mobile, tablet and desktop devices.',
       },
     ],
-    sliderTitle: 'Fully Responsive',
-    sliderDescription:
-      'A mobile-first design approach to ensure the layout of the movie cards and the movie detail information is to best fit the page in different devices without being too overcrowded or too much white space. The website is responsive for mobile, tablet and desktop devices.',
-    imgSlider: [
-      moviewaveSlider1,
-      moviewaveSlider2,
-      moviewaveSlider3,
-      moviewaveSlider4,
-      moviewaveSlider5,
-    ],
-
+    imgSlider: {
+      sliderTitle: 'Site Screenshots',
+      // sliderDescription:
+      //  'enter description here...',
+      imgs: [
+        moviewaveSlider1,
+        moviewaveSlider2,
+        moviewaveSlider3,
+        moviewaveSlider4,
+        moviewaveSlider5,
+      ],
+    },
     reflection:
-      'This is the first project in the BCIT FWD program that allows me to implement a complete design, development and deployment process. There were differences between the prototype and the final product. These changes were made based on the personal usability testing that went through all the development processes until it was published. In addition, compare to the design prototype, I added a lot of additional movie information such as a trailer from Youtube, poster images carousel and cast information in the movie detail page based on my discovery in the API documents. This project also helped me to get familiar with React JS and also its ecosystem. I would say this application achieves the basic functionality of an online movie database. In the future, I am planning to add more features/sections into this application such as having a movie review section.',
+      'This is the first project in the BCIT FWD program that allows me to implement a complete design, development and deployment process. There were differences between the prototype and the final product. These changes were made based on the personal usability testing that went through all the development processes until it was published. In addition, compare to the design prototype, I added a lot of additional movie information such as a trailer from YouTube, poster images carousel and cast information in the movie detail page based on my discovery in the API documents. This project also helped me to get familiar with React JS and also its ecosystem. I would say this application achieves the basic functionality of an online movie database. In the future, I am planning to add more features/sections into this application such as having a movie review section.',
   },
   {
     id: 'portfolio',

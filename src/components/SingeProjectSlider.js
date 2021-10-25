@@ -1,19 +1,21 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-const SingeProjectSlider = ({ imgs, title, description }) => {
-  //console.log(imgs);
+const SingeProjectSlider = ({ imgSlider }) => {
+  //console.log(imgSlider);
   return (
     <>
-      {imgs && (
+      {imgSlider && (
         <section className="single-project-slider">
           <div>
-            <h2>{title}</h2>
-            <p>{description}</p>
+            {imgSlider.sliderTitle && <h2>{imgSlider.sliderTitle}</h2>}
+            {imgSlider.sliderDescription && (
+              <p>{imgSlider.sliderDescription}</p>
+            )}
           </div>
           <div>
             <Carousel showThumbs={false} showStatus={false}>
-              {imgs.map((img, i) => {
+              {imgSlider.imgs.map((img, i) => {
                 return (
                   <div key={i}>
                     <img src={img} alt="screenshots slider" />

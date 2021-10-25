@@ -124,9 +124,7 @@ const SingleProjectDetail = ({ singleProject }) => {
         </div>
       )}
       <SingeProjectSlider
-        imgs={singleProject.imgSlider}
-        title={singleProject.sliderTitle}
-        description={singleProject.sliderDescription}
+        imgSlider={singleProject.imgSlider}
       />
       {singleProject.reflection && (
         <div className="reflection-info">
