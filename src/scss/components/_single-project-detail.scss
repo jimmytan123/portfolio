@@ -48,11 +48,12 @@
   }
 
   .url-link {
+    display: inline-block;
     font-family: $heading-font;
     font-size: 0.9rem;
     padding: 0.3rem 0.5rem;
     margin-right: $base-spacing;
-    min-width: 120px;
+    min-width: 135px;
     text-align: center;
     transition: all 0.3s ease-in-out;
     background-color: $dark-grey;
