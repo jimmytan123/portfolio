@@ -5,17 +5,24 @@ import Contact from '../components/Contact';
 import { FaCode, FaPaintBrush } from 'react-icons/fa';
 import { useEffect } from 'react';
 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import { motion } from 'framer-motion';
+
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 
 const PageHome = () => {
   useEffect(() => {
     document.title = 'Jimmy Tan | Portfolio';
-    Aos.init({ duration: 700, once: true });
+    // Aos.init({ duration: 700, once: true });
   }, []);
 
   return (
-    <div className="home-container">
+    <motion.div
+      className="home-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: 'easeInOut', duration: 0.3 }}
+    >
       <section className="landing">
         <div className="landing-content">
           <LaptopCode className="laptop-code-svg" />
@@ -33,7 +40,7 @@ const PageHome = () => {
         <a href="#background">{downArrow}</a>
       </section>
       <section className="background" id="background">
-        <div className="text" data-aos="zoom-in">
+        <div className="text">
           <h2>Front-End Developer</h2>
           <p>
             I'm Jimmy Tan. A self-motivated front-end developer with{' '}
@@ -67,7 +74,7 @@ const PageHome = () => {
         </div>
       </section>
       <Contact />
-    </div>
+    </motion.div>
   );
 };
 

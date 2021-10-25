@@ -6,6 +6,8 @@ import SingleProjectDetail from '../components/SingleProjectDetail';
 import SingleProjectNav from '../components/SingleProjectNav';
 import Contact from '../components/Contact';
 
+import { motion } from 'framer-motion';
+
 const PageSingleProject = () => {
   let { id } = useParams();
 
@@ -48,7 +50,12 @@ const PageSingleProject = () => {
   };
 
   return (
-    <div className="single-project-container">
+    <motion.div
+      className="single-project-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: 'easeInOut', duration: 0.3 }}
+    >
       {singleProject ? (
         <>
           <SingleProjectDetail singleProject={singleProject} />
@@ -66,7 +73,7 @@ const PageSingleProject = () => {
           <Link to="/">Back Home</Link>
         </section>
       )}
-    </div>
+    </motion.div>
   );
 };
 

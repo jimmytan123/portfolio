@@ -2,6 +2,8 @@ import Contact from '../components/Contact';
 import { init } from 'ityped';
 import { useEffect, useRef } from 'react';
 
+import { motion } from 'framer-motion';
+
 const PageAbout = () => {
   const topicsRef = useRef(null);
 
@@ -29,7 +31,12 @@ const PageAbout = () => {
   }, []);
 
   return (
-    <div className="about-container">
+    <motion.div
+      className="about-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: 'easeInOut', duration: 0.3 }}
+    >
       <section className="about-content">
         <div className="about-text">
           <h1>About Me.</h1>
@@ -92,12 +99,13 @@ const PageAbout = () => {
       <section className="interested-topics">
         <div className="interested-topics-content">
           <h2>Here are the topics that I am interested in...</h2>
-          <p><span ref={topicsRef}></span>
+          <p>
+            <span ref={topicsRef}></span>
           </p>
         </div>
       </section>
       <Contact />
-    </div>
+    </motion.div>
   );
 };
 

@@ -4,6 +4,8 @@ import SortButtonGroup from '../components/SortButtonGroup';
 import { rawProjectData } from '../data/rawProjectData';
 import { useState, useEffect } from 'react';
 
+import { motion } from 'framer-motion';
+
 const PageWork = () => {
   useEffect(() => {
     document.title = 'Jimmy Tan | Work';
@@ -29,7 +31,12 @@ const PageWork = () => {
   };
 
   return (
-    <div className="work-container">
+    <motion.div
+      className="work-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: 'easeInOut', duration: 0.3 }}
+    >
       <section className="projects-intro">
         <h1>Projects.</h1>
         <p>
@@ -67,7 +74,7 @@ const PageWork = () => {
           })}
       </section>
       <Contact />
-    </div>
+    </motion.div>
   );
 };
 
