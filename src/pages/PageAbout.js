@@ -1,6 +1,33 @@
 import Contact from '../components/Contact';
+import { init } from 'ityped';
+import { useEffect, useRef } from 'react';
 
 const PageAbout = () => {
+  const topicsRef = useRef(null);
+
+  useEffect(() => {
+    if (!topicsRef.current) {
+      return;
+    }
+
+    init(topicsRef.current, {
+      showCursor: true,
+      typeSpeed: 150,
+      startDelay: 800,
+      strings: [
+        'Coding...',
+        'Web Development...',
+        'Landscape Photography...',
+        'Data Analysis...',
+        'Stocks/Mutual Funds...',
+        'Technology...',
+        'Cooking...',
+        'NBA...',
+        'Automotive...',
+      ],
+    });
+  }, []);
+
   return (
     <div className="about-container">
       <section className="about-content">
@@ -60,6 +87,13 @@ const PageAbout = () => {
               <li>Photoshop</li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section className="interested-topics">
+        <div className="interested-topics-content">
+          <h2>Here are the topics that I am interested in...</h2>
+          <p><span ref={topicsRef}></span>
+          </p>
         </div>
       </section>
       <Contact />

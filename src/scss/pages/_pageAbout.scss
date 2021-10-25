@@ -41,6 +41,27 @@
     }
   }
 
+  .interested-topics {
+    padding: $base-spacing $medium-spacing;
+    background-color: $light-grey;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 1.5rem;
+      color: #ff6d00;
+      font-family: $heading-font;
+    }
+
+    h2 {
+      max-width: 430px;
+    }
+  }
+
   @media all and (min-width: $breakpoint-tablet) {
     .skills {
       ul {
@@ -49,6 +70,16 @@
 
       .skills-cat {
         margin: 0 $double-spacing;
+      }
+    }
+
+    .interested-topics {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 2rem;
       }
     }
   }
