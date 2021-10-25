@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SingleProjectDetail from '../components/SingleProjectDetail';
 import SingleProjectNav from '../components/SingleProjectNav';
+import Contact from '../components/Contact';
 
 const PageSingleProject = () => {
   let { id } = useParams();
@@ -52,6 +53,7 @@ const PageSingleProject = () => {
         <>
           <SingleProjectDetail singleProject={singleProject} />
           <SingleProjectNav nextProjectId={getNextProjectId()} />
+          <Contact />
         </>
       ) : (
         <section className="no-project-detail">

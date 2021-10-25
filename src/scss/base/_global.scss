@@ -51,6 +51,12 @@ a:focus {
   color: var(--text-color);
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }

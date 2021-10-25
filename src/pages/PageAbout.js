@@ -3,9 +3,9 @@ import Contact from '../components/Contact';
 const PageAbout = () => {
   return (
     <div className="about-container">
-      <h1>About Me</h1>
       <section className="about-content">
         <div className="about-text">
+          <h1>About Me.</h1>
           <p>
             My training and hands-on projects experience at BCIT's Front-End
             Developer Program, has allowed me to become a well-rounded front-end
@@ -14,11 +14,13 @@ const PageAbout = () => {
             HTML5, CSS3, JavaScript and Adobe XD.
           </p>
           <p>
-            My previous educational experience with the Bachelor of Science
-            Statistics major at University of Victoria allowed me to implement a
-            detail-oriented mindset and logical thinking skills into the web
-            development field. Overall, I would say I'm a detail-oriented person
-            and I'm good at self-learning and problem-solving.
+            Prior to web development and a few years of working experience, the
+            Bachelor of Science Statistics major degree that I earned at
+            University of Victoria allowed me to develop a detail-oriented
+            mindset, be flexible in solving problems, have investigative skills
+            and have the ability to deal with abstract concepts. Overall, I
+            would say I'm a detail-oriented person with self-learning and
+            creative problem-solving skills.
           </p>
           <p>
             In addition to web development, one of my interests is landscape
@@ -28,34 +30,36 @@ const PageAbout = () => {
         </div>
       </section>
       <section className="skills">
-        <div className="development-stack">
-          <h2>Development Stack</h2>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Sass</li>
-            <li>JavaScript</li>
-            <li>React JS</li>
-            <li>Redux</li>
-            <li>jQuery</li>
-            <li>BootStrap</li>
-            <li>WordPress</li>
-            <li>PHP</li>
-            <li>SQL</li>
-            <li>WooCommerce</li>
-            <li>Git</li>
-            <li>GitHub</li>
-          </ul>
-        </div>
-        <div className="development-stack">
-          <h2>Design Stack</h2>
-          <ul>
-            <li>Adobe XD</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Photoshop</li>
-            <li>Figma</li>
-            <li>Invision</li>
-          </ul>
+        <div className="skills-flex">
+          <div className="skills-cat">
+            <h3>Development</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>jQuery</li>
+              <li>PHP</li>
+              <li>WordPress</li>
+              <li>WooCommerce</li>
+              <li>BootStrap</li>
+              <li>SQL</li>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+          <div className="skills-cat">
+            <h3>Design</h3>
+            <ul>
+              <li>Adobe XD</li>
+              <li>Figma</li>
+              <li>Invision</li>
+              <li>Illustrator</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
         </div>
       </section>
       <Contact />

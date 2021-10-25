@@ -1,0 +1,62 @@
+@use '../base/variables' as *;
+@use '../utilities/mixins' as *;
+
+.single-project-slider {
+  margin: $double-spacing 0;
+  background-color: $light-grey;
+  padding: $base-spacing;
+
+  h2 {
+    text-align: center;
+    margin: 0 0 $base-spacing 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    max-width: 750px;
+    margin: $base-spacing auto;
+  }
+
+  .carousel-root {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  img {
+    display: block;
+    border-radius: 10px;
+  }
+
+  .carousel .control-dots {
+    margin: 0;
+  }
+
+  .carousel .control-dots .dot {
+    box-shadow: none;
+    background-color: $dark-blue;
+  }
+
+  .carousel .control-next.control-arrow:before {
+    border-left-color: $dark-grey;
+  }
+
+  .carousel .control-prev.control-arrow:before {
+    border-right-color: $dark-grey;
+  }
+
+  @media all and (min-width: $breakpoint-mobile) {
+    .carousel .control-dots {
+      margin: $small-spacing 0;
+    }
+
+    h2 {
+      font-size: 2.3rem;
+    }
+  }
+
+  @media all and (min-width: $breakpoint-tablet) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@use '../base/variables' as *;
+@use '../utilities/mixins' as *;
+
+.about-container {
+  h1 {
+    margin-bottom: 0;
+  }
+
+  ul {
+    @include ul-base;
+  }
+
+  .about-content {
+    padding: $base-spacing;
+  }
+
+  h3 {
+    color: $dark-blue;
+  }
+
+  .skills {
+    margin: $double-spacing 0;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $base-spacing;
+    }
+
+    .skills-cat {
+      padding: $base-spacing;
+      min-width: 280px;
+    }
+
+    .skills-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+
+  @media all and (min-width: $breakpoint-tablet) {
+    .skills {
+      ul {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .skills-cat {
+        margin: 0 $double-spacing;
+      }
+    }
+  }
+}
