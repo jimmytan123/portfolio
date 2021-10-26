@@ -3,6 +3,7 @@ import { init } from 'ityped';
 import { useEffect, useRef } from 'react';
 
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 const PageAbout = () => {
   const topicsRef = useRef(null);
@@ -37,6 +38,13 @@ const PageAbout = () => {
       animate={{ opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.3 }}
     >
+      <Helmet>
+        <title>Jimmy Tan | About Me</title>
+        <meta
+          name="description"
+          content="A summary of Jimmy Tan's background and technology skills as a Front-End Developer."
+        />
+      </Helmet>
       <section className="about-content">
         <div className="about-text">
           <h1>About Me.</h1>

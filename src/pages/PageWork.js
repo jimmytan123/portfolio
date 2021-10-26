@@ -5,10 +5,10 @@ import { rawProjectData } from '../data/rawProjectData';
 import { useState, useEffect } from 'react';
 
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 const PageWork = () => {
   useEffect(() => {
-    document.title = 'Jimmy Tan | Work';
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -37,6 +37,13 @@ const PageWork = () => {
       animate={{ opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.3 }}
     >
+      <Helmet>
+        <title>Jimmy Tan | Work</title>
+        <meta
+          name="description"
+          content="A list of project thumbnails to showcase Jimmy Tan's work as a Front-End Developer."
+        />
+      </Helmet>
       <section className="projects-intro">
         <h1>Projects.</h1>
         <p>

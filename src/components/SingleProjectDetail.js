@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import SingeProjectSlider from './SingeProjectSlider';
 
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
+import { Helmet } from 'react-helmet';
 
 const SingleProjectDetail = ({ singleProject }) => {
   useEffect(() => {
-    document.title = `Jimmy Tan | ${singleProject.title}`;
     window.scrollTo(0, 0);
-  }, [singleProject.title]);
+  }, []);
 
   //options for simple react lightbox
   const options = {
@@ -29,6 +29,13 @@ const SingleProjectDetail = ({ singleProject }) => {
 
   return (
     <section className="single-project-content">
+      <Helmet>
+        <title>Jimmy Tan | {singleProject.title}</title>
+        <meta
+          name="description"
+          content="A front-end project detail page that includes the summary of the individual project, tools used and design/development process."
+        />
+      </Helmet>
       <SimpleReactLightbox>
         <div className="banner-wrapper">
           <img

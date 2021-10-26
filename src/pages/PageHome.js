@@ -6,14 +6,13 @@ import { FaCode, FaPaintBrush } from 'react-icons/fa';
 import { useEffect } from 'react';
 
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 // import Aos from 'aos';
 // import 'aos/dist/aos.css';
 
 const PageHome = () => {
   useEffect(() => {
-    document.title = 'Jimmy Tan | Portfolio';
-    // Aos.init({ duration: 700, once: true });
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -27,6 +26,13 @@ const PageHome = () => {
       animate={{ opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.3 }}
     >
+      <Helmet>
+        <title>Jimmy Tan | Portfolio</title>
+        <meta
+          name="description"
+          content="A portfolio site built in React by Jimmy Tan, a Front-End Developer based in Vancouver, BC, Canada."
+        />
+      </Helmet>
       <section className="landing">
         <div className="landing-content">
           <LaptopCode className="laptop-code-svg" />
