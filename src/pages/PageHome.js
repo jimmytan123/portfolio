@@ -30,7 +30,7 @@ const PageHome = () => {
         <title>Jimmy Tan | Portfolio</title>
         <meta
           name="description"
-          content="A portfolio site built in React by Jimmy Tan, a Front-End Developer based in Vancouver, BC, Canada."
+          content="A portfolio site built in React by Jimmy Tan, a Front-End Developer based in Vancouver, BC, Canada. He has hands-on experience building websites from scratch, with a mobile-first approach. He likes React, JavaScript, HTML, CSS."
         />
       </Helmet>
       <section className="landing">

@@ -15,7 +15,7 @@ const Thumbnail = ({
       <div className="thumbnail-wrapper">
         <div className="project-thumbnail-image">
           <a href={livesite} target="_blank" rel="noreferrer">
-            <img src={thumbnailImgUrl} alt={`${title} Banner`} />
+            <img src={thumbnailImgUrl} alt={`${title} Thumbnail`} />
           </a>
         </div>
         <div className="thumbnail-text">

@@ -9,6 +9,11 @@ const PageAbout = () => {
   const topicsRef = useRef(null);
 
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+    
     if (!topicsRef.current) {
       return;
     }
@@ -22,11 +27,12 @@ const PageAbout = () => {
         'Web Development...',
         'Landscape Photography...',
         'Data Analysis...',
-        'Stocks/Mutual Funds...',
+        'Stocks...',
         'Technology...',
         'Cooking...',
-        'NBA...',
         'Automotive...',
+        'Exploring cities...',
+        'NBA...',
       ],
     });
   }, []);
