@@ -63,7 +63,7 @@ export const rawProjectData = [
     title: 'MovieWave',
     briefDescription:
       'A dynamic web app for users to browsing, searching and bookmarking movies.',
-    tags: ['ReactJS', 'HTML5', 'Sass', 'REST API', 'GitHub'],
+    tags: ['React', 'HTML5', 'Sass', 'REST API', 'GitHub'],
     thumbnailImgUrl: moviewaveThumbImg,
     livesite: 'https://ztan.ca/moviewave/',
     github: 'https://github.com/jimmytan123/movieWave',
@@ -75,7 +75,7 @@ export const rawProjectData = [
     duration: '4 Weeks',
     team: ['Jimmy Tan'],
     roles: ['UI/UX Design', 'Front-End Development'],
-    stack: ['ReactJS', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'Photoshop'],
+    stack: ['React', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'Photoshop'],
     design: [
       {
         title: 'Design Theme and Prototype',
@@ -149,13 +149,19 @@ export const rawProjectData = [
     title: 'Portfolio Site',
     briefDescription:
       'A portfolio website that was designed and developed as a platform to showcase my design and development skills as a front-end developer.',
-    tags: ['ReactJS', 'HTML5', 'Sass'],
+    tags: ['React', 'HTML5', 'Sass'],
     thumbnailImgUrl: portfolioThumbImg,
     livesite: '/',
-    github: 'google.ca',
+    github: 'https://www.google.ca/',
     category: 'featured',
     moreInfo: true,
     bannerImgUrl: portfolioBanner,
+    overview:
+      "A portfolio website that was designed and developed as a platform to showcase my design and development skills as a front-end developer. As I want my portfolio to be more manageable, I decided to build my portfolio using React since I can update my projects easier with React's reusable component.",
+    duration: '4 Weeks',
+    team: ['Jimmy Tan'],
+    roles: ['UI/UX Design', 'Front-End Development'],
+    stack: ['React', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'SEO'],
   },
   {
     id: 'codeBreaker',
