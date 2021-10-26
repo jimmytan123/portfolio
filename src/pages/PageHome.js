@@ -3,22 +3,11 @@ import { ReactComponent as LaptopCode } from '../assets/logos/laptop-code.svg';
 import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
 import { FaCode, FaPaintBrush } from 'react-icons/fa';
-import { useEffect } from 'react';
 
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 
-// import Aos from 'aos';
-// import 'aos/dist/aos.css';
-
 const PageHome = () => {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }, []);
-
   return (
     <motion.div
       className="home-container"

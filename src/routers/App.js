@@ -1,18 +1,20 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Footer from '../components/Footer';
+import { HelmetProvider } from 'react-helmet-async';
+
 import Header from '../components/Header';
 import PageHome from '../pages/PageHome';
 import PageAbout from '../pages/PageAbout';
 import PageWork from '../pages/PageWork';
 import PageSingleProject from '../pages/PageSingleProject';
-
-import { HelmetProvider } from 'react-helmet-async';
+import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 function App() {
   return (
     <HelmetProvider>
       <Router basename="/portfolio">
         <div className="site-wrapper">
+          <ScrollToTop />
           <Header />
           <main>
             <Switch>

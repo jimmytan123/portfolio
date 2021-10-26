@@ -19,11 +19,6 @@ const PageSingleProject = () => {
   // fetch rawProjectData and search for the single project item based on id
   // update the state
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-
     const project = rawProjectData.filter(
       (project) => project.id === id && project.moreInfo === true
     )[0];

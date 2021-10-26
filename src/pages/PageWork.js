@@ -2,19 +2,12 @@ import Contact from '../components/Contact';
 import Thumbnail from '../components/Thumbnail';
 import SortButtonGroup from '../components/SortButtonGroup';
 import { rawProjectData } from '../data/rawProjectData';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 
 const PageWork = () => {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }, []);
-
   // State to track projectData that is coming from rawThumbnailData
   const [projectsData, setProjectsData] = useState(rawProjectData);
 
