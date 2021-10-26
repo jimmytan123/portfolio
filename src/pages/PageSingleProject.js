@@ -69,8 +69,10 @@ const PageSingleProject = () => {
             This project currently does not have a single detail page, please
             check other projects.
           </p>
-          <Link to="/work">View More Projects</Link>
-          <Link to="/">Back Home</Link>
+          <div className="button-group">
+            <Link to="/work">View Other Projects</Link>
+            <Link to="/">Return Home</Link>
+          </div>
         </section>
       )}
     </motion.div>

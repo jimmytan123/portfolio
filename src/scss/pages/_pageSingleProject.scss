@@ -1,0 +1,32 @@
+// To view style sheet for single project details, please check _single-project-detail.scss
+
+@use '../base/variables' as *;
+
+.single-project-container {
+
+  // Styling for accidently go into a single movie page via URL that does not have the movie detail yet
+  .no-project-detail {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      margin: 1rem 0;
+    }
+    .button-group {
+      margin-top: 0.5rem;
+      a:first-of-type {
+        margin-right: 1rem;
+      }
+
+      a {
+        color: $white;
+        background-color: $dark-blue;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+  }
+}

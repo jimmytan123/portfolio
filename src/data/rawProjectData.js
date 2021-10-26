@@ -1,16 +1,38 @@
 /* 
    Overview: the rawProjectData consists of data that will be 
-   used in Page Work thumbnail section and single project page(if exist)
+   used in Page Work thumbnail section and single project detail page(if exist)
    
-   id - id for the project
-   title - name of the projec
-   briefDescription - A simple and brief summary of the project that will be displayed in the thumbnail section
-   tags - A highlight tools about the project that will be displayed in the thumbnail section
-   thumbnailImgUrl - screenshot of the project that will be displayed in the thumbnail section
-   moreInfo - boolean value, true if the project has a single detail page
-   livesite - URL of the live site of the project
-   github - URL of the GitHub repo of the project
-   category - featured/fun, used for filter feature in Page Work
+   id - id for the project [String]
+   title - name of the projec [String]
+   briefDescription - A simple and brief summary of the project that will be displayed in the thumbnail section [String]
+   tags - A highlight tools about the project that will be displayed in the thumbnail section [Array of Strings]
+   thumbnailImgUrl - screenshot of the project that will be displayed in the thumbnail section [Image Path]
+   livesite - URL of the live site of the project [External URL] (OPTIONAL)
+   github - URL of the GitHub repo of the project [External URL] (OPTIONAL)
+   category - featured/fun, used for filter feature in Page Work [String]
+   moreInfo - boolean value, true if the project has a single project detail page [Boolean]
+
+   <--- OPTIONAL || If a project has a single detail page, need to add the following data --->
+   bannerImgUrl - local img URL, for displaying banner image in single project detail page [Image Path]
+   overview - the overview of the project in single project detail page [String]
+   duration - duration of the project in single project detail page [String] (OPTIONAL)
+   team - team of the project [Array of String] (OPTIONAL)
+   roles - roles of the project in single project detail page [Array of String]
+   stack - tools/languages used in single project detail page [Array of String]
+   design - design aspect of the project, an array consists of objects [Array of Objects] (OPTIONAL)
+          -- title -> object property, represents the title of a deisgn block [String]
+          -- description -> object property, represents the paragraphs of a topic in a deisgn block [Array of Strings]
+          -- designURL -> object property, represents the external design related URL (Prototype/Mockup), has a title and link property [Object] (OPTIONAL)
+          -- img -> object property, represents a image of a topic in a deisgn block [Image Path] (OPTIONAL)
+   development - development aspect of the project, an array consists of objects [Array of Objects] (OPTIONAL)
+              -- title -> object property, represents the title of a development block [String]
+              -- description -> object property, represents the paragraphs of a topic in a development block [Array of Strings]
+              -- img -> object property, represents a image of a topic in a development block [Image Path] (OPTIONAL)
+   imgSlider - image slider, passing it as a prop to SingeProjectSlider component [Object] (OPTIONAL)
+             -- sliderTitle -> title of the slider block [String] (OPTIONAL)
+             -- sliderDescription --> description paragraph of the slider block [String] (OPTIONAL)
+             -- imgs --> image file for the slider [Array of Image Path]
+    reflection - paragraph to summerize and reflect the project [String] (OPTIONAL)
 */
 
 // import thumbnail images
@@ -51,9 +73,9 @@ export const rawProjectData = [
     overview:
       'MovieWave is a single-page web app built in ReactJS that allows users to browse movie information and keep track of movies. It is an online movie database where movie lovers can find the relevant movie information based on popular, top-rated, now playing and upcoming. This application uses the TMDb API to fetch movie data and outputs the content dynamically to the webpage. Users can also be able to search and save movies to their favourites. A dark/light theme is also included in this application to improve the user experience.',
     duration: '4 Weeks',
+    team: ['Jimmy Tan'],
     roles: ['UI/UX Design', 'Front-End Development'],
     stack: ['ReactJS', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'Photoshop'],
-    team: ['Jimmy Tan'],
     design: [
       {
         title: 'Design Theme and Prototype',
