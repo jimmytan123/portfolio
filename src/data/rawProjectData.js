@@ -31,6 +31,10 @@ import moviewaveSlider3 from '../assets/assets-moviewave/moviewave-slider/moview
 import moviewaveSlider4 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-4.png';
 import moviewaveSlider5 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-5.png';
 
+//import images for development section in single project page
+import moviewavePageSelector from '../assets/assets-moviewave/moviewave-page-selector.png';
+import moviewaveSearch from '../assets/assets-moviewave/moviewave-search.png';
+
 export const rawProjectData = [
   {
     id: 'moviewave',
@@ -50,50 +54,63 @@ export const rawProjectData = [
     roles: ['UI/UX Design', 'Front-End Development'],
     stack: ['ReactJS', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'Photoshop'],
     team: ['Jimmy Tan'],
-    designProcess: [
-      'The web app design was approached with the mind of a modern, clean interface. For an energetic and dynamic mood, light blue and orange were chosen to use as main accent colours on the dark/light background. High-fidelity mock-ups and interactive prototypes were created to provide clear guidance for the development phase.',
-      'To see the design and the prototype, please click the link below.',
+    design: [
+      {
+        title: 'Design Theme and Prototype',
+        description: [
+          'The web app design was approached with the mind of a modern, clean interface. For an energetic and dynamic mood, deep sky blue and neon orange were chosen to use as main accent colours on the dark/light background.',
+          'High-fidelity mockups were created through Adobe Photoshop a few weeks before the development phase. After that, an interactive prototype by Adobe XD was made to provide clear interactive guidance for the development phase.',
+          'To view the design and the prototype, please click the link below.',
+        ],
+        designURL: {
+          title: 'Prototype',
+          link: 'https://xd.adobe.com/view/91c321b5-ac56-40eb-87a9-11907794c25c-c490/',
+        },
+      },
     ],
-    designURL: {
-      title: 'Prototype',
-      link: 'https://xd.adobe.com/view/91c321b5-ac56-40eb-87a9-11907794c25c-c490/',
-    },
     development: [
       {
         title: 'Filter',
-        description:
+        description: [
           'A movie filter was made to allow users to view movies according to popular, top-rated, now playing and upcoming. This feature required the manipulation of the TMDb API with React useState and useEffect hooks. The impactful hero image section on the home page will also change based on the selected filter.',
+        ],
       },
       {
         title: 'Multiple Pages',
-        description:
+        description: [
           'The page selector buttons will allow users to browse more movies without having a long page to scroll. Each page will display 20 movies, with 5 pages and 100 movies in total.',
+        ],
+        img: moviewavePageSelector,
       },
       {
         title: 'Add to Favourites',
-        description:
+        description: [
           'The Add to Favourites feature allows user to add their favourite movies into the local storage in their browsers. The global state was created and used to keep track of favourited movies across different React components. The favourited movies will display on a dedicated page and also has a button that allows users to add/remove favourites on every page.',
+        ],
       },
       {
         title: 'Movie Search',
-        description:
+        description: [
           'Search functionality was incorporated to provide an opportunity for users to discover any movies available on the database. When there is no movie result or the search term is empty, the corresponding messages will display to users.',
+        ],
+        img: moviewaveSearch,
       },
       {
         title: 'Dark/Light Theme Toggle',
-        description:
+        description: [
           'The React useState hook was used to implement dark/light theme toggle functionality to create a better user experience.',
+        ],
       },
       {
         title: 'Fully Responsive',
-        description:
+        description: [
           'A mobile-first design approach to ensure the layout of the movie cards and the movie detail information is to best fit the page in different devices without being too overcrowded or too much white space. The website is responsive for mobile, tablet and desktop devices.',
+        ],
       },
     ],
     imgSlider: {
       sliderTitle: 'Site Screenshots',
-      // sliderDescription:
-      //  'enter description here...',
+      // sliderDescription: 'enter description here...',
       imgs: [
         moviewaveSlider1,
         moviewaveSlider2,

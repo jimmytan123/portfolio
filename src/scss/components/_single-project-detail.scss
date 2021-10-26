@@ -16,6 +16,7 @@
     // color: $dark-blue;
     margin-bottom: $small-spacing;
     font-size: 1.2rem;
+    margin-top: 0.5rem;
   }
 
   .banner-wrapper {
@@ -96,6 +97,17 @@
     padding: 0 $base-spacing;
     max-width: 1000px;
     margin: 0 auto;
+
+    .feature-block {
+      margin: 1rem 0;
+    }
+  }
+
+  img.block-img {
+    max-width: 600px;
+    display: block;
+    margin: $base-spacing auto;
+    width: 100%;
   }
 
   .reflection-info {
@@ -111,6 +123,10 @@
 
     h2 {
       font-size: 2.3rem;
+    }
+
+    h3 {
+      font-size: 1.7rem;
     }
 
     .external-links {
