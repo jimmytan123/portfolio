@@ -6,7 +6,7 @@ import { FaCode, FaPaintBrush } from 'react-icons/fa';
 import { useEffect } from 'react';
 
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 // import Aos from 'aos';
 // import 'aos/dist/aos.css';
