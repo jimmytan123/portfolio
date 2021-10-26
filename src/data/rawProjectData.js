@@ -161,7 +161,7 @@ export const rawProjectData = [
     duration: '4 Weeks',
     team: ['Jimmy Tan'],
     roles: ['UI/UX Design', 'Front-End Development'],
-    stack: ['React', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'SEO'],
+    stack: ['React', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'Figma', 'SEO'],
   },
   {
     id: 'codeBreaker',
