@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Thumbnail = ({
   title,
@@ -10,9 +14,18 @@ const Thumbnail = ({
   livesite,
   github,
 }) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 900,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100,
+    });
+  }, []);
+
   return (
     <div className={`project-thumbnail project-thumbnail-${id}`}>
-      <div className="thumbnail-wrapper">
+      <div className="thumbnail-wrapper" data-aos="fade-left">
         <div className="project-thumbnail-image">
           <a href={livesite} target="_blank" rel="noreferrer">
             <img src={thumbnailImgUrl} alt={`${title} Thumbnail`} />

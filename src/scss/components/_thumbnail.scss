@@ -5,6 +5,8 @@
 .project-thumbnail {
   padding: 3rem $base-spacing;
 
+  overflow-x: hidden;
+
   .thumbnail-wrapper {
     position: relative;
   }
