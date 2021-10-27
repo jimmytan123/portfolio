@@ -7,6 +7,8 @@ import SortButtonGroup from '../components/SortButtonGroup';
 import { rawProjectData } from '../data/rawProjectData';
 import { downArrow } from '../globals/icon';
 
+import { Flipper, Flipped } from 'react-flip-toolkit';
+
 const PageWork = () => {
   // State to track projectData that is coming from rawThumbnailData
   const [projectsData, setProjectsData] = useState(rawProjectData);
@@ -56,24 +58,37 @@ const PageWork = () => {
         </div>
         <a href="#projects-list">{downArrow}</a>
       </section>
-      <section className="projects-list" id="projects-list">
-        {projectsData &&
-          projectsData.map((projectData, i) => {
-            return (
-              <Thumbnail
-                title={projectData.title}
-                briefDescription={projectData.briefDescription}
-                tags={projectData.tags}
-                thumbnailImgUrl={projectData.thumbnailImgUrl}
-                id={projectData.id}
-                moreInfo={projectData.moreInfo}
-                livesite={projectData.livesite}
-                github={projectData.github}
-                key={i}
-              />
-            );
-          })}
-      </section>
+
+      {projectsData && (
+        // animation for project lists when switching categories(state changes and data changes)
+        // Stiffness of the spring. Higher values will create more sudden movement.
+        // Damping, strength of opposing force. If set to 0, spring will oscillate indefinitely.
+        <Flipper
+          flipKey={projectsData}
+          spring={{ stiffness: 125, damping: 20 }}
+        >
+          <Flipped flipId="animatedProjectListDiv">
+            <section className="projects-list" id="projects-list">
+              {projectsData.map((projectData, i) => {
+                return (
+                  <Thumbnail
+                    title={projectData.title}
+                    briefDescription={projectData.briefDescription}
+                    tags={projectData.tags}
+                    thumbnailImgUrl={projectData.thumbnailImgUrl}
+                    id={projectData.id}
+                    moreInfo={projectData.moreInfo}
+                    livesite={projectData.livesite}
+                    github={projectData.github}
+                    key={i}
+                  />
+                );
+              })}
+            </section>
+          </Flipped>
+        </Flipper>
+      )}
+
       <Contact />
     </motion.div>
   );
