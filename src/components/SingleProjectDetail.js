@@ -1,13 +1,9 @@
-import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import SingeProjectSlider from './SingeProjectSlider';
 
 const SingleProjectDetail = ({ singleProject }) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   //options for simple react lightbox
   const options = {
     buttons: {
@@ -37,13 +33,17 @@ const SingleProjectDetail = ({ singleProject }) => {
       </Helmet>
       <SimpleReactLightbox>
         <div className="banner-wrapper">
-          <img
+          <motion.img
             className="banner-img"
-            src={singleProject.bannerImgUrl}
+            // src={singleProject.bannerImgUrl}
+            src={singleProject.thumbnailImgUrl}
             alt={`banner of ${singleProject.title}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: 'easeInOut', duration: 0.3, delay: 0.2 }}
           />
         </div>
-        <div className="single-project-basic-info">
+        <div className="single-project-basic-info" data-aos="fade-up">
           <h1>{singleProject.title}</h1>
           <div className="overview-wrapper">
             <h2>Overview</h2>
