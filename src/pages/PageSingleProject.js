@@ -11,8 +11,6 @@ import { motion } from 'framer-motion';
 const PageSingleProject = () => {
   let { id } = useParams();
 
-  //console.log(rawProjectData);
-
   // state for single project
   const [singleProject, setSingleProject] = useState(null);
 
@@ -32,14 +30,10 @@ const PageSingleProject = () => {
       (project) => project.moreInfo === true
     );
 
-    //console.log(projectHasMoreInfo);
-
     // get the current project index in the array projectHasMoreInfo
     const currentProjectIndex = projectHasMoreInfo.findIndex((oneProject) => {
       return oneProject.id === id;
     });
-
-    //console.log(currentProjectIndex);
 
     // if the current project is the last project in the array projectHasMoreInfo, next project will be the first project in the array
     if (currentProjectIndex + 1 === projectHasMoreInfo.length) {
