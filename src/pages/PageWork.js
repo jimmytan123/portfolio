@@ -1,11 +1,10 @@
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import Contact from '../components/Contact';
 import Thumbnail from '../components/Thumbnail';
 import SortButtonGroup from '../components/SortButtonGroup';
 import { rawProjectData } from '../data/rawProjectData';
-import { useState } from 'react';
-
-import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
 
 const PageWork = () => {
   // State to track projectData that is coming from rawThumbnailData

@@ -1,13 +1,26 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
+import { FaCode, FaPaintBrush } from 'react-icons/fa';
 import { ReactComponent as LaptopCode } from '../assets/logos/laptop-code.svg';
 import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
-import { FaCode, FaPaintBrush } from 'react-icons/fa';
-
-import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
 
 const PageHome = () => {
+  // const [breakPointWidth, setBreakPointWidth] = useState(
+  //   window.innerWidth < 1024
+  // );
+
+  // const updateMedia = () => {
+  //   setBreakPointWidth(window.innerWidth < 1024);
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener('resize', updateMedia);
+  //   return () => window.removeEventListener('resize', updateMedia);
+  // }, []);
+
   return (
     <motion.div
       className="home-container"
@@ -23,7 +36,7 @@ const PageHome = () => {
         />
       </Helmet>
       <section className="landing">
-        <div className="landing-content">
+        <div className="landing-content" data-aos="fade-up" data-aos-delay="200">
           <LaptopCode className="laptop-code-svg" />
           <div className="text">
             <h1>I'm Jimmy Tan</h1>
@@ -37,6 +50,9 @@ const PageHome = () => {
           </div>
         </div>
         <a href="#background">{downArrow}</a>
+        {/* <p className="landing-background-text">
+          {breakPointWidth ? 'deb' : 'web developer'}
+        </p> */}
       </section>
       <section className="background" id="background">
         <div className="text">

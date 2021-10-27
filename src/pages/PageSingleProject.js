@@ -1,12 +1,11 @@
-import { useParams } from 'react-router';
-import { rawProjectData } from '../data/rawProjectData';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useParams } from 'react-router';
+import { motion } from 'framer-motion';
 import SingleProjectDetail from '../components/SingleProjectDetail';
 import SingleProjectNav from '../components/SingleProjectNav';
 import Contact from '../components/Contact';
-
-import { motion } from 'framer-motion';
+import { rawProjectData } from '../data/rawProjectData';
 
 const PageSingleProject = () => {
   let { id } = useParams();
