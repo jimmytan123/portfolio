@@ -183,6 +183,7 @@ export const rawProjectData = [
     tags: ['JavaScript', 'HTML5', 'Sass'],
     thumbnailImgUrl: weatherAppThumbImg,
     livesite: 'https://ztan.ca/weather-app/',
+    github: 'https://github.com/jimmytan123/weather-app',
     category: 'fun',
     moreInfo: false,
   },

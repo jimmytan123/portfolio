@@ -28,7 +28,7 @@ const SingleProjectDetail = ({ singleProject }) => {
         <title>Jimmy Tan | {singleProject.title}</title>
         <meta
           name="description"
-          content="A front-end project detail page that includes the summary of the individual project, tools used and design/development process."
+          content="A project detail page to show Jimmy Tan's web development project. It includes the summary of the individual project, tools used and design/development process."
         />
       </Helmet>
       <SimpleReactLightbox>
@@ -36,7 +36,6 @@ const SingleProjectDetail = ({ singleProject }) => {
           <motion.img
             className="banner-img"
             src={singleProject.bannerImgUrl}
-            // src={singleProject.thumbnailImgUrl}
             alt={`banner of ${singleProject.title}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

@@ -18,7 +18,7 @@
 
   img {
     display: block;
-    max-width: 750px;
+    max-width: 650px;
     width: 100%;
 
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
@@ -92,10 +92,6 @@
     .project-thumbnail-image {
       width: 50%;
     }
-
-    // img {
-    //   max-width: 650px;
-    // }
   }
 
   @media all and (min-width: $breakpoint-desktop) {
