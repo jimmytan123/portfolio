@@ -158,7 +158,7 @@ const SingleProjectDetail = ({ singleProject }) => {
               <h2>Development</h2>
               {singleProject.development.map((devBlock, i) => {
                 return (
-                  <div className="feature-block" key={i}>
+                  <div className="development-block" key={i}>
                     <h3>{devBlock.title}</h3>
                     {devBlock.description.map((paragraph, i) => {
                       return <p key={i}>{paragraph}</p>;

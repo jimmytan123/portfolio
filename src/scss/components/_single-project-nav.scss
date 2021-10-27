@@ -16,6 +16,11 @@
     min-width: 120px;
     text-align: center;
     transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-4px);
+      color: $dark-blue;
+    }
   }
 
   svg {
