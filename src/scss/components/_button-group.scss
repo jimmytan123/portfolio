@@ -9,14 +9,12 @@
   cursor: pointer;
   outline: inherit;
 
-  font-weight: 700;
   padding: 0.2rem 0.5rem;
-  border-radius: 10px;
-  margin: 0.3rem 0.5rem;
+  border-radius: 6px;
+  margin: 0.3rem 0.35rem;
   transition: all 0.3s ease-in-out;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $dark-blue;
     color: $white;
     transform: scale(1.05);
