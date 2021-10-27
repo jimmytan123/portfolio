@@ -2,14 +2,11 @@
 
 //google fonts
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@300;400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;700&display=swap');
 //font variables
-// $heading-font: 'Montserrat', sans-serif;
-// $body-text-font: 'Roboto', sans-serif;
 
 $heading-font: 'Poppins', sans-serif;
-$body-text-font: 'Source Sans Pro', sans-serif;
+$body-text-font: 'Open Sans', sans-serif;
 
 $line-height: 1.7;
 
@@ -20,10 +17,9 @@ $large-font-size: 2rem;
 
 //colors variables
 $dark-blue: #336699;
-$light-blue: #86BBD8;
-// $dark-grey: #404040;
+$light-blue: #86bbd8;
 $dark-grey: #2b2b2b;
-$light-grey: #E9ECEF;
+$light-grey: #e9ecef;
 $white: #fff;
 
 //spacing variables

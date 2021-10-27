@@ -26,6 +26,7 @@
     p {
       margin: 1rem 0;
       font-family: $heading-font;
+      font-weight: 600;
     }
 
     mark {
@@ -135,6 +136,7 @@
     display: inline-block;
     font-size: 0.8rem;
     font-family: $heading-font;
+    font-weight: 600;
     text-transform: uppercase;
     transition: all 0.4s ease-in-out;
     margin: $base-spacing 0;
