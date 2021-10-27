@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
-import SingeProjectSlider from './SingeProjectSlider';
-
-import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import { Helmet } from 'react-helmet-async';
+import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
+import SingeProjectSlider from './SingeProjectSlider';
 
 const SingleProjectDetail = ({ singleProject }) => {
   useEffect(() => {

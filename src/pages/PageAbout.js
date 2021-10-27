@@ -1,9 +1,8 @@
-import Contact from '../components/Contact';
-import { init } from 'ityped';
 import { useEffect, useRef } from 'react';
-
-import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
+import { init } from 'ityped';
+import { motion } from 'framer-motion';
+import Contact from '../components/Contact';
 
 const PageAbout = () => {
   const topicsRef = useRef(null);

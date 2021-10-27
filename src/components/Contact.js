@@ -1,6 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
 import { email } from '../globals/global';
-
 import { FaArrowCircleUp } from 'react-icons/fa';
 
 const Contact = () => {
