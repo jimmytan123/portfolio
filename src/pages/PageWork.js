@@ -5,6 +5,7 @@ import Contact from '../components/Contact';
 import Thumbnail from '../components/Thumbnail';
 import SortButtonGroup from '../components/SortButtonGroup';
 import { rawProjectData } from '../data/rawProjectData';
+import { downArrow } from '../globals/icon';
 
 const PageWork = () => {
   // State to track projectData that is coming from rawThumbnailData
@@ -36,7 +37,7 @@ const PageWork = () => {
           content="A list of project thumbnails to showcase Jimmy Tan's work as a Front-End Developer."
         />
       </Helmet>
-      <section className="projects-intro">
+      <section className="projects-intro" data-aos="fade-left">
         <h1>Projects.</h1>
         <p>
           A collection of my featured technical projects, fun projects as a
@@ -53,8 +54,9 @@ const PageWork = () => {
             ]}
           />
         </div>
+        <a href="#projects-list">{downArrow}</a>
       </section>
-      <section className="projects-list">
+      <section className="projects-list" id="projects-list">
         {projectsData &&
           projectsData.map((projectData, i) => {
             return (

@@ -2,9 +2,10 @@
 @use '../utilities/mixins' as *;
 
 .work-container {
+  overflow-x: hidden;
   .projects-intro {
-    padding: 0 $base-spacing;
-    margin-bottom: 4rem;
+    padding: 0 $base-spacing 4rem $base-spacing;
+    position: relative;
 
     h1 {
       margin: $base-spacing 0;
@@ -37,6 +38,18 @@
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
+
+    .down-arrow {
+      fill: $dark-grey;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
   }
 
   @media all and (min-width: 425px) {
@@ -50,7 +63,7 @@
 
   @media all and (min-width: $breakpoint-mobile) {
     .projects-intro {
-      margin-bottom: 4.5rem;
+      padding-bottom: 4.5rem;
 
       h1 {
         text-align: center;

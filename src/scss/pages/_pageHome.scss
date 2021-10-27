@@ -40,18 +40,6 @@
       margin: 0 auto;
     }
 
-    .down-arrow {
-      fill: $dark-grey;
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      transition: all 0.3s;
-
-      &:hover {
-        transform: translateY(-3px);
-      }
-    }
-
     // .landing-background-text {
     //   font-style: italic;
     //   margin: 0;
@@ -159,6 +147,18 @@
       .overlay {
         height: 100%;
       }
+    }
+  }
+
+  .down-arrow {
+    fill: $dark-grey;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-3px);
     }
   }
 
