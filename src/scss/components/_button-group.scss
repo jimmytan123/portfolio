@@ -15,8 +15,7 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: $dark-blue;
-    color: $white;
+    background-color: $light-grey;
     transform: scale(1.05);
   }
 

@@ -35,8 +35,8 @@ const SingleProjectDetail = ({ singleProject }) => {
         <div className="banner-wrapper">
           <motion.img
             className="banner-img"
-            // src={singleProject.bannerImgUrl}
-            src={singleProject.thumbnailImgUrl}
+            src={singleProject.bannerImgUrl}
+            // src={singleProject.thumbnailImgUrl}
             alt={`banner of ${singleProject.title}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
