@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import SingeProjectSlider from './SingeProjectSlider';
+import SingleProjectLink from './SingleProjectLink';
 
 const SingleProjectDetail = ({ singleProject }) => {
   //options for simple react lightbox
@@ -54,24 +55,16 @@ const SingleProjectDetail = ({ singleProject }) => {
           </div>
           <div className="external-links">
             {singleProject.livesite && (
-              <a
-                className="url-link"
-                href={singleProject.livesite}
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Live
-              </a>
+              <SingleProjectLink
+                url={singleProject.livesite}
+                name="View Live"
+              />
             )}
             {singleProject.github && (
-              <a
-                className="url-link"
-                href={singleProject.github}
-                target="_blank"
-                rel="noreferrer"
-              >
-                View GitHub
-              </a>
+              <SingleProjectLink
+                url={singleProject.github}
+                name="View GitHub"
+              />
             )}
           </div>
           <div className="info-grid">
@@ -130,14 +123,10 @@ const SingleProjectDetail = ({ singleProject }) => {
                       return <p key={i}>{paragraph}</p>;
                     })}
                     {designBlock.designURL && (
-                      <a
-                        className="url-link"
-                        href={designBlock.designURL.link}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        View {designBlock.designURL.title}
-                      </a>
+                      <SingleProjectLink
+                        url={designBlock.designURL.link}
+                        name={`View ${designBlock.designURL.title}`}
+                      />
                     )}
                     {designBlock.img && (
                       <img
