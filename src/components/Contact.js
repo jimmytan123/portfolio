@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <div className="text">
-        <h2>Get in Touch</h2>
+        <h2>Get in Touch.</h2>
         <p>
           I'm ready for challenges and opportunities. Please send me an email if
           you want to chat with me.

@@ -15,7 +15,7 @@ const PageWork = () => {
 
   // function for handle click event for filter buttons
   // updating state projectData based on chosen filter
-  const handleCategory = (selectedCat) => {
+  const handleChangeCategory = (selectedCat) => {
     if (selectedCat === 'all') {
       setProjectsData(rawProjectData);
     } else {
@@ -48,7 +48,7 @@ const PageWork = () => {
         </p>
         <div className="sort-btns-group">
           <SortButtonGroup
-            handleCategory={handleCategory}
+            handleChangeCategory={handleChangeCategory}
             buttons={[
               { name: 'All Projects', slug: 'all' },
               { name: 'Featured Projects', slug: 'featured' },

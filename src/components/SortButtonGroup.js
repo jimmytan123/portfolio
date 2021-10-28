@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
-const SortButtonGroup = ({ buttons, handleCategory }) => {
+const SortButtonGroup = ({ buttons, handleChangeCategory }) => {
   const [clickedId, setClickedId] = useState(0);
 
   const handleOnClick = (index, button) => {
     setClickedId(index);
-    handleCategory(button.slug);
+    handleChangeCategory(button.slug);
   };
 
   return (
