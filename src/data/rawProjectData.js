@@ -157,7 +157,7 @@ export const rawProjectData = [
     moreInfo: true,
     bannerImgUrl: portfolioBanner,
     overview:
-      "A portfolio website that was designed and developed as a platform to showcase my design and development skills as a front-end developer. As I want my portfolio to be more manageable, I decided to build my portfolio using React since I can update my projects easier with React's reusable component.",
+      "A portfolio website that was designed and developed as a platform to showcase my design and development skills as a front-end developer. As I want my portfolio to be more manageable, I decided to build my portfolio using React since I can update my projects easier with React's reusable components.",
     duration: '4 Weeks',
     team: ['Jimmy Tan'],
     roles: ['UI/UX Design', 'Front-End Development'],

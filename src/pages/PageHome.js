@@ -1,4 +1,5 @@
 // import { useState, useEffect } from 'react';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
@@ -21,6 +22,10 @@ const PageHome = () => {
   //   return () => window.removeEventListener('resize', updateMedia);
   // }, []);
 
+  const elementRef = useRef(null);
+  const executeScroll = () =>
+    elementRef.current.scrollIntoView({ behavior: 'smooth' });
+
   return (
     <motion.div
       className="home-container"
@@ -36,7 +41,11 @@ const PageHome = () => {
         />
       </Helmet>
       <section className="landing">
-        <div className="landing-content" data-aos="fade-up" data-aos-delay="200">
+        <div
+          className="landing-content"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <LaptopCode className="laptop-code-svg" />
           <div className="text">
             <h1>I'm Jimmy Tan</h1>
@@ -49,12 +58,14 @@ const PageHome = () => {
             </Link>
           </div>
         </div>
-        <a href="#background">{downArrow}</a>
+        <button onClick={executeScroll} className="scroll-btn">
+          {downArrow}
+        </button>
         {/* <p className="landing-background-text">
           {breakPointWidth ? 'deb' : 'web developer'}
         </p> */}
       </section>
-      <section className="background" id="background">
+      <section ref={elementRef} className="background">
         <div className="text">
           <h2>Front-End Developer</h2>
           <p>

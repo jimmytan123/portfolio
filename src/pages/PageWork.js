@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import Contact from '../components/Contact';
@@ -24,6 +24,10 @@ const PageWork = () => {
       );
     }
   };
+
+  const elementRef = useRef(null);
+  const executeScroll = () =>
+    elementRef.current.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <motion.div
@@ -56,9 +60,10 @@ const PageWork = () => {
             ]}
           />
         </div>
-        <a href="#projects-list">{downArrow}</a>
+        <button onClick={executeScroll} className="scroll-btn">
+          {downArrow}
+        </button>
       </section>
-
       {projectsData && (
         // animation for project lists when switching categories(state changes and data changes)
         // Stiffness of the spring. Higher values will create more sudden movement.
@@ -68,7 +73,7 @@ const PageWork = () => {
           spring={{ stiffness: 125, damping: 20 }}
         >
           <Flipped flipId="animatedProjectListDiv">
-            <section className="projects-list" id="projects-list">
+            <section ref={elementRef} className="projects-list">
               {projectsData.map((projectData, i) => {
                 return (
                   <Thumbnail
