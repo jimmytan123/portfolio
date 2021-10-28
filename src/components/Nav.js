@@ -1,5 +1,6 @@
 //Nav.js component, to return a navigation for header section
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import { FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
@@ -32,7 +33,9 @@ const Nav = ({ handleShowHide }) => {
           <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <HashLink to="#contact" smooth>
+            Contact
+          </HashLink>
         </li>
 
         <li className="nav-social-media">
