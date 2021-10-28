@@ -33,7 +33,7 @@ const PageAbout = () => {
 
   return (
     <motion.div
-      className="about-container"
+      className="about-container main-wrapper"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.3 }}

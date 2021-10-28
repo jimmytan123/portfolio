@@ -28,7 +28,7 @@ const PageHome = () => {
 
   return (
     <motion.div
-      className="home-container"
+      className="home-container main-wrapper"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.3 }}

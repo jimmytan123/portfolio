@@ -31,7 +31,7 @@ const PageWork = () => {
 
   return (
     <motion.div
-      className="work-container"
+      className="work-container main-wrapper"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.3 }}

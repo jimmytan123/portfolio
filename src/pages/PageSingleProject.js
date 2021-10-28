@@ -44,7 +44,7 @@ const PageSingleProject = () => {
 
   return (
     <motion.div
-      className="single-project-container"
+      className="single-project-container main-wrapper"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.3 }}
@@ -53,7 +53,6 @@ const PageSingleProject = () => {
         <>
           <SingleProjectDetail singleProject={singleProject} />
           <SingleProjectNav nextProjectId={getNextProjectId()} />
-          <Contact />
         </>
       ) : (
         <section className="no-project-detail">
@@ -68,6 +67,7 @@ const PageSingleProject = () => {
           </div>
         </section>
       )}
+      <Contact />
     </motion.div>
   );
 };
