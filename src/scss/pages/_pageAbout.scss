@@ -14,6 +14,11 @@
     padding: $base-spacing;
   }
 
+  .about-text {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
   h3 {
     color: $dark-blue;
   }
@@ -35,8 +40,8 @@
     .skills-flex {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      max-width: 1000px;
+      justify-content: space-between;
+      max-width: 900px;
       margin: 0 auto;
     }
   }
