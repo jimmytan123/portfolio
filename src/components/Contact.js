@@ -19,8 +19,8 @@ const Contact = () => {
       <div className="text">
         <h2>Get in Touch</h2>
         <p>
-          I'm avaiable for challenges and opportunities. Please send me an email
-          if you want to chat with me.
+          I'm ready for challenges and opportunities. Please send me an email if
+          you want to chat with me.
         </p>
         <div className="btn-wrapper">
           {location.pathname !== '/work' && (
