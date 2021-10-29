@@ -56,6 +56,7 @@ import moviewaveSlider5 from '../assets/assets-moviewave/moviewave-slider/moview
 //import images for development section in single project page
 import moviewavePageSelector from '../assets/assets-moviewave/moviewave-page-selector.png';
 import moviewaveSearch from '../assets/assets-moviewave/moviewave-search.png';
+import portfolioIA from '../assets/assets-portfolio/portfolio-IA.png';
 
 export const rawProjectData = [
   {
@@ -162,6 +163,19 @@ export const rawProjectData = [
     team: ['Jimmy Tan'],
     roles: ['UI/UX Design', 'Front-End Development'],
     stack: ['React', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'Figma', 'SEO'],
+    planning: [
+      {
+        title: 'Project Goal',
+        description: [
+          'The goal of the portfolio site project is to demonstrate Jimmy Tan’s web design and development skills. Since I value the content of the portfolio site to be the most important component of the website, the website should demonstrate the content in a clear and user-friendly way. In addition, the website should be easy for me to manage as the project lists may be updated regularly to showcase my latest skills and knowledge. Lastly, the website must be easy to navigate to different sections and it needs to be SEO-friendly as a personal portfolio website.',
+          'After doing research and comparing hard-coded websites, React applications and CMS websites, I decided to build my portfolio by React. Thanks to React’s component-based architecture, I can create reusable components and divide a large app into smaller parts, which means it is easier for me to add more features to the website and maintain the project data. Since React is a single-page application, where content is served in a single HTML page and the page is dynamically updated, it offers users a smoother interacting experience.',
+        ],
+      },
+      {
+        title: 'Information Architecture',
+        img: portfolioIA,
+      },
+    ],
   },
   {
     id: 'codeBreaker',

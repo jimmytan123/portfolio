@@ -70,6 +70,22 @@
     }
   }
 
+  .planning-info {
+    padding: 0 $base-spacing;
+    // max-width: 1000px;
+    max-width: 850px;
+    margin: 0 auto;
+
+    .design-block {
+      margin: 1rem 0;
+      padding: 1rem 0;
+
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+
   .design-info {
     padding: 0 $base-spacing;
     // max-width: 1000px;

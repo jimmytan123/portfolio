@@ -5,7 +5,7 @@ import SingeProjectSlider from './SingeProjectSlider';
 import SingleProjectLink from './SingleProjectLink';
 
 const SingleProjectDetail = ({ singleProject }) => {
-  //options for simple react lightbox
+  //settings for simple-react-lightbox
   const options = {
     buttons: {
       showAutoplayButton: false,
@@ -112,6 +112,30 @@ const SingleProjectDetail = ({ singleProject }) => {
           </div>
         </div>
         <SRLWrapper options={options}>
+          {singleProject.planning && (
+            <div className="planning-info">
+              <h2>Planning</h2>
+              {singleProject.planning.map((planningBlock, i) => {
+                return (
+                  <div className="design-block" key={i}>
+                    <h3>{planningBlock.title}</h3>
+                    {planningBlock.description &&
+                      planningBlock.description.map((paragraph, i) => {
+                        return <p key={i}>{paragraph}</p>;
+                      })}
+                    {planningBlock.img && (
+                      <img
+                        className="block-img"
+                        src={planningBlock.img}
+                        alt={planningBlock.title}
+                      />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
           {singleProject.design && (
             <div className="design-info">
               <h2>Design</h2>
@@ -119,9 +143,10 @@ const SingleProjectDetail = ({ singleProject }) => {
                 return (
                   <div className="design-block" key={i}>
                     <h3>{designBlock.title}</h3>
-                    {designBlock.description.map((paragraph, i) => {
-                      return <p key={i}>{paragraph}</p>;
-                    })}
+                    {designBlock.description &&
+                      designBlock.description.map((paragraph, i) => {
+                        return <p key={i}>{paragraph}</p>;
+                      })}
                     {designBlock.designURL && (
                       <SingleProjectLink
                         url={designBlock.designURL.link}
@@ -148,9 +173,10 @@ const SingleProjectDetail = ({ singleProject }) => {
                 return (
                   <div className="development-block" key={i}>
                     <h3>{devBlock.title}</h3>
-                    {devBlock.description.map((paragraph, i) => {
-                      return <p key={i}>{paragraph}</p>;
-                    })}
+                    {devBlock.description &&
+                      devBlock.description.map((paragraph, i) => {
+                        return <p key={i}>{paragraph}</p>;
+                      })}
                     {devBlock.img && (
                       <img
                         className="block-img"

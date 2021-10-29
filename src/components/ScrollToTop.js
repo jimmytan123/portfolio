@@ -1,4 +1,4 @@
-// Handle scroll restoration when router changes
+// Handle scroll restoration to top when router changes
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
