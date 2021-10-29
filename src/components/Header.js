@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Nav from './Nav';
-import logo from '../assets/logos/jimmy-logo-v1.png';
+import logo from '../globals/logos/jimmy-logo-v1.png';
 import { hamburgerIcon, closeIcon } from '../globals/icon';
 
 const Header = () => {

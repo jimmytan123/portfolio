@@ -187,7 +187,7 @@ export const rawProjectData = [
       {
         title: 'Wireframe',
         description: [
-          'The wireframe was created based on the content plan and information architecture. In order to let users focus on the content, the theme of the website is based on a white background, dark grey text, and a lot of whitespaces. On the project list page, I delicately set different background colours for different projects to add some uniqueness to each project. ',
+          'The wireframe was created based on the content plan and information architecture. To let users focus on the content, the theme of the website is based on a white background, dark grey text, and a lot of whitespaces. On the project list page, I delicately set different background colours for different projects to add some uniqueness to each project. ',
           'To view the interactive wireframe, please click the links below.',
         ],
         designURL: [

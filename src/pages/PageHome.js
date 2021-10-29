@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaCode, FaPaintBrush } from 'react-icons/fa';
-import { ReactComponent as LaptopCode } from '../assets/logos/laptop-code.svg';
+import { ReactComponent as LaptopCode } from '../globals/logos/laptop-code.svg';
 import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
 
