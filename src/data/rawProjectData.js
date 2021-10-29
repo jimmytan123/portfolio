@@ -22,7 +22,7 @@
    design - design aspect of the project, an array consists of objects [Array of Objects] (OPTIONAL)
           -- title -> object property, represents the title of a deisgn block [String]
           -- description -> object property, represents the paragraphs of a topic in a deisgn block [Array of Strings]
-          -- designURL -> object property, represents the external design related URL (Prototype/Mockup), has a title and link property [Object] (OPTIONAL)
+          -- designURL -> object property, represents the external design related URL (Prototype/Mockup), has a title and link property [Array of Object] (OPTIONAL)
           -- img -> object property, represents a image of a topic in a deisgn block [Image Path] (OPTIONAL)
    development - development aspect of the project, an array consists of objects [Array of Objects] (OPTIONAL)
               -- title -> object property, represents the title of a development block [String]
@@ -83,12 +83,18 @@ export const rawProjectData = [
         description: [
           'The web app design was approached with the mind of a modern, clean interface. For an energetic and dynamic mood, deep sky blue and neon orange were chosen to use as main accent colours on the dark/light background.',
           'High-fidelity mockups were created through Adobe Photoshop a few weeks before the development phase. After that, an interactive prototype by Adobe XD was made to provide clear interactive guidance for the development phase.',
-          'To view the design and the prototype, please click the link below.',
+          'To view the design and the interactive prototype, please click the link below.',
         ],
-        designURL: {
-          title: 'Prototype',
-          link: 'https://xd.adobe.com/view/91c321b5-ac56-40eb-87a9-11907794c25c-c490/',
-        },
+        designURL: [
+          {
+            title: 'Mobile Prototype',
+            link: 'https://xd.adobe.com/view/d8ed41bb-f200-4a16-b54c-369b384e72ad-8dbe/',
+          },
+          {
+            title: 'Desktop Prototype',
+            link: 'https://xd.adobe.com/view/511689db-6a40-44cf-a51d-954defc40927-0445/',
+          },
+        ],
       },
     ],
     development: [
@@ -165,15 +171,35 @@ export const rawProjectData = [
     stack: ['React', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'Figma', 'SEO'],
     planning: [
       {
-        title: 'Project Goal',
+        title: 'Project Goal & Planning',
         description: [
           'The goal of the portfolio site project is to demonstrate Jimmy Tan’s web design and development skills. Since I value the content of the portfolio site to be the most important component of the website, the website should demonstrate the content in a clear and user-friendly way. In addition, the website should be easy for me to manage as the project lists may be updated regularly to showcase my latest skills and knowledge. Lastly, the website must be easy to navigate to different sections and it needs to be SEO-friendly as a personal portfolio website.',
-          'After doing research and comparing hard-coded websites, React applications and CMS websites, I decided to build my portfolio by React. Thanks to React’s component-based architecture, I can create reusable components and divide a large app into smaller parts, which means it is easier for me to add more features to the website and maintain the project data. Since React is a single-page application, where content is served in a single HTML page and the page is dynamically updated, it offers users a smoother interacting experience.',
+          'After doing research and comparing hard-coded websites, React applications and CMS websites, I decided to build my portfolio by React. Thanks to React’s component-based architecture, I can create reusable components and divide a large app into smaller parts, which means it is easier for me to add more features to the website and maintain the project data. React is a single-page application, where content is served in a single HTML page and the page is dynamically updated, it can offer users a smoother interacting experience.',
+          'I also created a content plan, information architecture, wireframe, interactive prototype and style guide to allow me to be well-planned before the development phase.',
         ],
       },
       {
         title: 'Information Architecture',
         img: portfolioIA,
+      },
+    ],
+    design: [
+      {
+        title: 'Wireframe',
+        description: [
+          'The wireframe was created based on the content plan and information architecture. In order to let users focus on the content, the theme of the website is based on a white background, dark grey text, and a lot of whitespaces. On the project list page, I delicately set different background colours for different projects to add some uniqueness to each project. ',
+          'To view the interactive wireframe, please click the links below.',
+        ],
+        designURL: [
+          {
+            title: 'Mobile Wireframe',
+            link: 'https://xd.adobe.com/view/18848f33-a96e-43f3-94c3-698d505d9168-4dd7/',
+          },
+          {
+            title: 'Desktop Wireframe',
+            link: 'https://xd.adobe.com/view/db189623-7188-42d6-86ad-874107258803-8e4b/',
+          },
+        ],
       },
     ],
   },

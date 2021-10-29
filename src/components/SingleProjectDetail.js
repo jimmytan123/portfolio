@@ -43,8 +43,8 @@ const SingleProjectDetail = ({ singleProject }) => {
             transition={{ ease: 'easeInOut', duration: 0.3, delay: 0.2 }}
           />
         </div>
-        <div className="single-project-basic-info" data-aos="fade-up">
-          <h1>{singleProject.title}</h1>
+        <div className="single-project-basic-info">
+          <h1 data-aos="fade-up">{singleProject.title}</h1>
           <div className="overview-wrapper">
             <h2>Overview</h2>
             <p>
@@ -147,12 +147,16 @@ const SingleProjectDetail = ({ singleProject }) => {
                       designBlock.description.map((paragraph, i) => {
                         return <p key={i}>{paragraph}</p>;
                       })}
-                    {designBlock.designURL && (
-                      <SingleProjectLink
-                        url={designBlock.designURL.link}
-                        name={`View ${designBlock.designURL.title}`}
-                      />
-                    )}
+                    {designBlock.designURL &&
+                      designBlock.designURL.map((oneUrl, i) => {
+                        return (
+                          <SingleProjectLink
+                            key={i}
+                            url={oneUrl.link}
+                            name={`View ${oneUrl.title}`}
+                          />
+                        );
+                      })}
                     {designBlock.img && (
                       <img
                         className="block-img"
