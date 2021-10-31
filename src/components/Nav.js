@@ -22,18 +22,22 @@ const Nav = ({ handleShowHide }) => {
     <nav onClick={closeNav} className="main-nav">
       <ul>
         <li>
-          <NavLink to="/" exact>
+          <NavLink to="/" className="nav-link" exact>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/work">Work</NavLink>
+          <NavLink to="/work" className="nav-link">
+            Work
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about" className="nav-link">
+            About
+          </NavLink>
         </li>
         <li>
-          <HashLink to="#contact" smooth>
+          <HashLink to="#contact" smooth className="nav-link">
             Contact
           </HashLink>
         </li>
