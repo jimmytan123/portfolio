@@ -43,7 +43,7 @@ const PageWork = () => {
           content="A list of project thumbnails to showcase Jimmy Tan's work as a Front-End Developer."
         />
       </Helmet>
-      <section className="projects-intro" data-aos="fade-left">
+      <section className="projects-intro" data-aos="fade-right">
         <h1>Projects.</h1>
         <p>
           A collection of my featured technical projects, fun projects as a

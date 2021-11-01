@@ -49,9 +49,10 @@ const PageAbout = () => {
         <div className="about-text">
           <h1>About Me.</h1>
           <p>
-            My training and hands-on projects experience at BCIT's Front-End Web
-            Developer Program, have allowed me to further develop my passion and
-            skillsets in web development industries.
+            My training and hands-on projects experience at{' '}
+            <abbr title="British Columbia Institute of Technology">BCIT</abbr>{' '}
+            Front-End Web Developer Program, have allowed me to further develop
+            my passion and skillsets in web development industries.
           </p>
           <p>
             With solid fundamentals in various front-end programming languages

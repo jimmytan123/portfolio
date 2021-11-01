@@ -3,7 +3,9 @@
 
 .about-container {
   h1 {
-    margin-bottom: 0;
+    margin: $base-spacing 0;
+    font-size: 3rem;
+    color: $dark-blue;
   }
 
   ul {
@@ -19,8 +21,13 @@
     margin: 0 auto;
   }
 
+  abbr {
+    text-decoration: none;
+  }
+
   h3 {
     color: $dark-blue;
+    margin-top: 0;
   }
 
   .skills {
@@ -64,6 +71,12 @@
 
     h2 {
       max-width: 440px;
+    }
+  }
+
+  @media all and (min-width: $breakpoint-mobile) {
+    h1 {
+      font-size: 4rem;
     }
   }
 
