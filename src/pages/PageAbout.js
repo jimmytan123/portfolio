@@ -56,14 +56,14 @@ const PageAbout = () => {
           </p>
           <p>
             With solid fundamentals in various front-end programming languages
-            as well as web design, I am proficient in React, HTML5, CSS3,
-            JavaScript and Adobe XD.
+            as well as web design, I mostly enjoy working with React JS, HTML5,
+            CSS3, JavaScript and Adobe XD.
           </p>
           <p>
-            Graduated with a Bachelor’s degree of Science majored in Statistics
-            and gained a few years of working experience, I have developed a
-            detail-oriented mindset, creative problem-solving skills and strong
-            logical thinking ability.
+            Graduated with a Bachelor of Science Statistics major in University
+            of Victoria and gained a few years of working experience, I have
+            developed a detail-oriented mindset, creative problem-solving skills
+            and strong logical thinking ability.
           </p>
           <p>
             In addition to web development, one of my greatest interests is
@@ -82,15 +82,13 @@ const PageAbout = () => {
               <li>CSS3</li>
               <li>Sass</li>
               <li>React</li>
-              <li>Redux</li>
               <li>jQuery</li>
               <li>PHP</li>
               <li>WordPress</li>
               <li>WooCommerce</li>
               <li>BootStrap</li>
               <li>SQL</li>
-              <li>Git</li>
-              <li>GitHub</li>
+              <li>Git/GitHub</li>
             </ul>
           </div>
           <div className="skills-cat">
