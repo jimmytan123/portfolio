@@ -14,6 +14,7 @@
 
    <--- OPTIONAL || If a project has a single detail page, need to add the following data --->
    bannerImgUrl - local img URL, for displaying banner image in single project detail page [Image Path]
+   bannerImgMobileUrl - local img URL, when browser width smaller than 499px(mobile devices) [Image Path]
    overview - the overview of the project in single project detail page [String]
    duration - duration of the project in single project detail page [String] (OPTIONAL)
    team - team of the project [Array of String] (OPTIONAL)
@@ -44,7 +45,9 @@ import galleryThumbImg from '../assets/assets-gallery/gallery-thumbnail.png';
 
 // import banner images for single project page
 import moviewaveBanner from '../assets/assets-moviewave/moviewave-banner.png';
+import moviewaveBannerMobile from '../assets/assets-moviewave/moviewave-banner-mobile.png';
 import portfolioBanner from '../assets/assets-portfolio/portfolio-banner.png';
+import portfolioBannerMobile from '../assets/assets-portfolio/portfolio-banner-mobile.png';
 
 // import slider images for single project page
 import moviewaveSlider1 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-1.png';
@@ -71,6 +74,7 @@ export const rawProjectData = [
     category: 'featured',
     moreInfo: true,
     bannerImgUrl: moviewaveBanner,
+    bannerImgMobileUrl: moviewaveBannerMobile,
     overview:
       'MovieWave is a single-page web app built in ReactJS that allows users to browse movie information and keep track of movies. It is an online movie database where movie lovers can find the relevant movie information based on popular, top-rated, now playing and upcoming. This application uses the TMDb API to fetch movie data and outputs the content dynamically to the webpage. Users can also be able to search and save movies to their favourites. A dark/light theme is also included in this application to improve the user experience.',
     duration: '4 Weeks',
@@ -82,7 +86,7 @@ export const rawProjectData = [
         title: 'Design Theme and Prototype',
         description: [
           'The web app design was approached with the mind of a modern, clean interface. For an energetic and dynamic mood, deep sky blue and neon orange were chosen to use as main accent colours on the dark/light background.',
-          'High-fidelity mockups were created through Adobe Photoshop a few weeks before the development phase. After that, an interactive prototype by Adobe XD was made to provide clear interactive guidance for the development phase.',
+          'High-fidelity mockups were created through Adobe Photoshop as a start point for the design phase. After that, an interactive prototype by Adobe XD was made to provide clear interactive guidance for the development phase.',
           'To view the design and the interactive prototype, please click the link below.',
         ],
         designURL: [
@@ -163,6 +167,7 @@ export const rawProjectData = [
     category: 'featured',
     moreInfo: true,
     bannerImgUrl: portfolioBanner,
+    bannerImgMobileUrl: portfolioBannerMobile,
     overview:
       "A portfolio website that was designed and developed as a platform to showcase my design and development skills as a front-end developer. As I want my portfolio to be more manageable, I decided to build my portfolio using React since I can update my projects easier with React's reusable components.",
     duration: '4 Weeks',
@@ -173,7 +178,7 @@ export const rawProjectData = [
       {
         title: 'Project Goal & Planning',
         description: [
-          'The goal of the portfolio site project is to demonstrate Jimmy Tan’s web design and development skills. Since I value the content of the portfolio site to be the most important component of the website, the website should demonstrate the content in a clear and user-friendly way. In addition, the website should be easy for me to manage as the project lists may be updated regularly to showcase my latest skills and knowledge. Lastly, the website must be easy to navigate to different sections and it needs to be SEO-friendly as a personal portfolio website.',
+          'The goal of the portfolio site project is to demonstrate Jimmy Tan’s web design and development skills. Since I value the content of the portfolio site to be the most important component of the website, the website should demonstrate the content in a clear and user-friendly way. In addition, the website should be easy for me to manage as the project lists may be updated regularly to showcase my latest skills and knowledge.',
           'After doing research and comparing hard-coded websites, React applications and CMS websites, I decided to build my portfolio by React. Thanks to React’s component-based architecture, I can create reusable components and divide a large app into smaller parts, which means it is easier for me to add more features to the website and maintain the project data. React is a single-page application, where content is served in a single HTML page and the page is dynamically updated, it can offer users a smoother interacting experience.',
           'I also created a content plan, information architecture, wireframe, interactive prototype and style guide to allow me to be well-planned before the development phase.',
         ],

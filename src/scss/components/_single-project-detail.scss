@@ -19,14 +19,21 @@
   }
 
   .banner-wrapper {
-    background-color: $light-grey;
+    background-color: #fbf5f3;
     padding: $base-spacing;
 
     .banner-img {
-      width: 100%;
       display: block;
-      max-width: 850px;
+      max-width: 65%;
       margin: 0 auto;
+    }
+
+    // styling for responsive images
+    @media all and (min-width: 500px) {
+      .banner-img {
+        width: 100%;
+        max-width: 850px;
+      }
     }
   }
 

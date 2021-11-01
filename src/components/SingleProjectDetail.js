@@ -34,14 +34,21 @@ const SingleProjectDetail = ({ singleProject }) => {
       </Helmet>
       <SimpleReactLightbox>
         <div className="banner-wrapper">
-          <motion.img
-            className="banner-img"
-            src={singleProject.bannerImgUrl}
-            alt={`banner of ${singleProject.title}`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ ease: 'easeInOut', duration: 0.3, delay: 0.2 }}
-          />
+          {/* Responsive images  */}
+          <picture>
+            <source
+              media="(max-width: 499px)"
+              srcSet={singleProject.bannerImgMobileUrl}
+            />
+            <motion.img
+              className="banner-img"
+              src={singleProject.bannerImgUrl}
+              alt={`banner of ${singleProject.title}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ ease: 'easeInOut', duration: 0.3, delay: 0.2 }}
+            />
+          </picture>
         </div>
         <div className="single-project-basic-info">
           <h1 data-aos="fade-up">{singleProject.title}</h1>
@@ -98,7 +105,7 @@ const SingleProjectDetail = ({ singleProject }) => {
               </ul>
             </div>
             <div className="dev-stack-wrapper">
-              <h3>Development Stack</h3>
+              <h3>Tech Stack</h3>
               <ul>
                 {singleProject.stack ? (
                   singleProject.stack.map((oneTool, i) => {
