@@ -24,7 +24,9 @@ const SingleProjectDetail = ({ singleProject }) => {
   };
 
   return (
-    <section className="single-project-content">
+    <section
+      className={`single-project-content single-project-content-${singleProject.id}`}
+    >
       <Helmet>
         <title>Jimmy Tan | {singleProject.title}</title>
         <meta

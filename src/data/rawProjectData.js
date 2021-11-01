@@ -60,6 +60,9 @@ import moviewaveSlider5 from '../assets/assets-moviewave/moviewave-slider/moview
 import moviewavePageSelector from '../assets/assets-moviewave/moviewave-page-selector.png';
 import moviewaveSearch from '../assets/assets-moviewave/moviewave-search.png';
 import portfolioIA from '../assets/assets-portfolio/portfolio-IA.png';
+import portfolioDataFile from '../assets/assets-portfolio/portfolio-dataFile.png';
+import portfolioProjectFilter from '../assets/assets-portfolio/portfolio-project-filter.png';
+import portfolioResponsiveImg from '../assets/assets-portfolio/portfolio-responsiveImg.png';
 
 export const rawProjectData = [
   {
@@ -205,6 +208,29 @@ export const rawProjectData = [
             link: 'https://xd.adobe.com/view/db189623-7188-42d6-86ad-874107258803-8e4b/',
           },
         ],
+      },
+    ],
+    development: [
+      {
+        title: 'Project Filter',
+        description: [
+          'The project filter helps to organize the projects into categories, which makes the users view the projects that they are interested in easier. To make the filter feature works, it needs to use React useState hook, event listeners and array filtering techniques.',
+        ],
+        img: portfolioProjectFilter,
+      },
+      {
+        title: 'One Data File, Long Data File',
+        description: [
+          'To make the projects more manageable, I designed and created one data file containing a list of projects information. I created reusable React components to fetch data from the data file and output the content. It makes updating/adding/deleting projects really convenient and efficient.',
+        ],
+        img: portfolioDataFile,
+      },
+      {
+        title: 'Responsive Images',
+        description: [
+          'The banner image in the single project page is responsive (art direction) for users with different sizes of devices.',
+        ],
+        img: portfolioResponsiveImg,
       },
     ],
   },
