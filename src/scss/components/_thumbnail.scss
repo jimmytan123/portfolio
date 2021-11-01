@@ -51,8 +51,12 @@
   .action-buttons {
     a {
       margin-right: $small-spacing;
-      border-bottom: 2px solid $dark-grey;
+      border-bottom: 4px solid $dark-grey;
       transition: border-color 0.3s ease-in-out;
+
+      &.more-info {
+        border-bottom: 4px solid #ef233c;
+      }
 
       &:hover,
       &:focus {

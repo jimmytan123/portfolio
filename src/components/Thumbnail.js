@@ -35,7 +35,11 @@ const Thumbnail = ({
                 GitHub
               </a>
             )}
-            {moreInfo && <Link to={`/project-${id}`}>More Info</Link>}
+            {moreInfo && (
+              <Link to={`/project-${id}`} className="more-info">
+                More Info
+              </Link>
+            )}
           </div>
         </div>
       </div>
