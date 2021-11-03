@@ -182,7 +182,7 @@ export const rawProjectData = [
         title: 'Project Goal & Planning',
         description: [
           'The goal of the portfolio site project is to demonstrate Jimmy Tan’s web design and development skills. Since I value the content of the portfolio site to be the most important component of the website, the website should demonstrate the content in a clear and user-friendly way. In addition, the website should be easy for me to manage as the project lists may be updated regularly to showcase my latest skills and knowledge.',
-          'After doing research and comparing hard-coded websites, React applications and CMS websites, I decided to build my portfolio by React. Thanks to React’s component-based architecture, I can create reusable components and divide a large app into smaller parts, which means it is easier for me to add more features to the website and maintain the project data. React is a single-page application, where content is served in a single HTML page and the page is dynamically updated, it can offer users a smoother interacting experience.',
+          'After doing research and comparing hard-coded websites, React applications and CMS websites, I decided to build my portfolio by React. Thanks to React’s component-based architecture, I can create reusable components and divide a large app into smaller parts. It is easier for me to add more features to the website and maintain the projects data.',
           'I also created a content plan, information architecture, wireframe, interactive prototype and style guide to allow me to be well-planned before the development phase.',
         ],
       },
