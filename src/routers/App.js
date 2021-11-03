@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Aos from 'aos';
+import ReactGA from 'react-ga';
 import 'aos/dist/aos.css';
 
 import Header from '../components/Header';
@@ -21,11 +22,16 @@ function App() {
       once: true,
       offset: 100,
     });
-  });
+
+    // Initialize Google Analytics
+    ReactGA.initialize('UA-211842220-1');
+    // Will trigger on a route change
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <HelmetProvider>
-      <Router basename="/portfolio">
+      <Router>
         <div className="site-wrapper">
           <ScrollToTop />
           <Header />
