@@ -52,12 +52,10 @@ const PageAbout = () => {
             My training and hands-on projects experience at{' '}
             <abbr title="British Columbia Institute of Technology">BCIT</abbr>{' '}
             Front-End Web Developer Program, have allowed me to further develop
-            my passion and skillsets in web development industries.
-          </p>
-          <p>
-            With solid fundamentals in various front-end programming languages
-            as well as web design, I mostly enjoy working with React JS, HTML5,
-            CSS3, JavaScript and Adobe XD.
+            my passion and skillsets in web development industries. With solid
+            fundamentals in various front-end programming languages as well as
+            web design, I mostly enjoy working with React JS, HTML5, CSS3,
+            JavaScript and Adobe XD.
           </p>
           <p>
             Graduated with a Bachelor of Science Statistics major in University

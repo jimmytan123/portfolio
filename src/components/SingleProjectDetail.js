@@ -126,7 +126,7 @@ const SingleProjectDetail = ({ singleProject }) => {
               <h2>Planning</h2>
               {singleProject.planning.map((planningBlock, i) => {
                 return (
-                  <div className="design-block" key={i}>
+                  <div className="planning-block" key={i}>
                     <h3>{planningBlock.title}</h3>
                     {planningBlock.description &&
                       planningBlock.description.map((paragraph, i) => {

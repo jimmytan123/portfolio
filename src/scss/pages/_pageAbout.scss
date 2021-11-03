@@ -32,6 +32,7 @@
 
   .skills {
     margin: $double-spacing 0;
+    padding: $base-spacing;
 
     ul {
       display: grid;
@@ -40,7 +41,7 @@
     }
 
     .skills-cat {
-      padding: $base-spacing;
+      margin-bottom: $base-spacing;
       min-width: 280px;
     }
 
@@ -48,7 +49,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      max-width: 900px;
+      max-width: 850px;
       margin: 0 auto;
     }
   }
@@ -64,7 +65,7 @@
     align-items: center;
 
     p {
-      font-size: 1.5rem;
+      font-size: $medium-font-size;
       color: #ef233c;
       font-family: $heading-font;
     }
@@ -85,19 +86,15 @@
       ul {
         grid-template-columns: 1fr 1fr 1fr;
       }
-
-      .skills-cat {
-        margin: 0 $double-spacing;
-      }
     }
 
     .interested-topics {
       h2 {
-        font-size: 2rem;
+        font-size: $large-font-size;
       }
 
       p {
-        font-size: 2rem;
+        font-size: $large-font-size;
       }
     }
   }

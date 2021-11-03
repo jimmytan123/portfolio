@@ -7,7 +7,7 @@
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: $medium-font-size;
     margin-bottom: 0;
     color: $dark-blue;
   }
@@ -15,7 +15,7 @@
   h3 {
     margin-bottom: $small-spacing;
     font-size: 1.2rem;
-    margin-top: 0.5rem;
+    margin-top: $small-spacing;
   }
 
   .banner-wrapper {
@@ -83,9 +83,9 @@
     max-width: 850px;
     margin: 0 auto;
 
-    .design-block {
-      margin: 1rem 0;
-      padding: 1rem 0;
+    .planning-block {
+      margin: $base-spacing 0;
+      padding: $base-spacing 0;
 
       h3 {
         text-align: center;
@@ -100,8 +100,8 @@
     margin: 0 auto;
 
     .design-block {
-      margin: 1rem 0;
-      padding: 1rem 0;
+      margin: $base-spacing 0;
+      padding: $base-spacing 0;
 
       h3 {
         text-align: center;
@@ -116,8 +116,8 @@
     margin: 0 auto;
 
     .development-block {
-      margin: 1rem 0;
-      padding: 1rem 0;
+      margin: $base-spacing 0;
+      padding: $base-spacing 0;
 
       h3 {
         text-align: center;

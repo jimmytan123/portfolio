@@ -6,12 +6,12 @@
   justify-content: space-between;
 
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: $double-spacing auto;
 
   a {
     display: inline-block;
     font-family: $heading-font;
-    font-size: 1rem;
+    font-size: $standard-font-size;
     padding: 0.3rem 0.5rem;
     min-width: 120px;
     text-align: center;
@@ -24,7 +24,7 @@
   }
 
   svg {
-    font-size: 2rem;
+    font-size: $large-font-size;
     vertical-align: middle;
   }
 

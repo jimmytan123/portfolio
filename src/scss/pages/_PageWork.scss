@@ -15,7 +15,7 @@
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: $medium-font-size;
       font-family: $heading-font;
       font-weight: 600;
     }
@@ -91,7 +91,7 @@
       }
 
       .sort-btns-group {
-        font-size: 1rem;
+        font-size: $standard-font-size;
       }
     }
   }

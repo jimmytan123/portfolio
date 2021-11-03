@@ -2,7 +2,7 @@
 
 footer {
   text-align: center;
-  padding: 1rem 0;
+  padding: $base-spacing 0;
   background-color: $light-grey;
   color: $dark-grey;
 
@@ -14,7 +14,7 @@ footer {
   .footer-icon {
     color: $dark-grey;
     margin: 0 1rem;
-    font-size: 1.5rem;
+    font-size: $medium-font-size;
     transition: all 0.3s;
 
     &:hover {
@@ -24,7 +24,7 @@ footer {
 
   @media (min-width: $breakpoint-mobile) {
     .footer-icon {
-        font-size: 2rem;
+        font-size: $large-font-size;
         margin: 0 1.3rem;
     }
   }

@@ -6,20 +6,20 @@
 
   // Styling for accidently go into a single movie page via URL that does not have the movie detail yet
   .no-project-detail {
-    margin-top: 2rem;
-    padding: 1rem;
+    margin-top: $double-spacing;
+    padding: $base-spacing;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
     h1 {
-      margin: 1rem 0;
+      margin: $base-spacing 0;
     }
     .button-group {
-      margin-top: 0.5rem;
+      margin-top: $small-spacing;
       a:first-of-type {
-        margin-right: 1rem;
+        margin-right: $base-spacing;
       }
 
       a {

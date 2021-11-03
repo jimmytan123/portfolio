@@ -21,7 +21,7 @@
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: $large-font-size;
     margin: $base-spacing 0;
     text-align: center;
     color: $white;
@@ -96,7 +96,7 @@
     right: 20px;
     svg {
       cursor: pointer;
-      font-size: 1.5rem;
+      font-size: $medium-font-size;
       fill: $white;
       display: block;
     }

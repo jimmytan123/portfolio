@@ -1,10 +1,9 @@
 //variables for application
 
-//google fonts
-
+//google fonts import
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;700&display=swap');
-//font variables
 
+//font variables
 $heading-font: 'Poppins', sans-serif;
 $body-text-font: 'Open Sans', sans-serif;
 
@@ -27,9 +26,6 @@ $small-spacing: 0.5rem;
 $base-spacing: 1rem;
 $medium-spacing: 1.5rem;
 $double-spacing: 2rem;
-
-//max width for <main> container
-$main-max-width: 1600px;
 
 //media query breakpoints
 $breakpoint-mobile: 576px;
