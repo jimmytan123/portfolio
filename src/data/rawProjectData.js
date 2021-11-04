@@ -250,7 +250,7 @@ export const rawProjectData = [
     id: 'weather-app',
     title: 'Weather App',
     briefDescription:
-      'The reponsive weather app allows you to search for a city or click Show My Location to get the weather info. The background image is from Unsplash API and it changes according to different cities. ',
+      'The responsive weather app allows you to search for a city or click Show My Location to get the weather info. The background image is from Unsplash API and it changes according to different cities. ',
     tags: ['JavaScript', 'HTML5', 'Sass'],
     thumbnailImgUrl: weatherAppThumbImg,
     livesite: 'https://ztan.ca/weather-app/',
