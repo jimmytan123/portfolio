@@ -21,7 +21,7 @@ const Contact = () => {
         <svg
           id="wave"
           style={{ transform: 'rotate(0deg)', transition: '0.3s' }}
-          viewBox="0 0 1440 238"
+          viewBox="0 0 1440 240"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
         >

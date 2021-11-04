@@ -53,7 +53,7 @@ const PageHome = () => {
         <div className="text">
           <h2>Front-End Developer</h2>
           <p>
-            I'm Jimmy Tan. A self-motivated front-end developer with{' '}
+            A self-motivated front-end developer with{' '}
             <Link className="link-to-work" to="/work">
               <mark>hands-on project experience</mark>
             </Link>{' '}

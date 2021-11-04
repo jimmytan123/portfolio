@@ -232,6 +232,12 @@ export const rawProjectData = [
         ],
         img: portfolioResponsiveImg,
       },
+      {
+        title: 'SEO',
+        description: [
+          'In order to increase the visibility of the portfolio website in search engines, I used React Helmet to optimize the SEO. Therefore, it allowed me to have every page have its own custom meta tags.',
+        ],
+      },
     ],
   },
   {

@@ -42,7 +42,7 @@ const PageAbout = () => {
         <title>Jimmy Tan | About Me</title>
         <meta
           name="description"
-          content="A summary of Jimmy Tan's background and technology skills as a Front-End Developer."
+          content="A summary of Jimmy Tan's background and technical skills as a Front-End Developer."
         />
       </Helmet>
       <section className="about-content">
