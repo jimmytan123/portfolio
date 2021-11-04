@@ -16,7 +16,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <AiFillGithub />
+          <AiFillGithub title="GitHub icon" />
         </a>
         <a
           className="footer-icon"
@@ -25,10 +25,10 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <FaLinkedinIn />
+          <FaLinkedinIn title="LinkedIn icon" />
         </a>
         <a className="footer-icon" href={`mailto:${email}`} title="email">
-          <HiOutlineMail />
+          <HiOutlineMail title="Email icon" />
         </a>
       </section>
 

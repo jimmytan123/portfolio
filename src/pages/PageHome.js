@@ -83,14 +83,14 @@ const PageHome = () => {
           <div className="grid">
             <h3>Things I Love</h3>
             <div className="card">
-              <FaCode className="code-icon" />
+              <FaCode className="code-icon" title="Code icon" />
               <p>
                 I enjoy front-end development and love to work with React JS,
                 HTML5, CSS3/Sass and modern JavaScript.
               </p>
             </div>
             <div className="card">
-              <FaPaintBrush className="brush-icon" />
+              <FaPaintBrush className="brush-icon" title="Design brush icon" />
               <p>
                 I also like being part of the design creative process and I have
                 been working on web design using Adobe Creative Cloud.

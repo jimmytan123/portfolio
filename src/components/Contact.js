@@ -68,7 +68,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="scroll-to-top">
-        <FaArrowCircleUp onClick={toTop} />
+        <FaArrowCircleUp onClick={toTop} title="Up arrow icon" />
       </div>
     </section>
   );
