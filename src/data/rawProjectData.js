@@ -106,7 +106,7 @@ export const rawProjectData = [
     ],
     development: [
       {
-        title: 'Filter',
+        title: 'Movie Filter',
         description: [
           'A movie filter was made to allow users to view movies according to popular, top-rated, now playing and upcoming. This feature required the manipulation of the TMDb API with React useState and useEffect hooks. The impactful hero image section on the home page will also change based on the selected filter.',
         ],
