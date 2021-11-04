@@ -50,13 +50,25 @@
       cursor: pointer;
       padding: 0;
 
+      animation: upAndDown 1.5s ease-in-out infinite;
+
+      @keyframes upAndDown {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-5px);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+      }
+
       .down-arrow {
         fill: $dark-grey;
         transition: all 0.3s;
-
-        &:hover {
-          transform: translateY(-3px);
-        }
       }
     }
   }

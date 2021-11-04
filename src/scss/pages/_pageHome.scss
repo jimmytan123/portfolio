@@ -83,6 +83,9 @@
       }
     }
 
+    @media all and (min-width: $breakpoint-desktop) {
+      min-height: calc(88vh - 72px);
+    }
   }
 
   .homepage-btn {
