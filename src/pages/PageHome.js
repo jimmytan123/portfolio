@@ -9,19 +9,6 @@ import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
 
 const PageHome = () => {
-  // const [breakPointWidth, setBreakPointWidth] = useState(
-  //   window.innerWidth < 1024
-  // );
-
-  // const updateMedia = () => {
-  //   setBreakPointWidth(window.innerWidth < 1024);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener('resize', updateMedia);
-  //   return () => window.removeEventListener('resize', updateMedia);
-  // }, []);
-
   const elementRef = useRef(null);
   const executeScroll = () =>
     elementRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -61,9 +48,6 @@ const PageHome = () => {
         <button onClick={executeScroll} className="scroll-btn">
           {downArrow}
         </button>
-        {/* <p className="landing-background-text">
-          {breakPointWidth ? 'deb' : 'web developer'}
-        </p> */}
       </section>
       <section ref={elementRef} className="background">
         <div className="text">

@@ -40,25 +40,6 @@
       margin: 0 auto;
     }
 
-    // .landing-background-text {
-    //   font-style: italic;
-    //   margin: 0;
-    //   color: $white;
-    //   font-size: 7rem;
-    //   position: absolute;
-    //   top: 50%;
-    //   left: 50%;
-    //   transform: translate(-50%, -50%) rotate(90deg);
-    //   z-index: -9;
-    //   filter: drop-shadow(0 0 10px rgba(#dee2e6, 0.4));
-    // }
-
-    // @media all and (min-width: 375px) {
-    //   .landing-background-text {
-    //     font-size: 10rem;
-    //   }
-    // }
-
     @media all and (min-width: 450px) {
       h1 {
         font-size: 2.8rem;
@@ -102,20 +83,6 @@
       }
     }
 
-    @media all and (min-width: $breakpoint-desktop) {
-      min-height: calc(100vh - 72px);
-
-      // .landing-background-text {
-      //   transform: translate(-50%, -50%) rotate(0);
-      //   font-size: 12rem;
-      // }
-    }
-
-    // @media all and (min-width: $breakpoint-desktop-lg) {
-    //   .landing-background-text {
-    //     font-size: 15rem;
-    //   }
-    // }
   }
 
   .homepage-btn {
