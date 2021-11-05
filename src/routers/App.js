@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Aos from 'aos';
-import ReactGA from 'react-ga';
 import 'aos/dist/aos.css';
+import ReactGA from 'react-ga';
 
 import Header from '../components/Header';
 import PageHome from '../pages/PageHome';
@@ -15,7 +15,7 @@ import ScrollToTop from '../components/ScrollToTop';
 
 function App() {
   useEffect(() => {
-    // Animate on scroll library
+    // Animate on scroll library initialization settings
     Aos.init({
       duration: 800,
       easing: 'ease-in-out',
@@ -25,7 +25,7 @@ function App() {
 
     // Initialize Google Analytics
     ReactGA.initialize('UA-211842220-1');
-    // Will trigger on a route change
+    // This line will trigger on a route change
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 

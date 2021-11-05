@@ -37,7 +37,7 @@ const Thumbnail = ({
             )}
             {moreInfo && (
               <Link to={`/project-${id}`} className="more-info">
-                More Info
+                Learn More
               </Link>
             )}
           </div>
