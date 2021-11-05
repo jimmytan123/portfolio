@@ -155,8 +155,10 @@ export const rawProjectData = [
         moviewaveSlider5,
       ],
     },
-    reflection:
-      'This is the first project in the BCIT FWD program that allows me to implement a complete design, development and deployment process. There were differences between the prototype and the final product. These changes were made based on the personal usability testing that went through all the development processes until it was published. In addition, compare to the design prototype, I added a lot of additional movie information such as a trailer from YouTube, poster images carousel and cast information in the movie detail page based on my discovery in the API documents. This project also helped me to get familiar with React JS and also its ecosystem. I would say this application achieves the basic functionality of an online movie database. In the future, I am planning to add more features/sections into this application such as having a movie review section.',
+    reflection: [
+      'This is the first project in the BCIT FWD program that allows me to implement a complete design, development and deployment process. There were differences between the prototype and the final product. These changes were made based on the personal usability testing that went through all the development processes until it was published. In addition, compare to the design prototype, I added a lot of additional movie information such as a trailer from YouTube, poster images carousel and cast information in the movie detail page based on my discovery in the API documents.',
+      'This project also helped me to get familiar with React JS and also its ecosystem. I would say this application achieves the basic functionality of an online movie database. In the future, I am planning to add more features/sections into this application such as having a movie review section.',
+    ],
   },
   {
     id: 'portfolio',
@@ -238,6 +240,10 @@ export const rawProjectData = [
           'In order to increase the visibility of the portfolio website in search engines, I used React Helmet to optimize the SEO. Therefore, it allowed me to have every page have its own custom meta tags.',
         ],
       },
+    ],
+    reflection: [
+      'This portfolio project gave me an opportunity to try out new skills and get familiar with React during the process. It also let me realize how React components are useful when building templates to serve project data. I spent a lot of time planning before the design and development phase. Breaking down the project into small pieces, following the plan allows me to make the workflow smoother and more efficient. ',
+      'One thing that I learned during this project is to put myself in the user’s shoes. As a web developer, thinking about how your target audience will use your website is the key. A good website should accomplish its goal to deliver a specific message and also engage more users. Only when we have learnt more about your target users, we can create a website that has the features/design that is more suitable to their needs.',
     ],
   },
   {

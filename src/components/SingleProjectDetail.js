@@ -207,7 +207,9 @@ const SingleProjectDetail = ({ singleProject }) => {
         {singleProject.reflection && (
           <div className="reflection-info">
             <h2>Reflection</h2>
-            <p>{singleProject.reflection}</p>
+            {singleProject.reflection.map((paragraph, i) => {
+              return <p key={i}>{paragraph}</p>;
+            })}
           </div>
         )}
       </SimpleReactLightbox>
