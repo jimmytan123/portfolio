@@ -75,10 +75,10 @@ const PageAbout = () => {
           <div className="skills-cat">
             <h3>Development Skills</h3>
             <ul>
-              <li>JavaScript</li>
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Sass</li>
+              <li>JavaScript</li>
               <li>React</li>
               <li>jQuery</li>
               <li>PHP</li>
@@ -103,8 +103,12 @@ const PageAbout = () => {
       </section>
       <section className="interested-topics">
         <div className="interested-topics-content">
-          <h2>Here are the topics that I am interested in...</h2>
-          <p>
+          <h2>
+            Here are the topics that I am{' '}
+            <mark className="interested-topics-hightlight">interested</mark>{' '}
+            in...
+          </h2>
+          <p className="topics-text">
             <span ref={topicsRef}></span>
           </p>
         </div>

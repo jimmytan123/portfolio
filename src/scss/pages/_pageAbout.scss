@@ -64,9 +64,15 @@
     justify-content: center;
     align-items: center;
 
-    p {
+    .interested-topics-hightlight {
+      background-color: #ff7b00;
+      color: $white;
+      padding: 0 0.2rem;
+    }
+
+    p.topics-text {
       font-size: $medium-font-size;
-      color: #ef233c;
+      color: #ff7b00;
       font-family: $heading-font;
     }
 
@@ -93,7 +99,7 @@
         font-size: $large-font-size;
       }
 
-      p {
+      p.topics-text {
         font-size: $large-font-size;
       }
     }

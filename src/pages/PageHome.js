@@ -20,7 +20,7 @@ const PageHome = () => {
       transition={{ ease: 'easeInOut', duration: 0.3 }}
     >
       <Helmet>
-        <title>Jimmy Tan | Portfolio</title>
+        <title>Jimmy Tan | Web Developer</title>
         <meta
           name="description"
           content="A portfolio site built in React by Jimmy Tan, a Front-End Developer based in Vancouver, BC, Canada. He has hands-on experience building websites from scratch, with a mobile-first approach. He likes React, JavaScript, HTML, CSS."
