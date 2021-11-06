@@ -243,7 +243,8 @@ export const rawProjectData = [
     ],
     reflection: [
       'This portfolio project gave me an opportunity to try out new skills and get familiar with React during the process. It also let me realize how React components are useful when building templates to serve project data. I spent a lot of time planning before the design and development phase. Breaking down the project into small pieces, following the plan allows me to make the workflow smoother and more efficient. ',
-      'One thing that I learned during this project is to put myself in the user’s shoes. As a web developer, thinking about how your target audience will use your website is the key. A good website should accomplish its goal to deliver a specific message and also engage more users. Only when we have learnt more about your target users, we can create a website that has the features/design that is more suitable to their needs.',
+      'One thing that I learned during this project is to put myself in the user’s shoes. Only when we have learnt more about the target users, we can create a website that has the features/design that is more suitable to their needs. I initially think of putting my contact information as an individual page, but I decided to put it as a section to locate at the end of every page based on user experience consideration. ',
+      'In the middle of the development phase, I realized React, as a single-page application, has limited capabilities of improving SEO. Although I  have used React Helmet to get around the issue, I think using a static site generator such as Gatsby to build a portfolio site will be a more SEO-friendly solution. I am going to learn Gatsby or Next.js to rebuild my portfolio website in the future.',
     ],
   },
   {
