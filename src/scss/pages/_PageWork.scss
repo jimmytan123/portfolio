@@ -15,7 +15,7 @@
     }
 
     p {
-      font-size: $medium-font-size;
+      font-size: $standard-font-size;
       font-family: $heading-font;
       font-weight: 600;
     }
@@ -79,6 +79,10 @@
 
   @media all and (min-width: 425px) {
     .projects-intro {
+      p {
+        font-size: $medium-font-size;
+      }
+
       .sort-btns-group {
         flex-direction: row;
         @include margin-center;
