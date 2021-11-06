@@ -19,6 +19,7 @@
   img {
     display: block;
     width: 100%;
+    margin: 0 auto;
     max-width: 650px;
 
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
@@ -69,6 +70,13 @@
     margin-top: $double-spacing;
   }
 
+  // switch thumbnail img and text position (text->left, img->right) for even thumbnail projects
+  &:nth-of-type(2n) {
+    .thumbnail-text {
+      order: -1;
+    }
+  }
+
   @media all and (min-width: $breakpoint-mobile) {
     padding: 3rem $double-spacing;
   }
@@ -80,8 +88,12 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      max-width: 1500px;
+      max-width: 1200px;
       margin: 0 auto;
+    }
+
+    img {
+      max-width: 550px;
     }
 
     h2 {
@@ -103,15 +115,19 @@
       font-size: 2.5rem;
     }
   }
-}
 
-// change img and text position (text left, img right) for even thumbnail projects
-.project-thumbnail:nth-of-type(2n) {
-  .thumbnail-text {
-    order: -1;
+  @media all and (min-width: $breakpoint-desktop-lg) {
+    .thumbnail-wrapper {
+      max-width: 1300px;
+    }
+
+    img {
+      max-width: 600px;
+    }
   }
 }
 
+// ***** ------ CUSTOM STYLING BASED ON PROJECT ------ *****
 // styling specific for project MovieWave thumbnail
 .project-thumbnail-moviewave {
   background-color: #0f182b;
