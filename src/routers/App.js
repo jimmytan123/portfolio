@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; //React Router V6
 import { HelmetProvider } from 'react-helmet-async';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -10,6 +10,7 @@ import PageHome from '../pages/PageHome';
 import PageAbout from '../pages/PageAbout';
 import PageWork from '../pages/PageWork';
 import PageSingleProject from '../pages/PageSingleProject';
+import PageNoMatch from '../pages/PageNoMatch';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 
@@ -31,32 +32,22 @@ function App() {
 
   return (
     <HelmetProvider>
-      <Router>
+      <BrowserRouter>
         <div className="site-wrapper">
           <ScrollToTop />
           <Header />
           <main>
-            <Switch>
-              <Route path="/" exact>
-                <PageHome />
-              </Route>
-              <Route path="/about">
-                <PageAbout />
-              </Route>
-              <Route path="/work">
-                <PageWork />
-              </Route>
-              <Route path="/project-:id">
-                <PageSingleProject />
-              </Route>
-              <Route path="*">
-                <PageHome />
-              </Route>
-            </Switch>
+            <Routes>
+              <Route path="/" element={<PageHome />} />
+              <Route path="/about" element={<PageAbout />} />
+              <Route path="/work" element={<PageWork />} />
+              <Route path="/project-:id" element={<PageSingleProject />} />
+              <Route path="*" element={<PageNoMatch />} />
+            </Routes>
           </main>
           <Footer />
         </div>
-      </Router>
+      </BrowserRouter>
     </HelmetProvider>
   );
 }
