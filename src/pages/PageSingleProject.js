@@ -14,7 +14,7 @@ const PageSingleProject = () => {
   const [singleProject, setSingleProject] = useState(null);
 
   // fetch rawProjectData and search for the single project item based on id
-  // update the state
+  // update the singleProject state
   useEffect(() => {
     const project = rawProjectData.filter(
       (project) => project.id === id && project.moreInfo === true
@@ -25,20 +25,20 @@ const PageSingleProject = () => {
   // function to return the id of the next project that has a single page(moreInfo = true)
   const getNextProjectId = () => {
     // get an array only contains the projects that has more info(single project page)
-    const projectHasMoreInfo = rawProjectData.filter(
+    const projectsHasMoreInfo = rawProjectData.filter(
       (project) => project.moreInfo === true
     );
 
-    // get the current project index in the array projectHasMoreInfo
-    const currentProjectIndex = projectHasMoreInfo.findIndex((oneProject) => {
+    // get the current project index in the array projectsHasMoreInfo
+    const currentProjectIndex = projectsHasMoreInfo.findIndex((oneProject) => {
       return oneProject.id === id;
     });
 
-    // if the current project is the last project in the array projectHasMoreInfo, next project will be the first project in the array
-    if (currentProjectIndex + 1 === projectHasMoreInfo.length) {
-      return projectHasMoreInfo[0].id;
+    // if the current project is the last project in the array projectsHasMoreInfo, next project will be the first project in the array
+    if (currentProjectIndex + 1 === projectsHasMoreInfo.length) {
+      return projectsHasMoreInfo[0].id;
     } else {
-      return projectHasMoreInfo[currentProjectIndex + 1].id;
+      return projectsHasMoreInfo[currentProjectIndex + 1].id;
     }
   };
 

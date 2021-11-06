@@ -1,11 +1,13 @@
 import { useState } from 'react';
 
-const SortButtonGroup = ({ buttons, handleChangeCategory }) => {
+const FilterButtonGroup = ({ buttons, setFilter }) => {
+  // set default active button class when first load
+  // when filter button is clicked, set active class to that button
   const [clickedId, setClickedId] = useState(0);
 
   const handleOnClick = (index, button) => {
     setClickedId(index);
-    handleChangeCategory(button.slug);
+    setFilter(button.slug);
   };
 
   return (
@@ -28,4 +30,4 @@ const SortButtonGroup = ({ buttons, handleChangeCategory }) => {
   );
 };
 
-export default SortButtonGroup;
+export default FilterButtonGroup;

@@ -216,7 +216,7 @@ export const rawProjectData = [
       {
         title: 'Project Filter',
         description: [
-          'The project filter helps to organize the projects into categories, which makes the users view the projects that they are interested in easier. To make the filter feature works, it needs to use React useState hook, event listeners and array filtering techniques.',
+          'The project filter helps to organize the projects into categories, which makes the users view the projects that they are interested in easier. The filter feature needs to use React useState hook, event listeners, and array filtering techniques. I also used React state to determine the default filter.',
         ],
         img: portfolioProjectFilter,
       },

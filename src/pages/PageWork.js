@@ -1,20 +1,27 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import Contact from '../components/Contact';
 import Thumbnail from '../components/Thumbnail';
-import SortButtonGroup from '../components/SortButtonGroup';
+import FilterButtonGroup from '../components/FilterButtonGroup';
 import { rawProjectData } from '../data/rawProjectData';
 import { downArrow } from '../globals/icon';
 
 import { Flipper, Flipped } from 'react-flip-toolkit';
 
 const PageWork = () => {
-  // State to track projectData that is coming from rawThumbnailData
-  const [projectsData, setProjectsData] = useState(rawProjectData);
+  // state to track project data to render
+  const [projectsData, setProjectsData] = useState(null);
 
-  // function for handle click event for filter buttons
-  // updating state projectData based on chosen filter
+  // state to track filter, initially is showing all projects
+  const [filter, setFilter] = useState('all');
+
+  // useEffect to update project data, running when first load and filter changes
+  useEffect(() => {
+    handleChangeCategory(filter);
+  }, [filter]);
+
+  // function for handling click event for filter buttons and updating state projectData based on chosen filter
   const handleChangeCategory = (selectedCat) => {
     if (selectedCat === 'all') {
       setProjectsData(rawProjectData);
@@ -25,6 +32,7 @@ const PageWork = () => {
     }
   };
 
+  // for scroll to down button
   const elementRef = useRef(null);
   const executeScroll = () =>
     elementRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -51,8 +59,8 @@ const PageWork = () => {
           Stay tune for more...
         </p>
         <div className="sort-btns-group">
-          <SortButtonGroup
-            handleChangeCategory={handleChangeCategory}
+          <FilterButtonGroup
+            setFilter={setFilter}
             buttons={[
               { name: 'All Projects', slug: 'all' },
               { name: 'Featured Projects', slug: 'featured' },
@@ -65,9 +73,10 @@ const PageWork = () => {
         </button>
       </section>
       {projectsData && (
-        // animation for project lists when switching categories(state changes and data changes)
-        // Stiffness of the spring. Higher values will create more sudden movement.
-        // Damping, strength of opposing force. If set to 0, spring will oscillate indefinitely.
+        // Flipper & Flipped - animation for project lists when switching categories(state changes and data changes)
+        // flipKey - data to be tracked
+        // stiffness - Stiffness of the spring. Higher values will create more sudden movement.
+        // damping - Damping, strength of opposing force. If set to 0, spring will oscillate indefinitely.
         <Flipper
           flipKey={projectsData}
           spring={{ stiffness: 125, damping: 20 }}
@@ -93,7 +102,6 @@ const PageWork = () => {
           </Flipped>
         </Flipper>
       )}
-
       <Contact />
     </motion.div>
   );

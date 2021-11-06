@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
 const Thumbnail = ({
+  id,
   title,
   briefDescription,
   tags,
   thumbnailImgUrl,
-  id,
   moreInfo,
   livesite,
   github,
