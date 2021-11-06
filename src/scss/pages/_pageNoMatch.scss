@@ -1,0 +1,29 @@
+@use '../base/variables' as *;
+
+.page-not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $base-spacing;
+  text-align: center;
+  font-family: $heading-font;
+
+  h1 {
+    font-size: $medium-font-size;
+    color: $dark-blue;
+  }
+
+  @media all and (min-width: $breakpoint-mobile) {
+    h1 {
+      font-size: $large-font-size;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .page-not-found-content {
+      max-width: 680px;
+    }
+  }
+}
