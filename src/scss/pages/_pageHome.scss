@@ -72,7 +72,6 @@
       min-height: calc(85vh - 72px);
 
       // for svg background of the landing section
-      background-attachment: fixed;
       background-position: bottom;
 
       .landing-content {
@@ -95,6 +94,9 @@
 
     @media all and (min-width: $breakpoint-desktop) {
       min-height: calc(88vh - 72px);
+
+      // for svg background of the landing section
+      background-attachment: fixed;
     }
   }
 
