@@ -94,7 +94,9 @@
 
     @media all and (min-width: $breakpoint-desktop) {
       min-height: calc(88vh - 72px);
+    }
 
+    @media all and (min-width: 1200px) {
       // for svg background of the landing section
       background-attachment: fixed;
     }
