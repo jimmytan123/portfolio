@@ -49,20 +49,20 @@ const Contact = () => {
           {location.pathname !== '/work' && (
             <div className="btn">
               <div className="side default-side">
-                <Link to="/work">View work</Link>
+                <Link to="/work">View Work</Link>
               </div>
               <div className="side hover-side">
-                <Link to="/work">View work</Link>
+                <Link to="/work">View Work</Link>
               </div>
             </div>
           )}
           <div className="btn">
             <div className="side default-side">
-              <a href={`mailto:${email}`}>Email me</a>
+              <a href={`mailto:${email}`}>Email Me</a>
             </div>
 
             <div className="side hover-side hover-side-email-btn">
-              <a href={`mailto:${email}`}>Email me</a>
+              <a href={`mailto:${email}`}>Email Me</a>
             </div>
           </div>
         </div>

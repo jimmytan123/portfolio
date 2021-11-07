@@ -56,7 +56,7 @@
       transition: border-color 0.3s ease-in-out;
 
       &.more-info {
-        border-bottom: 4px solid #ef233c;
+        border-color: $orange;
       }
 
       &:hover,
@@ -156,7 +156,7 @@
 
       &:hover,
       &:focus {
-        border-color: #ff983d;
+        border-color: #ef233c;
       }
     }
   }

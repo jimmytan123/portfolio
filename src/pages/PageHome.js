@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { FaCode, FaPaintBrush } from 'react-icons/fa';
 import { ReactComponent as LaptopCode } from '../globals/logos/laptop-code.svg';
 import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
@@ -48,38 +47,21 @@ const PageHome = () => {
           {downArrow}
         </button>
       </section>
-      <section ref={elementRef} className="background">
+      <section ref={elementRef} className="brief-intro">
         <div className="text">
-          <h2>Front-End Developer</h2>
+          <h2>One Pixel at a Time</h2>
           <p>
             A self-motivated front-end developer with{' '}
             <Link className="link-to-work" to="/work">
-              <mark>hands-on project experience</mark>
+              <span>hands-on project experiences</span>
             </Link>{' '}
             designing and building websites from scratch. My goal is to build
             websites with both visually appealing and user experience-oriented
             functionality.
             <Link className="link-to-about" to="/about">
-              <mark>More about me.</mark>
+              <span> More about me.</span>
             </Link>
           </p>
-          <div className="grid">
-            <h3>Things I Love</h3>
-            <div className="card">
-              <FaCode className="code-icon" title="Code icon" />
-              <p>
-                I enjoy front-end development and love to work with React JS,
-                HTML5, CSS3/Sass and modern JavaScript.
-              </p>
-            </div>
-            <div className="card">
-              <FaPaintBrush className="brush-icon" title="Design brush icon" />
-              <p>
-                I also like being part of the design creative process and I have
-                been working on web design using Adobe Creative Cloud.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
       <Contact />

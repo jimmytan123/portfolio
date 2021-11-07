@@ -155,54 +155,43 @@
     }
   }
 
-  // for background section on Page Home
-  .background {
+  // for brief-intro section on Page Home
+  .brief-intro {
     background-color: $light-grey;
+
+    min-height: 380px;
+    @include flex-layout-column-center;
 
     .link-to-about,
     .link-to-work {
-      mark {
-        padding: 0.1rem 0.2rem;
-        margin-left: 3px;
-        background-color: $dark-blue;
-        color: $white;
+      span {
+        padding-bottom: 0.1rem;
+        border-bottom: 5px solid $orange;
+        transition: border-color 0.35s ease-in-out;
+
+        &:hover {
+          border-color: red;
+        }
       }
     }
 
     h2 {
-      margin: $base-spacing 0;
+      margin: $base-spacing 0 0 0;
       text-align: center;
-      // color: $white;
       font-size: $large-font-size;
+
+      &::after {
+        content: '.';
+        color: $dark-blue;
+      }
     }
 
     .text {
       max-width: 1000px;
       padding: $base-spacing $double-spacing;
       margin: 0 auto;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      h3 {
-        grid-column: 1/2;
-        text-align: center;
-        font-size: $medium-font-size;
-      }
-
-      svg {
-        font-size: 2.5rem;
-      }
-
-      .card {
-        text-align: center;
-
-        p {
-          text-align: left;
-        }
-      }
+      font-size: $standard-font-size;
+      line-height: 2;
     }
 
     .code-icon {
@@ -217,19 +206,9 @@
       h2 {
         font-size: 2.5rem;
       }
-    }
 
-    @media all and (min-width: $breakpoint-mobile) {
-      .grid {
-        grid-template-columns: 1fr 1fr;
-
-        h3 {
-          grid-column: 1/3;
-        }
-
-        .card {
-          margin: 0 $base-spacing;
-        }
+      .text {
+        font-size: 1.3rem;
       }
     }
 
