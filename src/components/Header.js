@@ -26,6 +26,12 @@ const Header = () => {
     return () => mediaQuery.removeEventListener('change', isDesktop);
   }, []);
 
+  // prevent scroll when mobile nav is open
+  useEffect(
+    () => (document.body.style.overflow = navOpen ? 'hidden' : 'unset'),
+    [navOpen]
+  );
+
   return (
     <header className={navOpen ? 'active' : undefined}>
       <div className="top-bar">
