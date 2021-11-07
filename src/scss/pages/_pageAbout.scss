@@ -65,14 +65,14 @@
     align-items: center;
 
     .interested-topics-hightlight {
-      background-color: #ff7b00;
+      background-color: $orange;
       color: $white;
       padding: 0 0.2rem;
     }
 
     p.topics-text {
       font-size: $medium-font-size;
-      color: #ff7b00;
+      color: $orange;
       font-family: $heading-font;
     }
 

@@ -35,7 +35,6 @@
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
     transform: translateZ(-30px);
-    // margin: $medium-spacing auto $base-spacing auto;
     margin: $base-spacing;
 
     .side {
@@ -53,7 +52,7 @@
     }
 
     .default-side {
-      background-color: #3aafa9;
+      background-color: $orange;
       border: 5px solid $white;
       transform: translateZ(30px);
 
@@ -76,10 +75,6 @@
 
     &:hover {
       transform: rotateX(-90deg) translateY(30px);
-    }
-
-    .hover-side-email-btn {
-      background-color: #fca311;
     }
   }
 

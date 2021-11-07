@@ -158,10 +158,10 @@
     .link-to-about,
     .link-to-work {
       mark {
-        padding: 0 0.2rem;
+        padding: 0.1rem 0.2rem;
         margin-left: 3px;
-        background-color: #fca311;
-        color: $dark-grey;
+        background-color: $dark-blue;
+        color: $white;
       }
     }
 
@@ -206,7 +206,7 @@
     }
 
     .brush-icon {
-      fill: #fca311;
+      fill: $orange;
     }
 
     @media all and (min-width: 450px) {
