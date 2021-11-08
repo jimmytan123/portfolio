@@ -39,8 +39,8 @@
 
   .overview-wrapper {
     padding: 0 $base-spacing;
-    // max-width: 1000px;
-    max-width: 850px;
+    //max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -68,8 +68,8 @@
 
   .info-grid {
     padding: 0 $base-spacing;
-    // max-width: 1000px;
-    max-width: 850px;
+    //max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
 
     h3 {
@@ -79,8 +79,8 @@
 
   .planning-info {
     padding: 0 $base-spacing;
-    // max-width: 1000px;
-    max-width: 850px;
+    //max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
 
     .planning-block {
@@ -95,8 +95,8 @@
 
   .design-info {
     padding: 0 $base-spacing;
-    // max-width: 1000px;
-    max-width: 850px;
+    //max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
 
     .design-block {
@@ -115,8 +115,8 @@
 
   .development-info {
     padding: 0 $base-spacing;
-    // max-width: 1000px;
-    max-width: 850px;
+    //max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
 
     .development-block {
@@ -130,7 +130,7 @@
   }
 
   img.block-img {
-    max-width: 600px;
+    max-width: 650px;
     display: block;
     margin: $medium-spacing auto;
     width: 100%;
@@ -138,8 +138,8 @@
 
   .reflection-info {
     padding: 0 $base-spacing;
-    // max-width: 1000px;
-    max-width: 850px;
+    //max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -188,5 +188,9 @@
     .info-grid {
       grid-template-columns: repeat(4, 1fr);
     }
+  }
+
+  @media all and (min-width: $breakpoint-desktop) {
+    
   }
 }
