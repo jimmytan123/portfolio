@@ -46,8 +46,8 @@ const PageAbout = () => {
       </Helmet>
       <section className="about-content">
         <div className="about-text">
-          <h1>About Me.</h1>
-          <p>
+          <h1 data-aos="fade-up">About Me.</h1>
+          <p data-aos="fade-up" data-aos-delay="50">
             My training and hands-on projects experience at{' '}
             <abbr title="British Columbia Institute of Technology">BCIT</abbr>{' '}
             Front-End Web Developer Program, have allowed me to further develop
@@ -56,20 +56,20 @@ const PageAbout = () => {
             web design, I mostly enjoy working with React JS, HTML5, CSS3,
             JavaScript and Adobe XD.
           </p>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="100">
             Graduated with a Bachelor of Science Statistics major in University
             of Victoria and gained a few years of working experience, I have
             developed a detail-oriented mindset, creative problem-solving skills
             and strong logical thinking ability.
           </p>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="150">
             In addition to web development, one of my greatest interests is
             landscape photography. I enjoy the process of slowing down and
             capturing the point of aesthetics.
           </p>
         </div>
       </section>
-      <section className="skills">
+      <section className="skills" data-aos="fade-up" data-aos-delay="200">
         <div className="skills-flex">
           <div className="skills-cat">
             <h3>Development Skills</h3>

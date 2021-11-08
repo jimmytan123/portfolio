@@ -251,7 +251,7 @@ export const rawProjectData = [
     id: 'codeBreaker',
     title: 'Code Breaker',
     briefDescription:
-      'A browser based code guessing game using jQuery, JavaScript and object-oriented programming principles. Comes with mode selection, countdown timer and star rating features.',
+      'A browser-based code guessing game using jQuery, JavaScript and object-oriented programming principles. Comes with difficulty level selection, countdown timer and star rating features.',
     tags: ['jQuery', 'JavaScript', 'HTML5', 'CSS', 'BootStrap'],
     thumbnailImgUrl: codeBreakerThumbImg,
     livesite: 'https://ztan.ca/code-breaker/',
