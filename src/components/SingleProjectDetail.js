@@ -35,8 +35,9 @@ const SingleProjectDetail = ({ singleProject }) => {
         />
       </Helmet>
       <SimpleReactLightbox>
+        {/* banner image */}
         <div className="banner-wrapper">
-          {/* Responsive images  */}
+          {/* Responsive images */}
           <picture>
             <source
               media="(max-width: 499px)"
@@ -52,6 +53,7 @@ const SingleProjectDetail = ({ singleProject }) => {
             />
           </picture>
         </div>
+        {/* basic project info */}
         <div className="single-project-basic-info">
           <h1 data-aos="fade-up">{singleProject.title}</h1>
           <div className="overview-wrapper">
@@ -121,6 +123,7 @@ const SingleProjectDetail = ({ singleProject }) => {
           </div>
         </div>
         <SRLWrapper options={options}>
+          {/* project planning info */}
           {singleProject.planning && (
             <div className="planning-info">
               <h2>Planning</h2>
@@ -145,6 +148,7 @@ const SingleProjectDetail = ({ singleProject }) => {
             </div>
           )}
 
+          {/* project design info */}
           {singleProject.design && (
             <div className="design-info">
               <h2>Design</h2>
@@ -180,17 +184,20 @@ const SingleProjectDetail = ({ singleProject }) => {
             </div>
           )}
 
+          {/* project development info */}
           {singleProject.development && (
             <div className="development-info">
               <h2>Development</h2>
               {singleProject.development.map((devBlock, i) => {
                 return (
                   <div className="development-block" key={i}>
-                    <h3>{devBlock.title}</h3>
-                    {devBlock.description &&
-                      devBlock.description.map((paragraph, i) => {
-                        return <p key={i}>{paragraph}</p>;
-                      })}
+                    <div className="development-block-text">
+                      <h3>{devBlock.title}</h3>
+                      {devBlock.description &&
+                        devBlock.description.map((paragraph, i) => {
+                          return <p key={i}>{paragraph}</p>;
+                        })}
+                    </div>
                     {devBlock.img && (
                       <img
                         className="block-img"
@@ -204,7 +211,9 @@ const SingleProjectDetail = ({ singleProject }) => {
             </div>
           )}
         </SRLWrapper>
+        {/* image slider section */}
         <SingeProjectSlider imgSlider={singleProject.imgSlider} />
+        {/* project reflection info */}
         {singleProject.reflection && (
           <div className="reflection-info">
             <h2>Reflection</h2>

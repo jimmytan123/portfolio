@@ -40,7 +40,8 @@
   .overview-wrapper {
     padding: 0 $base-spacing;
     //max-width: 850px;
-    max-width: 1000px;
+    //max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 
@@ -69,7 +70,8 @@
   .info-grid {
     padding: 0 $base-spacing;
     //max-width: 850px;
-    max-width: 1000px;
+    //max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 
     h3 {
@@ -80,7 +82,8 @@
   .planning-info {
     padding: 0 $base-spacing;
     //max-width: 850px;
-    max-width: 1000px;
+    //max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 
     .planning-block {
@@ -96,7 +99,8 @@
   .design-info {
     padding: 0 $base-spacing;
     //max-width: 850px;
-    max-width: 1000px;
+    //max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 
     .design-block {
@@ -116,7 +120,8 @@
   .development-info {
     padding: 0 $base-spacing;
     //max-width: 850px;
-    max-width: 1000px;
+    //max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 
     .development-block {
@@ -139,7 +144,8 @@
   .reflection-info {
     padding: 0 $base-spacing;
     //max-width: 850px;
-    max-width: 1000px;
+    //max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 
@@ -191,6 +197,25 @@
   }
 
   @media all and (min-width: $breakpoint-desktop) {
-    
+    .development-info {
+      .development-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: $double-spacing 0;
+
+        h3 {
+          margin-top: 0;
+          text-align: left;
+        }
+
+        img {
+          margin: 0;
+          padding: 0 0 0 3rem;
+          max-width: 600px;
+          align-self: flex-start;
+        }
+      }
+    }
   }
 }
