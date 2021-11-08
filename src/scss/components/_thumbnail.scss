@@ -169,19 +169,15 @@
 
 // styling specific for project Code Breaker thumbnail
 .project-thumbnail-codeBreaker {
-  background-color: #e2711d;
+  background-color: #7e674d;
 
-  h2 {
-    color: $white;
-  }
-
-  p {
+  h2,
+  p,
+  li {
     color: $white;
   }
 
   .tools-list {
-    color: $white;
-
     li {
       border-color: $white;
     }
@@ -195,7 +191,7 @@
 
       &:hover,
       &:focus {
-        border-color: #606c38;
+        border-color: #ddb829;
       }
     }
   }

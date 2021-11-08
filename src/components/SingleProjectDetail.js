@@ -163,6 +163,7 @@ const SingleProjectDetail = ({ singleProject }) => {
                             key={i}
                             url={oneUrl.link}
                             name={`View ${oneUrl.title}`}
+                            customClass="design-external-link"
                           />
                         );
                       })}

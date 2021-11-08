@@ -57,7 +57,7 @@ const PageAbout = () => {
             JavaScript and Adobe XD.
           </p>
           <p data-aos="fade-up" data-aos-delay="100">
-            Graduated with a Bachelor of Science Statistics major in University
+            Graduated with a Bachelor of Science Statistics major at University
             of Victoria and gained a few years of working experience, I have
             developed a detail-oriented mindset, creative problem-solving skills
             and strong logical thinking ability.

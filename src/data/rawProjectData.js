@@ -183,8 +183,8 @@ export const rawProjectData = [
       {
         title: 'Project Goal & Planning',
         description: [
-          'The goal of the portfolio site project is to demonstrate Jimmy Tan’s web design and development skills. Since I value the content of the portfolio site to be the most important component of the website, the website should demonstrate the content in a clear and user-friendly way. In addition, the website should be easy for me to manage as the project lists may be updated regularly to showcase my latest skills and knowledge.',
-          'After doing research and comparing hard-coded websites, React applications and CMS websites, I decided to build my portfolio by React. Thanks to React’s component-based architecture, I can create reusable components and divide a large app into smaller parts. It is easier for me to add more features to the website and maintain the projects data.',
+          'The goal of the portfolio site project is to demonstrate Jimmy Tan’s web design and development skills. The website should display the content in a clear and user-friendly way since I value the content of this site to be the most important. In addition, the website should be easy for me to manage as the project lists may be updated regularly to showcase my latest skills and knowledge.',
+          'Thanks to React’s component-based architecture, I can create reusable components and divide a large app into smaller parts. It is easier for me to add more features to the website and maintain the projects data.',
           'I also created a content plan, information architecture, wireframe, interactive prototype and style guide to allow me to be well-planned before the development phase.',
         ],
       },
@@ -252,7 +252,7 @@ export const rawProjectData = [
     title: 'Code Breaker',
     briefDescription:
       'A browser-based code guessing game using jQuery, JavaScript and object-oriented programming principles. Comes with difficulty level selection, countdown timer and star rating features.',
-    tags: ['jQuery', 'JavaScript', 'HTML5', 'CSS', 'BootStrap'],
+    tags: ['jQuery', 'JavaScript', 'HTML5', 'CSS3', 'BootStrap'],
     thumbnailImgUrl: codeBreakerThumbImg,
     livesite: 'https://ztan.ca/code-breaker/',
     github: 'https://github.com/jimmytan123/Code-Breaker-Game',
