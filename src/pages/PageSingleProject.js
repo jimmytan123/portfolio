@@ -8,6 +8,7 @@ import Contact from '../components/Contact';
 import { rawProjectData } from '../data/rawProjectData';
 
 const PageSingleProject = () => {
+  // reading the URL parameter
   let { id } = useParams();
 
   // state for single project data
@@ -16,7 +17,8 @@ const PageSingleProject = () => {
   // state for the next project id that has the single page
   const [nextProjectId, setNextProjectId] = useState(null);
 
-  // fetch rawProjectData and search for the single project item based on id
+  // fetch single project data based on id;
+  // get the next project id that has the single page
   useEffect(() => {
     const project = rawProjectData.filter(
       (project) => project.id === id && project.moreInfo === true
@@ -24,10 +26,7 @@ const PageSingleProject = () => {
 
     // update the singleProject state
     setSingleProject(project);
-  }, [id]);
 
-  // useEffect to get the id of the next project that has a single page
-  useEffect(() => {
     // get an array only contains the projects that has more info(single project page)
     const projectsHasMoreInfo = rawProjectData.filter(
       (project) => project.moreInfo === true
@@ -40,10 +39,8 @@ const PageSingleProject = () => {
 
     // if the current project is the last project in the array projectsHasMoreInfo, next project will be the first project in the array
     if (currentProjectIndex + 1 === projectsHasMoreInfo.length) {
-      // update state
       setNextProjectId(projectsHasMoreInfo[0].id);
     } else {
-      // update state
       setNextProjectId(projectsHasMoreInfo[currentProjectIndex + 1].id);
     }
   }, [id]);
