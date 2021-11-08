@@ -10,20 +10,24 @@ import { rawProjectData } from '../data/rawProjectData';
 const PageSingleProject = () => {
   let { id } = useParams();
 
-  // state for single project
+  // state for single project data
   const [singleProject, setSingleProject] = useState(null);
 
+  // state for the next project id that has the single page
+  const [nextProjectId, setNextProjectId] = useState(null);
+
   // fetch rawProjectData and search for the single project item based on id
-  // update the singleProject state
   useEffect(() => {
     const project = rawProjectData.filter(
       (project) => project.id === id && project.moreInfo === true
     )[0];
+
+    // update the singleProject state
     setSingleProject(project);
   }, [id]);
 
-  // function to return the id of the next project that has a single page(moreInfo = true)
-  const getNextProjectId = () => {
+  // useEffect to get the id of the next project that has a single page
+  useEffect(() => {
     // get an array only contains the projects that has more info(single project page)
     const projectsHasMoreInfo = rawProjectData.filter(
       (project) => project.moreInfo === true
@@ -36,11 +40,13 @@ const PageSingleProject = () => {
 
     // if the current project is the last project in the array projectsHasMoreInfo, next project will be the first project in the array
     if (currentProjectIndex + 1 === projectsHasMoreInfo.length) {
-      return projectsHasMoreInfo[0].id;
+      // update state
+      setNextProjectId(projectsHasMoreInfo[0].id);
     } else {
-      return projectsHasMoreInfo[currentProjectIndex + 1].id;
+      // update state
+      setNextProjectId(projectsHasMoreInfo[currentProjectIndex + 1].id);
     }
-  };
+  }, [id]);
 
   return (
     <motion.div
@@ -52,7 +58,7 @@ const PageSingleProject = () => {
       {singleProject ? (
         <>
           <SingleProjectDetail singleProject={singleProject} />
-          <SingleProjectNav nextProjectId={getNextProjectId()} />
+          <SingleProjectNav nextProjectId={nextProjectId} />
         </>
       ) : (
         <section className="no-project-detail">
