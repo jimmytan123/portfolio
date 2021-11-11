@@ -50,15 +50,28 @@ import portfolioBanner from '../assets/assets-portfolio/portfolio-banner.png';
 import portfolioBannerMobile from '../assets/assets-portfolio/portfolio-banner-mobile.png';
 
 // import slider images for single project page
+
+/* for project MovieWave */
 import moviewaveSlider1 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-1.png';
 import moviewaveSlider2 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-2.png';
 import moviewaveSlider3 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-3.png';
 import moviewaveSlider4 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-4.png';
 import moviewaveSlider5 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-5.png';
 
-//import images for development section in single project page
+/* for project Portfolio */
+import portfolioSlider1 from '../assets/assets-portfolio/portfolio-slider-1.png';
+import portfolioSlider2 from '../assets/assets-portfolio/portfolio-slider-2.png';
+import portfolioSlider3 from '../assets/assets-portfolio/portfolio-slider-3.png';
+import portfolioSlider4 from '../assets/assets-portfolio/portfolio-slider-4.png';
+import portfolioSlider5 from '../assets/assets-portfolio/portfolio-slider-5.png';
+
+//import images for planning/design/development section in single project page
+
+/* for project MovieWave */
 import moviewavePageSelector from '../assets/assets-moviewave/moviewave-page-selector.png';
 import moviewaveSearch from '../assets/assets-moviewave/moviewave-search.png';
+
+/* for project Portfolio */
 import portfolioIA from '../assets/assets-portfolio/portfolio-IA.png';
 import portfolioDataFile from '../assets/assets-portfolio/portfolio-dataFile.png';
 import portfolioProjectFilter from '../assets/assets-portfolio/portfolio-project-filter.png';
@@ -241,6 +254,16 @@ export const rawProjectData = [
         ],
       },
     ],
+    imgSlider: {
+      sliderTitle: 'Site Screenshots',
+      imgs: [
+        portfolioSlider1,
+        portfolioSlider2,
+        portfolioSlider3,
+        portfolioSlider4,
+        portfolioSlider5,
+      ],
+    },
     reflection: [
       'This portfolio project gave me an opportunity to try out new skills and get familiar with React during the process. It also let me realize how React components are useful when building templates to serve project data. I spent a lot of time planning before the design and development phase. Breaking down the project into small pieces, following the plan allows me to make the workflow smoother and more efficient. ',
       'One thing that I learned during this project is to put myself in the user’s shoes. Only when we have learnt more about the target users, we can create a website that has the features/design that is more suitable to their needs. I initially think of putting my contact information as an individual page, but I decided to put it as a section to locate at the end of every page based on user experience consideration. ',

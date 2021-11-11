@@ -18,7 +18,7 @@ const SingeProjectSlider = ({ imgSlider }) => {
               {imgSlider.imgs.map((img, i) => {
                 return (
                   <div key={i}>
-                    <img src={img} alt="screenshots slider" />
+                    <img src={img} alt="screenshots slider" loading="lazy" />
                   </div>
                 );
               })}

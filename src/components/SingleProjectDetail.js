@@ -140,6 +140,7 @@ const SingleProjectDetail = ({ singleProject }) => {
                         className="block-img"
                         src={planningBlock.img}
                         alt={planningBlock.title}
+                        loading="lazy"
                       />
                     )}
                   </div>
@@ -176,6 +177,7 @@ const SingleProjectDetail = ({ singleProject }) => {
                         className="block-img"
                         src={designBlock.img}
                         alt={designBlock.title}
+                        loading="lazy"
                       />
                     )}
                   </div>
@@ -203,6 +205,7 @@ const SingleProjectDetail = ({ singleProject }) => {
                         className="block-img"
                         src={devBlock.img}
                         alt={devBlock.title}
+                        loading="lazy"
                       />
                     )}
                   </div>

@@ -15,7 +15,11 @@ const Thumbnail = ({
       <div className="thumbnail-wrapper" data-aos="fade-left">
         <div className="project-thumbnail-image">
           <a href={livesite} target="_blank" rel="noreferrer">
-            <img src={thumbnailImgUrl} alt={`${title} Thumbnail`} />
+            <img
+              src={thumbnailImgUrl}
+              alt={`${title} Thumbnail`}
+              loading="lazy"
+            />
           </a>
         </div>
         <div className="thumbnail-text">
