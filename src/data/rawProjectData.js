@@ -41,7 +41,8 @@ import moviewaveThumbImg from '../assets/assets-moviewave/moviewave-thumbnail.pn
 import portfolioThumbImg from '../assets/assets-portfolio/portfolio-thumbnail.png';
 import codeBreakerThumbImg from '../assets/assets-codeBreaker/codeBreaker-thumbnail.png';
 import weatherAppThumbImg from '../assets/assets-weather-app/weatherApp-thumbnail.png';
-import galleryThumbImg from '../assets/assets-gallery/gallery-thumbnail.png';
+//import galleryThumbImg from '../assets/assets-gallery/gallery-thumbnail.png';
+import tranquilTofinoCabinsThumbImg from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-thumbnail.png';
 
 // import banner images for single project page
 import moviewaveBanner from '../assets/assets-moviewave/moviewave-banner.png';
@@ -76,6 +77,9 @@ import portfolioIA from '../assets/assets-portfolio/portfolio-IA.png';
 import portfolioDataFile from '../assets/assets-portfolio/portfolio-dataFile.png';
 import portfolioProjectFilter from '../assets/assets-portfolio/portfolio-project-filter.png';
 import portfolioResponsiveImg from '../assets/assets-portfolio/portfolio-responsiveImg.png';
+
+/* for project Tranquil Tofino Cabins */
+import tranquilTofinoCabinsTrello from '../assets/assets-tranquil-tofino-cabins/tranquilTofinoCabinsTrello.png';
 
 export const rawProjectData = [
   {
@@ -174,6 +178,79 @@ export const rawProjectData = [
     ],
   },
   {
+    id: 'tranquil-tofino-cabins',
+    title: 'Tranquil Tofino Cabins',
+    briefDescription:
+      'A fully customized cabin rental business website that comes with an online booking feature. The site was developed using WordPress and WooCommerce plugins in a collaborative team.',
+    tags: ['WordPress', 'WooCommerce', 'PHP', 'HTML5', 'Sass'],
+    thumbnailImgUrl: tranquilTofinoCabinsThumbImg,
+    livesite: '/',
+    // github: '#',
+    category: 'featured',
+    moreInfo: true,
+    bannerImgUrl: tranquilTofinoCabinsThumbImg,
+    // bannerImgMobileUrl: ,
+    overview:
+      'Tranquil Tofino Cabins is an e-commerce website project for the cabin rental business. This is a collaborative project that was designed and developed from scratch with 3 other team members. We built a fully custom WordPress theme based on the starter theme Underscores. The project involves project management principles, UI/UX design, content planning and customized WordPress development with the WooCommerce plugin. I mainly focused on WordPress development such as creating the development plan with one of my team members, modifying template files and plugin files, using hooks to control the content output.',
+    duration: '5 Weeks',
+    team: ['Jimmy Tan', 'John Maguss', 'Patrick Neil', 'Vivi Zeng'],
+    roles: ['Content Planning', 'WordPress Development', 'Styling'],
+    stack: [
+      'WordPress',
+      'WooCommerce',
+      'PHP',
+      'HTML5',
+      'JavaScript',
+      'Sass',
+      'Figma',
+      'GitHub',
+      'Trello',
+    ],
+    planning: [
+      {
+        title: 'Project Goal & Planning',
+        description: [
+          'The goal for this project was to help our fictional client to build a cabin rental website that has online booking functionality. Our team started by reviewing the project brief then researched some cabin rentals website competitors to gain inspiration for design and features. We summarized our findings and prepared questions for the client. We then had a discovery meeting with our fictional client and created a memo of understanding after the meeting.',
+          'From there, we began to create a content plan and information architecture for the site. The planning process will guide the design and development of the website.',
+          'Due to Covid-19, we had to do the project remotely. In order to manage our project efficiently, our team lead set up a Trello workspace and we used its task boards to update our to-dos and current status. We also utilized Slack, Zoom to communicate effectively on a daily basis. We used GitHub to share files that we edited and used Google Drive to store assets.',
+        ],
+      },
+      {
+        title: 'Project Management Using Trello',
+        img: tranquilTofinoCabinsTrello,
+      },
+    ],
+    design: [
+      {
+        title: 'Theme & Wireframe',
+        description: [
+          'The design of this site is to convey relaxation. The primary colour for the website will be dark green to express the feeling of relaxation and also represents the natural beauty of Tofino, BC.',
+        ],
+        designURL: [
+          {
+            title: 'Wireframe',
+            link: 'https://www.figma.com/file/2GVwycuVmxJLLopxLScpid/Tranquil-Tofino-Cabin-Wireframes?node-id=0%3A1',
+          },
+        ],
+      },
+    ],
+    development: [
+      {
+        title: 'Booking Feature',
+        description: [
+          "We used the WooCommerce plugins and adjust the booking settings according to our clients' requirements. The booking feature allows users to select the bookable dates, create an account and checkout.",
+        ],
+      },
+      {
+        title: 'Customized Theme',
+        description: [
+          'We started with configuring the backend of WordPress then dived into template and plugin files. To have better control of the content, we created custom fields using the ACF(Advanced Custom Fields) plugin and output the content of the fields using appropriate template files.',
+          'We also used action hooks and filter hooks to organize the content to position it in the way we want based on the wireframes. We made sure our clients can easily update the content on their own and display them properly without touching the template files.',
+        ],
+      },
+    ],
+  },
+  {
     id: 'portfolio',
     title: 'Portfolio Site',
     briefDescription:
@@ -181,14 +258,14 @@ export const rawProjectData = [
     tags: ['React', 'HTML5', 'Sass'],
     thumbnailImgUrl: portfolioThumbImg,
     livesite: 'https://ztan.ca/',
-    github: '#',
+    // github: '#',
     category: 'featured',
     moreInfo: true,
     bannerImgUrl: portfolioBanner,
     bannerImgMobileUrl: portfolioBannerMobile,
     overview:
       "A portfolio website that was designed and developed as a platform to showcase my design and development skills as a front-end developer. As I want my portfolio to be more manageable, I decided to build my portfolio using React since I can update my projects easier with React's reusable components.",
-    duration: '4 Weeks',
+    duration: '5 Weeks',
     team: ['Jimmy Tan'],
     roles: ['UI/UX Design', 'Front-End Development'],
     stack: ['React', 'HTML5', 'Sass', 'GitHub', 'Adobe XD', 'Figma', 'SEO'],
@@ -294,15 +371,15 @@ export const rawProjectData = [
     category: 'fun',
     moreInfo: false,
   },
-  {
-    id: 'gallery',
-    title: 'Gallery',
-    briefDescription:
-      'A responsive masonry gallery that showcases my interests in landscape photography. All the images can be uploaded from local devices via the site.',
-    tags: ['ReactJS', 'Sass', 'Firebase'],
-    thumbnailImgUrl: galleryThumbImg,
-    livesite: 'https://ztan.ca/gallery/',
-    category: 'fun',
-    moreInfo: false,
-  },
+  // {
+  //   id: 'gallery',
+  //   title: 'Gallery',
+  //   briefDescription:
+  //     'A responsive masonry gallery that showcases my interests in landscape photography. All the images can be uploaded from local devices via the site.',
+  //   tags: ['ReactJS', 'Sass', 'Firebase'],
+  //   thumbnailImgUrl: galleryThumbImg,
+  //   livesite: 'https://ztan.ca/gallery/',
+  //   category: 'fun',
+  //   moreInfo: false,
+  // },
 ];

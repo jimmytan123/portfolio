@@ -1,13 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
+import { Flipper, Flipped } from 'react-flip-toolkit';
 import Contact from '../components/Contact';
 import Thumbnail from '../components/Thumbnail';
 import FilterButtonGroup from '../components/FilterButtonGroup';
 import { rawProjectData } from '../data/rawProjectData';
 import { downArrow } from '../globals/icon';
-
-import { Flipper, Flipped } from 'react-flip-toolkit';
 
 const PageWork = () => {
   // state to track project data to render
