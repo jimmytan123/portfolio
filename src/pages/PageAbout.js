@@ -48,7 +48,8 @@ const PageAbout = () => {
         <div className="about-text">
           <h1 data-aos="fade-up">About Me.</h1>
           <p data-aos="fade-up" data-aos-delay="50">
-            My training and hands-on projects experience at{' '}
+            I'm Jimmy(Zhixi) Tan. My training and hands-on projects experience
+            at{' '}
             <abbr title="British Columbia Institute of Technology">BCIT</abbr>{' '}
             Front-End Web Developer Program, have allowed me to further develop
             my passion and skillsets in web development industry. With solid
