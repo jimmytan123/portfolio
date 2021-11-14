@@ -258,7 +258,7 @@ export const rawProjectData = [
     tags: ['React', 'HTML5', 'Sass'],
     thumbnailImgUrl: portfolioThumbImg,
     livesite: 'https://ztan.ca/',
-    // github: '#',
+    github: 'https://github.com/jimmytan123/portfolio',
     category: 'featured',
     moreInfo: true,
     bannerImgUrl: portfolioBanner,
