@@ -86,7 +86,7 @@ export const rawProjectData = [
     id: 'moviewave',
     title: 'MovieWave',
     briefDescription:
-      'A dynamic web app for users to browsing, searching and bookmarking movies.',
+      'A dynamic web app for users to browse, search and bookmark movies.',
     tags: ['React', 'HTML5', 'Sass', 'REST API', 'GitHub'],
     thumbnailImgUrl: moviewaveThumbImg,
     livesite: 'https://ztan.ca/moviewave/',

@@ -52,7 +52,7 @@ const PageAbout = () => {
             at{' '}
             <abbr title="British Columbia Institute of Technology">BCIT</abbr>{' '}
             Front-End Web Developer Program, have allowed me to further develop
-            my passion and skillsets in web development industry. With solid
+            my passion and skillsets in the web development industry. With solid
             fundamentals in various front-end programming languages as well as
             web design, I mostly enjoy working with React JS, HTML5, CSS3,
             JavaScript and Adobe XD.
