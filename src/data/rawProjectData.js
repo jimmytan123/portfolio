@@ -49,6 +49,8 @@ import moviewaveBanner from '../assets/assets-moviewave/moviewave-banner.png';
 import moviewaveBannerMobile from '../assets/assets-moviewave/moviewave-banner-mobile.png';
 import portfolioBanner from '../assets/assets-portfolio/portfolio-banner.png';
 import portfolioBannerMobile from '../assets/assets-portfolio/portfolio-banner-mobile.png';
+import tranquilTofinoCabinsBanner from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-banner.png';
+import tranquilTofinoCabinsBannerMobile from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-banner-mobile.png';
 
 // import slider images for single project page
 
@@ -184,12 +186,12 @@ export const rawProjectData = [
       'A fully customized cabin rental business website that comes with an online booking feature. The site was developed using WordPress and WooCommerce plugins in a collaborative team.',
     tags: ['WordPress', 'WooCommerce', 'PHP', 'HTML5', 'Sass'],
     thumbnailImgUrl: tranquilTofinoCabinsThumbImg,
-    //livesite: '/',
+    livesite: 'https://tranquiltofino.bcitwebdeveloper.ca/',
     //github: '#',
     category: 'featured',
     moreInfo: true,
-    bannerImgUrl: tranquilTofinoCabinsThumbImg,
-    // bannerImgMobileUrl: ,
+    bannerImgUrl: tranquilTofinoCabinsBanner,
+    bannerImgMobileUrl: tranquilTofinoCabinsBannerMobile,
     overview:
       'Tranquil Tofino Cabins is an e-commerce website project for the cabin rental business. This is a collaborative project that was designed and developed from scratch with 3 other team members. We built a fully custom WordPress theme based on the starter theme Underscores. The project involves project management principles, UI/UX design, content planning and customized WordPress development with the WooCommerce plugin. I mainly focused on WordPress development such as creating the development plan with one of my team members, modifying template files and plugin files, using hooks to control the content output.',
     duration: '5 Weeks',
