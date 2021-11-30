@@ -218,12 +218,12 @@ const SingleProjectDetail = ({ singleProject }) => {
         <SingeProjectSlider imgSlider={singleProject.imgSlider} />
         {/* project reflection info */}
         {singleProject.reflection && (
-          <div className="reflection-info">
+          <article className="reflection-info">
             <h2>Reflection</h2>
             {singleProject.reflection.map((paragraph, i) => {
               return <p key={i}>{paragraph}</p>;
             })}
-          </div>
+          </article>
         )}
       </SimpleReactLightbox>
     </section>

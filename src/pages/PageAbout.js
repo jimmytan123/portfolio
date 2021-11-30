@@ -45,7 +45,7 @@ const PageAbout = () => {
         />
       </Helmet>
       <section className="about-content">
-        <div className="about-text">
+        <article className="about-text">
           <h1 data-aos="fade-up">About Me.</h1>
           <p data-aos="fade-up" data-aos-delay="50">
             I'm Jimmy(Zhixi) Tan. My training and hands-on projects experience
@@ -68,7 +68,7 @@ const PageAbout = () => {
             landscape photography. I enjoy the process of slowing down and
             capturing the point of aesthetics.
           </p>
-        </div>
+        </article>
       </section>
       <section className="skills" data-aos="fade-up" data-aos-delay="200">
         <div className="skills-flex">

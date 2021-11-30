@@ -41,7 +41,7 @@ import moviewaveThumbImg from '../assets/assets-moviewave/moviewave-thumbnail.pn
 import portfolioThumbImg from '../assets/assets-portfolio/portfolio-thumbnail.png';
 import codeBreakerThumbImg from '../assets/assets-codeBreaker/codeBreaker-thumbnail.png';
 import weatherAppThumbImg from '../assets/assets-weather-app/weatherApp-thumbnail.png';
-//import galleryThumbImg from '../assets/assets-gallery/gallery-thumbnail.png';
+import galleryThumbImg from '../assets/assets-gallery/gallery-thumbnail.png';
 import tranquilTofinoCabinsThumbImg from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-thumbnail.png';
 
 // import banner images for single project page
@@ -52,9 +52,11 @@ import portfolioBannerMobile from '../assets/assets-portfolio/portfolio-banner-m
 import tranquilTofinoCabinsBanner from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-banner.png';
 import tranquilTofinoCabinsBannerMobile from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-banner-mobile.png';
 
-// import slider images for single project page
+//import images for planning/design/development/slider section in single project page
 
 /* for project MovieWave */
+import moviewavePageSelector from '../assets/assets-moviewave/moviewave-page-selector.png';
+import moviewaveSearch from '../assets/assets-moviewave/moviewave-search.png';
 import moviewaveSlider1 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-1.png';
 import moviewaveSlider2 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-2.png';
 import moviewaveSlider3 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-3.png';
@@ -62,26 +64,25 @@ import moviewaveSlider4 from '../assets/assets-moviewave/moviewave-slider/moview
 import moviewaveSlider5 from '../assets/assets-moviewave/moviewave-slider/moviewave-slider-5.png';
 
 /* for project Portfolio */
+import portfolioIA from '../assets/assets-portfolio/portfolio-IA.png';
+import portfolioDataFile from '../assets/assets-portfolio/portfolio-dataFile.png';
+import portfolioProjectFilter from '../assets/assets-portfolio/portfolio-project-filter.png';
+import portfolioResponsiveImg from '../assets/assets-portfolio/portfolio-responsiveImg.png';
 import portfolioSlider1 from '../assets/assets-portfolio/portfolio-slider-1.png';
 import portfolioSlider2 from '../assets/assets-portfolio/portfolio-slider-2.png';
 import portfolioSlider3 from '../assets/assets-portfolio/portfolio-slider-3.png';
 import portfolioSlider4 from '../assets/assets-portfolio/portfolio-slider-4.png';
 import portfolioSlider5 from '../assets/assets-portfolio/portfolio-slider-5.png';
 
-//import images for planning/design/development section in single project page
-
-/* for project MovieWave */
-import moviewavePageSelector from '../assets/assets-moviewave/moviewave-page-selector.png';
-import moviewaveSearch from '../assets/assets-moviewave/moviewave-search.png';
-
-/* for project Portfolio */
-import portfolioIA from '../assets/assets-portfolio/portfolio-IA.png';
-import portfolioDataFile from '../assets/assets-portfolio/portfolio-dataFile.png';
-import portfolioProjectFilter from '../assets/assets-portfolio/portfolio-project-filter.png';
-import portfolioResponsiveImg from '../assets/assets-portfolio/portfolio-responsiveImg.png';
-
 /* for project Tranquil Tofino Cabins */
 import tranquilTofinoCabinsTrello from '../assets/assets-tranquil-tofino-cabins/tranquilTofinoCabinsTrello.png';
+import tranquilTofinoCabinsBookings from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-bookings.png';
+import tranquilTofinoCabinsCode from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-code.png';
+import tranquilTofinoCabinsSlider1 from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-slider-1.png';
+import tranquilTofinoCabinsSlider2 from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-slider-2.png';
+import tranquilTofinoCabinsSlider3 from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-slider-3.png';
+import tranquilTofinoCabinsSlider4 from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-slider-4.png';
+import tranquilTofinoCabinsSlider5 from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-slider-5.png';
 
 export const rawProjectData = [
   {
@@ -242,6 +243,7 @@ export const rawProjectData = [
         description: [
           "We used the WooCommerce plugins and adjust the booking settings according to our clients' requirements. The booking feature allows users to select the bookable dates, create an account and checkout.",
         ],
+        img: tranquilTofinoCabinsBookings,
       },
       {
         title: 'Customized Theme',
@@ -249,8 +251,19 @@ export const rawProjectData = [
           'We started with configuring the backend of WordPress then dived into template and plugin files. To have better control of the content, we created custom fields using the ACF(Advanced Custom Fields) plugin and output the content of the fields using appropriate template files.',
           'We also used action hooks and filter hooks to organize the content to position it in the way we want based on the wireframes. We made sure our clients can easily update the content on their own and display them properly without touching the template files.',
         ],
+        img: tranquilTofinoCabinsCode,
       },
     ],
+    imgSlider: {
+      sliderTitle: 'Site Screenshots',
+      imgs: [
+        tranquilTofinoCabinsSlider1,
+        tranquilTofinoCabinsSlider2,
+        tranquilTofinoCabinsSlider3,
+        tranquilTofinoCabinsSlider4,
+        tranquilTofinoCabinsSlider5,
+      ],
+    },
   },
   {
     id: 'portfolio',
@@ -373,15 +386,15 @@ export const rawProjectData = [
     category: 'fun',
     moreInfo: false,
   },
-  // {
-  //   id: 'gallery',
-  //   title: 'Gallery',
-  //   briefDescription:
-  //     'A responsive masonry gallery that showcases my interests in landscape photography. All the images can be uploaded from local devices via the site.',
-  //   tags: ['ReactJS', 'Sass', 'Firebase'],
-  //   thumbnailImgUrl: galleryThumbImg,
-  //   livesite: 'https://ztan.ca/gallery/',
-  //   category: 'fun',
-  //   moreInfo: false,
-  // },
+  {
+    id: 'gallery',
+    title: 'Gallery',
+    briefDescription:
+      'A responsive masonry gallery that showcases my interests in landscape photography. All the images can be uploaded from local devices via the site.',
+    tags: ['ReactJS', 'Sass', 'Firebase'],
+    thumbnailImgUrl: galleryThumbImg,
+    livesite: 'https://ztan.ca/gallery/',
+    category: 'fun',
+    moreInfo: false,
+  },
 ];
