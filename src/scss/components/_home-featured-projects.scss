@@ -48,7 +48,7 @@
   .featured-project-card {
     margin: $double-spacing auto;
     background-color: $dark-grey;
-    max-width: 500px;
+    max-width: 480px;
     transition: all 0.3s ease-in-out;
 
     img {
@@ -83,7 +83,7 @@
     .home-featured-projects-content {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      column-gap: $base-spacing;
+      column-gap: $double-spacing;
 
       h2 {
         grid-column: 1 / 4;
