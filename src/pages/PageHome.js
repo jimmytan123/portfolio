@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { ReactComponent as LaptopCode } from '../globals/logos/laptop-code.svg';
 import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
+import HomeFeaturedProjects from '../components/HomeFeaturedProjects';
 
 const PageHome = () => {
   const elementRef = useRef(null);
@@ -64,6 +65,7 @@ const PageHome = () => {
           </p>
         </div>
       </section>
+      <HomeFeaturedProjects />
       <Contact />
     </motion.div>
   );

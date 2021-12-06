@@ -26,7 +26,9 @@ const PageWork = () => {
       setProjectsData(rawProjectData);
     } else {
       setProjectsData(
-        rawProjectData.filter((project) => project.category === selectedCat)
+        rawProjectData.filter((project) =>
+          project.category.includes(selectedCat)
+        )
       );
     }
   };

@@ -1,0 +1,97 @@
+@use '../base/variables' as *;
+
+.home-featured-projects {
+  .home-featured-projects-content {
+    padding: $base-spacing $double-spacing;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    margin: $base-spacing 0 0 0;
+    width: 100%;
+
+    &::after {
+      content: '.';
+      color: $dark-blue;
+    }
+  }
+
+  h3 {
+    display: inline-block;
+    margin: $small-spacing 0;
+    color: $white;
+    transition: color 0.3s ease-in-out;
+    font-size: 1.3rem;
+
+    &:hover {
+      color: $light-blue;
+    }
+  }
+
+  p {
+    margin: $small-spacing 0;
+    color: $white;
+  }
+
+  .all-works-btn {
+    max-width: 135px;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .featured-project-card {
+    margin: $double-spacing auto;
+    background-color: $dark-grey;
+    max-width: 500px;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      display: block;
+    }
+
+    .project-card-text {
+      padding: 0.8rem $base-spacing;
+    }
+
+    &:hover {
+      transform: translateY(-5px) translateX(-5px);
+      bottom: $small-spacing;
+      box-shadow: 0.5rem 0.5rem $light-blue;
+      right: $small-spacing;
+    }
+  }
+
+  @media all and (min-width: 450px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media all and (min-width: $breakpoint-tablet) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  @media all and (min-width: $breakpoint-desktop) {
+    .home-featured-projects-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: $base-spacing;
+
+      h2 {
+        grid-column: 1 / 4;
+      }
+
+      .all-works-btn {
+        grid-column: 1 / 4;
+      }
+    }
+  }
+}
