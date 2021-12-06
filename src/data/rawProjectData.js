@@ -268,7 +268,7 @@ export const rawProjectData = [
   },
   {
     id: 'portfolio',
-    title: 'Jimmy Tan',
+    title: 'Portfolio',
     subtitle: 'React Portfolio Website',
     briefDescription:
       'A portfolio website that was designed and developed as a platform to showcase my design and development skills as a front-end developer.',

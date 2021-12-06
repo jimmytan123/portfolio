@@ -24,6 +24,7 @@ const HomeFeaturedProjects = () => {
                   <img
                     src={homeFeaturedProject.thumbnailImgUrl}
                     alt={`cover of the project ${homeFeaturedProject.title}`}
+                    loading="lazy"
                   />
                   <div className="project-card-text">
                     <a
