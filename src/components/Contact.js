@@ -48,22 +48,11 @@ const Contact = () => {
         <div className="btn-wrapper">
           {location.pathname !== '/work' && (
             <div className="btn">
-              <div className="side default-side">
-                <Link to="/work">View Work</Link>
-              </div>
-              <div className="side hover-side">
-                <Link to="/work">View Work</Link>
-              </div>
+              <Link to="/work">View Work</Link>
             </div>
           )}
           <div className="btn">
-            <div className="side default-side">
-              <a href={`mailto:${email}`}>Email Me</a>
-            </div>
-
-            <div className="side hover-side hover-side-email-btn">
-              <a href={`mailto:${email}`}>Email Me</a>
-            </div>
+            <a href={`mailto:${email}`}>Email Me</a>
           </div>
         </div>
       </div>

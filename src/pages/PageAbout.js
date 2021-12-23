@@ -55,7 +55,7 @@ const PageAbout = () => {
             my passion and skillsets in the web development industry. With solid
             fundamentals in various front-end programming languages as well as
             web design, I mostly enjoy working with React JS, HTML5, CSS3,
-            JavaScript and Adobe XD.
+            JavaScript and Adobe XD. I am currently learning TypeScript.
           </p>
           <p data-aos="fade-up" data-aos-delay="100">
             Graduated with a Bachelor of Science Statistics major at University
@@ -80,12 +80,13 @@ const PageAbout = () => {
               <li>Sass</li>
               <li>JavaScript</li>
               <li>React</li>
+              <li>Redux</li>
               <li>jQuery</li>
               <li>PHP</li>
               <li>WordPress</li>
               <li>WooCommerce</li>
               <li>BootStrap</li>
-              <li>SQL</li>
+              <li>MySQL</li>
               <li>Git/GitHub</li>
             </ul>
           </div>
