@@ -1,6 +1,7 @@
 @use '../base/variables' as *;
 
 .home-featured-projects {
+  background-color: $white;
   .home-featured-projects-content {
     padding: $base-spacing $double-spacing;
     max-width: 1800px;

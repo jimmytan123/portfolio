@@ -17,7 +17,7 @@ const PageHome = () => {
       className="home-container main-wrapper"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: 'easeInOut', duration: 0.3 }}
+      transition={{ ease: 'easeInOut', duration: 0.2 }}
     >
       <Helmet>
         <title>Jimmy Tan | Web Developer</title>
@@ -30,7 +30,7 @@ const PageHome = () => {
         <div
           className="landing-content"
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           <LaptopCode className="laptop-code-svg" />
           <div className="text">

@@ -13,11 +13,29 @@
     overflow: hidden;
 
     // svg background for landing section
-    background-color: #ffffff;
+    //background-color: #ffffff;
     /* note: background by SVGBackgrounds.com */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23e1ecf7' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23e1ecf7' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23e6eef8' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23d7e5f5' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23ebf1f9' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23ccdff2' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23f0f4fa' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23c2d8f0' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23f4f6fa' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23b8d2ed' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23f8f9fb' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23aecbeb' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
-    background-size: cover;
-    background-position: center;
+    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23e1ecf7' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23e1ecf7' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23e6eef8' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23d7e5f5' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23ebf1f9' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23ccdff2' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23f0f4fa' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23c2d8f0' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23f4f6fa' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23b8d2ed' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23f8f9fb' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23aecbeb' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    // background-size: cover;
+    // background-position: center;
+
+    // improve and fix background image performance issue
+    &::before {
+      content: ' ';
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      // svg background for landing section
+      background-color: #ffffff;
+      /* note: background by SVGBackgrounds.com */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23e1ecf7' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23e1ecf7' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23e6eef8' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23d7e5f5' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23ebf1f9' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23ccdff2' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23f0f4fa' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23c2d8f0' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23f4f6fa' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23b8d2ed' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23f8f9fb' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23aecbeb' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+      background-size: cover;
+      background-position: center;
+      will-change: transform;
+      z-index: -1;
+    }
 
     svg.laptop-code-svg {
       fill: $dark-grey;
@@ -94,10 +112,10 @@
       min-height: calc(88vh - 72px);
     }
 
-    @media all and (min-width: 1200px) {
-      // for svg background of the landing section
-      background-attachment: fixed;
-    }
+    // @media all and (min-width: 1200px) {
+    //   // for svg background of the landing section
+    //   background-attachment: fixed;
+    // }
   }
 
   .homepage-btn {
