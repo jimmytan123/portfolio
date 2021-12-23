@@ -16,7 +16,7 @@ const WeatherWidget = () => {
         const weatherData = await axios.get(
           `https://api.openweathermap.org/data/2.5/weather?q=vancouver&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`
         );
-        console.log(weatherData.data);
+        //console.log(weatherData.data);
         setTemp(weatherData.data.main.temp);
         setDescription(weatherData.data.weather[0].main);
 
