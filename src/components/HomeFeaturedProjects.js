@@ -17,14 +17,13 @@ const HomeFeaturedProjects = () => {
       <div className="home-featured-projects-content">
         <h2>Featured Projects</h2>
         {homeFeaturedProjects &&
-          homeFeaturedProjects.map((homeFeaturedProject) => {
+          homeFeaturedProjects.map((homeFeaturedProject, index) => {
             return (
-              <div className="featured-project-card">
+              <div className="featured-project-card" key={index}>
                 <div className="project-card-content">
                   <img
                     src={homeFeaturedProject.thumbnailImgUrl}
                     alt={`cover of the project ${homeFeaturedProject.title}`}
-                    loading="lazy"
                   />
                   <div className="project-card-text">
                     <a

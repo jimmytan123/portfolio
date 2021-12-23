@@ -17,7 +17,7 @@ const PageHome = () => {
       className="home-container main-wrapper"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: 'easeInOut', duration: 0.2 }}
+      transition={{ ease: 'easeInOut', duration: 0.3 }}
     >
       <Helmet>
         <title>Jimmy Tan | Web Developer</title>
