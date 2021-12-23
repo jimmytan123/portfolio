@@ -6,6 +6,7 @@ import { ReactComponent as LaptopCode } from '../globals/logos/laptop-code.svg';
 import { downArrow } from '../globals/icon';
 import Contact from '../components/Contact';
 import HomeFeaturedProjects from '../components/HomeFeaturedProjects';
+import WeatherWidget from '../components/WeatherWidget';
 
 const PageHome = () => {
   const elementRef = useRef(null);
@@ -17,7 +18,7 @@ const PageHome = () => {
       className="home-container main-wrapper"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: 'easeInOut', duration: 0.3 }}
+      transition={{ ease: 'easeInOut', duration: 0.5 }}
     >
       <Helmet>
         <title>Jimmy Tan | Web Developer</title>
@@ -47,6 +48,7 @@ const PageHome = () => {
         <button onClick={executeScroll} className="scroll-btn">
           {downArrow}
         </button>
+        <WeatherWidget />
       </section>
       <section ref={elementRef} className="brief-intro">
         <div className="text">
