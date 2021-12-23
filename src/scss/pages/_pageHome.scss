@@ -130,6 +130,7 @@
     margin: $base-spacing 0;
 
     position: relative;
+    z-index: 1;
 
     .overlay {
       position: absolute;
