@@ -36,11 +36,7 @@ Project is created with:
 - One data file containing a list of projects information
 - Responsive Images
 - Optimize for SEO
-
-```
-$ npm install
-$ npm start
-```
+- Fetch weather info for Vancouver
 
 ## Author
 
