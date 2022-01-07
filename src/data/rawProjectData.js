@@ -272,7 +272,7 @@ export const rawProjectData = [
     title: 'TS Note-Taking App',
     subtitle: 'React TypeScript CRUD App',
     briefDescription:
-      'A functional note-taker app with CRUD feature using TypeScript, React JS, LocalStorage and BootStrap.',
+      'A functional and responsive note-taking app with CRUD feature using TypeScript, React JS, LocalStorage and BootStrap.',
     tags: ['TypeScript', 'ReactJS', 'BootStrap', 'LocalStorage'],
     thumbnailImgUrl: noteTakerThumbImg,
     livesite: 'https://ztan.ca/note-taker/',
