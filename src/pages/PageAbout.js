@@ -79,6 +79,7 @@ const PageAbout = () => {
               <li>CSS3</li>
               <li>Sass</li>
               <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>React</li>
               <li>Redux</li>
               <li>jQuery</li>

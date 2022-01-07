@@ -43,6 +43,7 @@ import codeBreakerThumbImg from '../assets/assets-codeBreaker/codeBreaker-thumbn
 import weatherAppThumbImg from '../assets/assets-weather-app/weatherApp-thumbnail.png';
 import galleryThumbImg from '../assets/assets-gallery/gallery-thumbnail.png';
 import tranquilTofinoCabinsThumbImg from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-thumbnail.png';
+import noteTakerThumbImg from '../assets/assets-note-taker/note-taker-thumbnail.png';
 
 // import banner images for single project page
 import moviewaveBanner from '../assets/assets-moviewave/moviewave-banner.png';
@@ -265,6 +266,19 @@ export const rawProjectData = [
         tranquilTofinoCabinsSlider5,
       ],
     },
+  },
+  {
+    id: 'note-taker',
+    title: 'TS Note-Taking App',
+    subtitle: 'React TypeScript CRUD App',
+    briefDescription:
+      'A functional note-taker app with CRUD feature using TypeScript, React JS, LocalStorage and BootStrap.',
+    tags: ['TypeScript', 'ReactJS', 'BootStrap', 'LocalStorage'],
+    thumbnailImgUrl: noteTakerThumbImg,
+    livesite: 'https://ztan.ca/note-taker/',
+    github: 'https://github.com/jimmytan123/TypeScript-React-Note-App',
+    category: ['fun'],
+    moreInfo: false,
   },
   {
     id: 'portfolio',
