@@ -44,6 +44,8 @@ import weatherAppThumbImg from '../assets/assets-weather-app/weatherApp-thumbnai
 import galleryThumbImg from '../assets/assets-gallery/gallery-thumbnail.png';
 import tranquilTofinoCabinsThumbImg from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-thumbnail.png';
 import noteTakerThumbImg from '../assets/assets-note-taker/note-taker-thumbnail.png';
+import nexterThumbImg from '../assets/assets-nexter/nexter-thumbnail.png';
+import trilloThumbImg from '../assets/assets-trillo/trillo-thumbnail.png';
 
 // import banner images for single project page
 import moviewaveBanner from '../assets/assets-moviewave/moviewave-banner.png';
@@ -392,6 +394,19 @@ export const rawProjectData = [
     moreInfo: false,
   },
   {
+    id: 'nexter-front-end',
+    title: 'Nexter Real Estate',
+    subtitle: 'A mockup real estate website',
+    briefDescription:
+      'A responsive real estate website based on a design. Emphasis on modern CSS Grid technique.',
+    tags: ['HTML5', 'Sass'],
+    thumbnailImgUrl: nexterThumbImg,
+    livesite: 'https://ztan.ca/nexter-front-end/',
+    github: 'https://github.com/jimmytan123/nexter-front-end',
+    category: ['fun'],
+    moreInfo: false,
+  },
+  {
     id: 'weather-app',
     title: 'Weather App',
     subtitle: 'JavaScript Weather App',
@@ -413,6 +428,19 @@ export const rawProjectData = [
     tags: ['ReactJS', 'Sass', 'Firebase'],
     thumbnailImgUrl: galleryThumbImg,
     livesite: 'https://ztan.ca/gallery/',
+    category: ['fun'],
+    moreInfo: false,
+  },
+  {
+    id: 'trillo-front-end',
+    title: 'Trillo Travel',
+    subtitle: 'A mockup travel website',
+    briefDescription:
+      'A responsive travel website based on a design. Emphasis on modern CSS Flexbox technique with nice CSS animations.',
+    tags: ['HTML5', 'Sass'],
+    thumbnailImgUrl: trilloThumbImg,
+    livesite: 'https://ztan.ca/trillo-front-end/',
+    github: 'https://github.com/jimmytan123/trillo-front-end',
     category: ['fun'],
     moreInfo: false,
   },
