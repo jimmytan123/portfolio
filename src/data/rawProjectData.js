@@ -46,6 +46,7 @@ import tranquilTofinoCabinsThumbImg from '../assets/assets-tranquil-tofino-cabin
 import noteTakerThumbImg from '../assets/assets-note-taker/note-taker-thumbnail.png';
 import nexterThumbImg from '../assets/assets-nexter/nexter-thumbnail.png';
 import trilloThumbImg from '../assets/assets-trillo/trillo-thumbnail.png';
+import foodOrderAppThumbImg from '../assets/assets-food-order-app/food-order-app-thumbnail.png';
 
 // import banner images for single project page
 import moviewaveBanner from '../assets/assets-moviewave/moviewave-banner.png';
@@ -280,6 +281,19 @@ export const rawProjectData = [
     livesite: 'https://ztan.ca/note-taker/',
     github: 'https://github.com/jimmytan123/TypeScript-React-Note-App',
     category: ['fun'],
+    moreInfo: false,
+  },
+  {
+    id: 'food-order-app',
+    title: 'Food on the Run',
+    subtitle: 'A React JS Food Order App',
+    briefDescription:
+      'A React food order app with menu filter, add to cart, edit cart, enter customer information and post order features. Menu data and order data are stored in Firebase. Utilized useState, useEffect, useRef, useReducer and useContext hooks.',
+    tags: ['React', 'CSS', 'Firebase'],
+    thumbnailImgUrl: foodOrderAppThumbImg,
+    livesite: 'https://ztan.ca/food-order-app/',
+    github: 'https://github.com/jimmytan123/food-order-app',
+    category: ['featured'],
     moreInfo: false,
   },
   {
