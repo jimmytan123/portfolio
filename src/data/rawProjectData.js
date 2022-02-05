@@ -46,7 +46,8 @@ import tranquilTofinoCabinsThumbImg from '../assets/assets-tranquil-tofino-cabin
 import noteTakerThumbImg from '../assets/assets-note-taker/note-taker-thumbnail.png';
 import nexterThumbImg from '../assets/assets-nexter/nexter-thumbnail.png';
 import trilloThumbImg from '../assets/assets-trillo/trillo-thumbnail.png';
-import foodOrderAppThumbImg from '../assets/assets-food-order-app/food-order-app-thumbnail.png';
+// import foodOrderAppThumbImg from '../assets/assets-food-order-app/food-order-app-thumbnail.png';
+import jushiNextJs from '../assets/assets-jushi-nextjs/jushi-nextjs-thumbnail.png';
 
 // import banner images for single project page
 import moviewaveBanner from '../assets/assets-moviewave/moviewave-banner.png';
@@ -186,6 +187,27 @@ export const rawProjectData = [
     ],
   },
   {
+    id: 'jushi-nextjs',
+    title: 'Jushi Restaurant',
+    subtitle: 'Full Stack App Built in Next.js',
+    briefDescription:
+      'A responsive full-stack food order web app built in Next.js, Redux and MongoDB. Users can add items to the cart and place orders. The order info will be sent to the database.',
+    tags: [
+      'Next.js',
+      'React',
+      'Redux',
+      'MongoDB',
+      'CSS Module',
+      'API Routes',
+      'SSR',
+    ],
+    thumbnailImgUrl: jushiNextJs,
+    livesite: 'https://jushi-restaurant-nextjs.vercel.app/',
+    github: 'https://github.com/jimmytan123/jushi-restaurtant-nextjs',
+    category: ['featured', 'featured-home'],
+    moreInfo: false,
+  },
+  {
     id: 'tranquil-tofino-cabins',
     title: 'Tranquil Tofino Cabins',
     subtitle: 'WordPress & WooCommerce Website',
@@ -194,7 +216,7 @@ export const rawProjectData = [
     tags: ['WordPress', 'WooCommerce', 'PHP', 'HTML5', 'Sass'],
     thumbnailImgUrl: tranquilTofinoCabinsThumbImg,
     livesite: 'https://tranquiltofino.bcitwebdeveloper.ca/',
-    category: ['featured', 'featured-home'],
+    category: ['featured'],
     moreInfo: true,
     bannerImgUrl: tranquilTofinoCabinsBanner,
     bannerImgMobileUrl: tranquilTofinoCabinsBannerMobile,
@@ -283,19 +305,19 @@ export const rawProjectData = [
     category: ['fun'],
     moreInfo: false,
   },
-  {
-    id: 'food-order-app',
-    title: 'Food on the Run',
-    subtitle: 'A React JS Food Order App',
-    briefDescription:
-      'A React food order app with menu filter, add to cart, edit cart, enter customer information and post order features. Menu data and order data are stored in Firebase. Utilized useState, useEffect, useRef, useReducer and useContext hooks.',
-    tags: ['React', 'CSS', 'Firebase'],
-    thumbnailImgUrl: foodOrderAppThumbImg,
-    livesite: 'https://ztan.ca/food-order-app/',
-    github: 'https://github.com/jimmytan123/food-order-app',
-    category: ['featured'],
-    moreInfo: false,
-  },
+  // {
+  //   id: 'food-order-app',
+  //   title: 'Food on the Run',
+  //   subtitle: 'A React JS Food Order App',
+  //   briefDescription:
+  //     'A React food order app with menu filter, add to cart, edit cart, enter customer information and post order features. Menu data and order data are stored in Firebase. Utilized useState, useEffect, useRef, useReducer and useContext hooks.',
+  //   tags: ['React', 'CSS', 'Firebase'],
+  //   thumbnailImgUrl: foodOrderAppThumbImg,
+  //   livesite: 'https://ztan.ca/food-order-app/',
+  //   github: 'https://github.com/jimmytan123/food-order-app',
+  //   category: ['featured'],
+  //   moreInfo: false,
+  // },
   {
     id: 'portfolio',
     title: 'Portfolio',
