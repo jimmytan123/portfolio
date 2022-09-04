@@ -48,14 +48,19 @@ const PageAbout = () => {
         <article className="about-text">
           <h1 data-aos="fade-up">About Me.</h1>
           <p data-aos="fade-up" data-aos-delay="50">
-            I'm Jimmy(Zhixi) Tan. My training and hands-on projects experience
-            at{' '}
+            I'm Jimmy(Zhixi) Tan. I currently working as a Front-End developer
+            in{' '}
+            <a href="https://corp.airg.com/" target="_blank" rel="noreferrer">
+              airG Inc.{' '}
+            </a>
+            . I have experience in responsive design with mobile-first approach.
+            My training and hands-on projects experience at{' '}
             <abbr title="British Columbia Institute of Technology">BCIT</abbr>{' '}
             Front-End Web Developer Program, have allowed me to further develop
             my passion and skillsets in the web development industry. With solid
             fundamentals in various front-end programming languages as well as
-            web design, I mostly enjoy working with React JS, HTML5, CSS3,
-            JavaScript and Adobe XD. I am currently learning TypeScript.
+            web design, I mostly enjoy working with React JS, Redux, JavaScript,
+            Web Components, HTML5 and CSS(Sass).
           </p>
           <p data-aos="fade-up" data-aos-delay="100">
             Graduated with a Bachelor of Science Statistics major at University
@@ -75,21 +80,20 @@ const PageAbout = () => {
           <div className="skills-cat">
             <h3>Development Skills</h3>
             <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass</li>
               <li>JavaScript</li>
               <li>React</li>
               <li>Next.js</li>
               <li>Redux</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Sass</li>
+              <li>Web Components</li>
+              <li>Lit Element</li>
+              <li>WordPress(with PHP)</li>
+              <li>Git/GitHub/GitLab</li>
               <li>TypeScript(Learning)</li>
               <li>jQuery</li>
-              <li>PHP</li>
-              <li>WordPress</li>
-              <li>WooCommerce</li>
-              <li>BootStrap</li>
-              <li>MySQL</li>
-              <li>Git/GitHub</li>
+              <li>Gulp</li>
             </ul>
           </div>
           <div className="skills-cat">
