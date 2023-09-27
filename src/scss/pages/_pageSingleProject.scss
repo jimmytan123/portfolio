@@ -3,7 +3,6 @@
 @use '../base/variables' as *;
 
 .single-project-container {
-
   // Styling for accidently go into a single movie page via URL that does not have the movie detail yet
   .no-project-detail {
     margin-top: $double-spacing;

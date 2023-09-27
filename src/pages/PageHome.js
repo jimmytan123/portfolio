@@ -54,13 +54,13 @@ const PageHome = () => {
         <div className="text">
           <h2>One Pixel at a Time</h2>
           <p>
-            A self-motivated front-end developer with{' '}
+            A focused and motivated front-end developer with hands-on{' '}
             <Link className="link-to-work" to="/work">
-              <span>hands-on project experiences</span>
+              <span>project experience.</span>
             </Link>{' '}
-            designing and building websites from scratch. My goal is to build
-            websites with both visually appealing and user experience-oriented
-            functionality.
+            Passionate to build functional and user-friendly websites with great
+            attention to detail. I value continuous learning and keeping up with
+            trends.
             <Link className="link-to-about" to="/about">
               <span> More about me.</span>
             </Link>

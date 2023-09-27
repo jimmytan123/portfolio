@@ -80,20 +80,21 @@ const PageAbout = () => {
           <div className="skills-cat">
             <h3>Development Skills</h3>
             <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Sass</li>
               <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Sass</li>
               <li>React</li>
-              <li>Next.js</li>
               <li>Redux</li>
+              <li>Next.js</li>
+              <li>Vue</li>
               <li>Web Components</li>
-              <li>Lit Element</li>
-              <li>WordPress(with PHP)</li>
+              <li>Lit</li>
               <li>Git/GitHub/GitLab</li>
               <li>TypeScript(Learning)</li>
               <li>jQuery</li>
               <li>Gulp</li>
+              <li>WordPress(with PHP)</li>
             </ul>
           </div>
           <div className="skills-cat">
