@@ -48,25 +48,20 @@ const PageAbout = () => {
         <article className="about-text">
           <h1 data-aos="fade-up">About Me.</h1>
           <p data-aos="fade-up" data-aos-delay="50">
-            I'm Jimmy(Zhixi) Tan. I currently working as a Front-End developer
-            in{' '}
-            <a href="https://corp.airg.com/" target="_blank" rel="noreferrer">
-              airG Inc.{' '}
-            </a>
-            . I have experience in responsive design with mobile-first approach.
-            My training and hands-on projects experience at{' '}
-            <abbr title="British Columbia Institute of Technology">BCIT</abbr>{' '}
-            Front-End Web Developer Program, have allowed me to further develop
-            my passion and skillsets in the web development industry. With solid
-            fundamentals in various front-end programming languages as well as
-            web design, I mostly enjoy working with React JS, Redux, JavaScript,
-            Web Components, HTML5 and CSS(Sass).
+            I'm Jimmy(Zhixi) Tan, a front-end developer based in Vancouver.
+            Passionate to build functional and user-friendly websites with great
+            attention to detail. I value continuous learning and keeping up with
+            trends. My training and hands-on projects experience at
+            <abbr title="British Columbia Institute of Technology"> BCIT </abbr>
+            , have allowed me to further develop my passion and skillsets in the
+            web development industry. With solid fundamentals in various
+            front-end programming languages as well as web design.
           </p>
           <p data-aos="fade-up" data-aos-delay="100">
             Graduated with a Bachelor of Science Statistics major at University
-            of Victoria and gained a few years of working experience, I have
-            developed a detail-oriented mindset, creative problem-solving skills
-            and strong logical thinking ability.
+            of Victoria and gained a few years of working experience as a
+            front-end developer, I have developed a detail-oriented mindset,
+            creative problem-solving skills and strong logical thinking ability.
           </p>
           <p data-aos="fade-up" data-aos-delay="150">
             In addition to web development, one of my greatest interests is
@@ -75,6 +70,30 @@ const PageAbout = () => {
           </p>
         </article>
       </section>
+      <section className="work" data-aos="fade-up" data-aos-delay="200">
+        <div className="work-wrapper">
+          <h3>Profession Experience</h3>
+          <div className="work-item">
+            <h4>airG Inc.(Vancouver, BC) - Junior Front-End Developer</h4>
+            <ul>
+              <li>
+                Contribute to building cross-platform web applications, mainly
+                focusing on airG Inc.'s customer-facing web apps.
+              </li>
+              <li>
+                Leveraging my problem-solving skills to promptly address and
+                resolve reported bugs, and ensure cross-browser usability.
+              </li>
+              <li>
+                Worked together within an Agile framework and maintained a
+                dynamic partnership with Senior Front-End Developers, Back-End
+                Developers, UI/UX Designers and QA to consistently deliver value
+                to the organization.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section className="skills" data-aos="fade-up" data-aos-delay="200">
         <div className="skills-flex">
           <div className="skills-cat">
@@ -82,16 +101,17 @@ const PageAbout = () => {
             <ul>
               <li>JavaScript</li>
               <li>HTML</li>
-              <li>CSS</li>
-              <li>Sass</li>
+              <li>CSS(SCSS)</li>
               <li>React</li>
               <li>Redux</li>
               <li>Next.js</li>
+              <li>Angular</li>
+              <li>AngularJS</li>
               <li>Vue</li>
               <li>Web Components</li>
               <li>Lit</li>
               <li>Git/GitHub/GitLab</li>
-              <li>TypeScript(Learning)</li>
+              <li>TypeScript</li>
               <li>jQuery</li>
               <li>Gulp</li>
               <li>WordPress(with PHP)</li>
@@ -103,12 +123,21 @@ const PageAbout = () => {
               <li>Adobe XD</li>
               <li>Figma</li>
               <li>Invision</li>
-              <li>Illustrator</li>
-              <li>Photoshop</li>
+            </ul>
+          </div>
+          <div className="skills-cat">
+            <h3>Others</h3>
+            <ul>
+              <li>SEO</li>
+              <li>Stripe</li>
+              <li>Mixpanel</li>
+              <li>Jira</li>
+              <li>Scrum</li>
             </ul>
           </div>
         </div>
       </section>
+
       <section className="interested-topics">
         <div className="interested-topics-content">
           <h2>
