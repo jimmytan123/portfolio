@@ -72,7 +72,7 @@ const PageAbout = () => {
       </section>
       <section className="work" data-aos="fade-up" data-aos-delay="200">
         <div className="work-wrapper">
-          <h3>Profession Experience</h3>
+          <h3>Professional Experience</h3>
           <div className="work-item">
             <h4>airG Inc.(Vancouver, BC) - Junior Front-End Developer</h4>
             <ul>
