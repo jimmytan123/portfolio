@@ -41,17 +41,18 @@ const PageAbout = () => {
         <title>Jimmy Tan | About Me</title>
         <meta
           name="description"
-          content="A summary of Jimmy Tan's background and technical skills as a Front-End Developer."
+          content="A summary of Jimmy Tan's background and technical skills as a Full-Stack Developer."
         />
       </Helmet>
       <section className="about-content">
         <article className="about-text">
           <h1 data-aos="fade-up">About Me.</h1>
           <p data-aos="fade-up" data-aos-delay="50">
-            I'm Jimmy(Zhixi) Tan, a front-end developer based in Vancouver.
-            Passionate to build functional and user-friendly websites with great
-            attention to detail. I value continuous learning and keeping up with
-            trends. My training and hands-on projects experience at
+            I'm Jimmy(Zhixi) Tan, a full-stack developer(front-end focused)
+            based in Vancouver. Passionate to build functional and user-friendly
+            websites with great attention to detail. I value continuous learning
+            and keeping up with trends. My training and hands-on projects
+            experience at
             <abbr title="British Columbia Institute of Technology"> BCIT </abbr>
             , have allowed me to further develop my passion and skillsets in the
             web development industry. With solid fundamentals in various
@@ -101,20 +102,21 @@ const PageAbout = () => {
             <ul>
               <li>JavaScript</li>
               <li>HTML</li>
-              <li>CSS(SCSS)</li>
+              <li>CSS</li>
               <li>React</li>
               <li>Redux</li>
               <li>Next.js</li>
               <li>Angular</li>
               <li>AngularJS</li>
-              <li>Vue</li>
+              <li>Lit</li>
               <li>Web Components</li>
               <li>Lit</li>
-              <li>Git/GitHub/GitLab</li>
+              <li>Git</li>
               <li>TypeScript</li>
-              <li>jQuery</li>
-              <li>Gulp</li>
-              <li>WordPress(with PHP)</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
             </ul>
           </div>
           <div className="skills-cat">
@@ -133,6 +135,7 @@ const PageAbout = () => {
               <li>Mixpanel</li>
               <li>Jira</li>
               <li>Scrum</li>
+              <li>Agile</li>
             </ul>
           </div>
         </div>

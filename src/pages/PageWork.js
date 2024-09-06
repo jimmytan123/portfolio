@@ -56,7 +56,7 @@ const PageWork = () => {
         <h1>Projects.</h1>
         <p>
           A collection of my featured technical projects, fun projects as a
-          front-end developer. <br />
+          web developer. <br />
           Stay tune for more...
         </p>
         <div className="sort-btns-group">

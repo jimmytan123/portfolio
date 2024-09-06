@@ -24,7 +24,7 @@ const PageHome = () => {
         <title>Jimmy Tan | Web Developer</title>
         <meta
           name="description"
-          content="A portfolio site built in React by Jimmy Tan, a Front-End Developer based in Vancouver, BC, Canada. He has hands-on experience building websites from scratch, with a mobile-first approach. He likes React, JavaScript, HTML, CSS."
+          content="A portfolio site built in React by Jimmy Tan, a Full-Stack Developer(front-end focused) based in Vancouver, BC, Canada. He has hands-on experience building websites from scratch, with a mobile-first approach. He likes React, JavaScript, HTML, CSS."
         />
       </Helmet>
       <section className="landing">
@@ -37,7 +37,7 @@ const PageHome = () => {
           <div className="text">
             <h1>I'm Jimmy Tan</h1>
             <p>
-              A <mark>front-end developer</mark> based in Vancouver, Canada.
+              A <mark>full-stack developer</mark> based in Vancouver, Canada.
             </p>
             <Link className="work-btn homepage-btn" to="/work">
               View My Work
@@ -54,7 +54,8 @@ const PageHome = () => {
         <div className="text">
           <h2>One Pixel at a Time</h2>
           <p>
-            A focused and motivated front-end developer with hands-on{' '}
+            A focused and motivated full-stack developer(front-end focused) with
+            hands-on{' '}
             <Link className="link-to-work" to="/work">
               <span>project experience.</span>
             </Link>{' '}

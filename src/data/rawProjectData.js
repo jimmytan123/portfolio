@@ -48,6 +48,7 @@ import nexterThumbImg from '../assets/assets-nexter/nexter-thumbnail.png';
 import trilloThumbImg from '../assets/assets-trillo/trillo-thumbnail.png';
 // import foodOrderAppThumbImg from '../assets/assets-food-order-app/food-order-app-thumbnail.png';
 import jushiNextJs from '../assets/assets-jushi-nextjs/jushi-nextjs-thumbnail.png';
+import jobjourneyThumbImg from '../assets/assets-job-journey/job-journey-thumbnail.png';
 
 // import banner images for single project page
 import moviewaveBanner from '../assets/assets-moviewave/moviewave-banner.png';
@@ -90,6 +91,27 @@ import tranquilTofinoCabinsSlider4 from '../assets/assets-tranquil-tofino-cabins
 import tranquilTofinoCabinsSlider5 from '../assets/assets-tranquil-tofino-cabins/tranquil-tofino-cabins-slider-5.png';
 
 export const rawProjectData = [
+  {
+    id: 'job-journey',
+    title: 'Job Journey',
+    subtitle: 'MERN Job Application Tracking Web App',
+    briefDescription:
+      'A full-stack web app built with Express, MongoDB, React, Node.js to help users efficiently manage, update and track their job applications.',
+    tags: [
+      'Express',
+      'React',
+      'RESTApi',
+      'MongoDB',
+      'JWT',
+      'React Query',
+      'React Router',
+    ],
+    thumbnailImgUrl: jobjourneyThumbImg,
+    livesite: 'https://job-journey-5vos.onrender.com/',
+    github: 'https://github.com/jimmytan123/jobjourney',
+    category: ['featured', 'featured-home'],
+    moreInfo: false,
+  },
   {
     id: 'moviewave',
     title: 'MovieWave',
@@ -328,7 +350,7 @@ export const rawProjectData = [
     thumbnailImgUrl: portfolioThumbImg,
     livesite: 'https://ztan.ca/',
     github: 'https://github.com/jimmytan123/portfolio',
-    category: ['featured', 'featured-home'],
+    category: ['featured'],
     moreInfo: true,
     bannerImgUrl: portfolioBanner,
     bannerImgMobileUrl: portfolioBannerMobile,
